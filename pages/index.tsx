@@ -17,7 +17,7 @@ export default function Home() {
       <Header />
 
       <main>
-        <div>Hello World</div>
+        <div className="h-screen">Hello World</div>
 
         {/* Header */}
 
