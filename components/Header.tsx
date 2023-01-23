@@ -10,7 +10,7 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className={`${isOpen ? "overflow-y-hidden" : ""}`}>
+    <div>
       <div className="px-6 flex text-white justify-between py-4 items-center fixed w-screen z-50">
         <div>
           <Link href="/">
@@ -50,7 +50,7 @@ export default function Header() {
 
       <div
         className={`${
-          isOpen ? "block z-40  opacity-100" : "block -z-40  opacity-0 h-0 w-0"
+          isOpen ? "block z-40 opacity-100" : "block -z-40 opacity-0 h-0 w-0"
         } fixed inset-x-0 mx-auto bottom-3 h-[50vh] w-[95%] bg-[#E8E5E3] rounded-xl text-black transition-all duration-300 p-4`}
       >
         <div className="">Menu coming soon</div>
