@@ -10,7 +10,7 @@ export default function Header() {
 
   return (
     <div>
-      <div className="px-6 flex text-white justify-between py-4">
+      <div className="px-6 flex text-white justify-between py-4 items-center">
         <div>
           <Link href="/">
             <Image src={Logo} alt="Seitenlogo"></Image>
