@@ -40,9 +40,48 @@ export default function Header() {
           </button>
         </div>
       </div>
+
+      {/* ----------------------------------------------------------------------- */}
+
+      <div
+        onClick={() => setIsOpen(!isOpen)}
+        className={`${
+          isOpen
+            ? "flex flex-col gap-[0px] items-center justify-center z-50 h-16 w-16 rounded-full bg-[#E8E5E3] fixed bottom-3 left-1/2"
+            : "flex flex-col gap-[10px] items-center justify-center z-50 h-16 w-16 rounded-full bg-[#E8E5E3] fixed bottom-3 left-1/2"
+        }`}
+      >
+        <div
+          className={`${
+            isOpen
+              ? "bg-black -rotate-45 h-[2px] w-8 rounded-full duration-100"
+              : "bg-black h-[2px] w-8 rounded-full duration-100"
+          }`}
+        ></div>
+        <div
+          className={`${
+            isOpen
+              ? "bg-black rotate-45 h-[2px] w-8 rounded-full duration-100"
+              : "bg-black h-[2px] w-8 rounded-full duration-100"
+          }`}
+        ></div>
+      </div>
+
+      {/* ----------------------------------------------------------------------- */}
+
       <div className={`${isOpen ? "block z-40" : "hidden"}`}>
-        <div className="bg-black/80 h-screen absolute w-screen">
-          <h1>test</h1>
+        <div className="bg-black/80 h-screen fixed w-screen backdrop-blur-sm">
+          <nav className="flex gap-4 flex-col pt-24 text-center">
+            <Link href={"/"}>
+              <button>Home</button>
+            </Link>
+            <Link href={"/About"}>
+              <button>About</button>
+            </Link>
+            <Link href={"Webdesign"}>
+              <button>Webdesign- und Entwicklung</button>
+            </Link>
+          </nav>
         </div>
       </div>
     </div>
