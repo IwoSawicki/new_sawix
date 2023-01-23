@@ -31,24 +31,18 @@ export default function Header() {
       <div
         onClick={() => setIsOpen(!isOpen)}
         className={`${
-          isOpen
-            ? "flex flex-col gap-0 items-center justify-center z-50 h-16 w-16 rounded-full bg-[#E8E5E3] fixed bottom-3 inset-x-0 mx-auto"
-            : "flex flex-col gap-[10px] items-center justify-center z-50 h-16 w-16 rounded-full bg-[#E8E5E3] fixed bottom-3 inset-x-0 mx-auto"
-        }`}
+          isOpen ? "gap-0" : "gap-[10px]"
+        } flex flex-col items-center justify-center z-50 h-16 w-16 rounded-full bg-[#E8E5E3] fixed bottom-3 inset-x-0 mx-auto`}
       >
         <div
           className={`${
-            isOpen
-              ? "bg-black -rotate-45 h-[2px] w-8 rounded-full duration-100"
-              : "bg-black h-[2px] w-8 rounded-full duration-100"
-          }`}
+            isOpen ? "-rotate-45" : " "
+          } bg-black h-[2px] w-8 rounded-full duration-100`}
         ></div>
         <div
           className={`${
-            isOpen
-              ? "bg-black rotate-45 h-[2px] w-8 rounded-full duration-100"
-              : "bg-black h-[2px] w-8 rounded-full duration-100"
-          }`}
+            isOpen ? "rotate-45" : ""
+          } bg-black h-[2px] w-8 rounded-full duration-100`}
         ></div>
       </div>
 
@@ -56,12 +50,10 @@ export default function Header() {
 
       <div
         className={`${
-          isOpen
-            ? "block z-40 fixed inset-x-0 mx-auto bottom-3 h-[50vh] w-[95%] bg-[#E8E5E3] rounded-xl text-black transition-all opacity-100 duration-500"
-            : "block -z-40 fixed inset-x-0 mx-auto bottom-3 h-[50vh] w-[95%] bg-[#E8E5E3] rounded-xl text-black transition-all opacity-0 duration-500"
-        }`}
+          isOpen ? "block z-40  opacity-100" : "block -z-40  opacity-0 h-0 w-0"
+        } fixed inset-x-0 mx-auto bottom-3 h-[50vh] w-[95%] bg-[#E8E5E3] rounded-xl text-black transition-all duration-300 p-4`}
       >
-        <div className="">a</div>
+        <div className="">Menu coming soon</div>
       </div>
     </div>
   );
