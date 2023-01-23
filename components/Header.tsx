@@ -57,8 +57,8 @@ export default function Header() {
       <div
         className={`${
           isOpen
-            ? "block z-40 fixed inset-x-0 mx-auto bottom-3 h-1/2 w-[95%] bg-[#E8E5E3] rounded-xl text-black transition-all opacity-100 duration-500"
-            : "block -z-40 fixed inset-x-0 mx-auto bottom-3 h-1/2 w-[95%] bg-[#E8E5E3] rounded-xl text-black transition-all opacity-0 duration-500"
+            ? "block z-40 fixed inset-x-0 mx-auto bottom-3 h-[50vh] w-[95%] bg-[#E8E5E3] rounded-xl text-black transition-all opacity-100 duration-500"
+            : "block -z-40 fixed inset-x-0 mx-auto bottom-3 h-[50vh] w-[95%] bg-[#E8E5E3] rounded-xl text-black transition-all opacity-0 duration-500"
         }`}
       >
         <div className="">a</div>
