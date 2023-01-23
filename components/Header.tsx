@@ -19,7 +19,9 @@ export default function Header() {
         <div>
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="flex flex-col gap-[20px]"
+            className={`${
+              isOpen ? "flex flex-col gap-[20px]" : "flex flex-col gap-[10px]"
+            }`}
           >
             <div
               className={`${
