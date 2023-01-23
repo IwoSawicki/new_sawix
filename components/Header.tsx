@@ -17,27 +17,11 @@ export default function Header() {
           </Link>
         </div>
         <div>
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            className={`${
-              isOpen ? "flex flex-col gap-[20px]" : "flex flex-col gap-[10px]"
-            }`}
-          >
-            <div
-              className={`${
-                isOpen
-                  ? "bg-white -rotate-45 origin-right h-[2px] w-8 rounded-full duration-100"
-                  : "bg-white h-[2px] w-8 rounded-full duration-100"
-              }`}
-            ></div>
-            <div
-              className={`${
-                isOpen
-                  ? "bg-white rotate-45 origin-right h-[2px] w-8 rounded-full duration-100"
-                  : "bg-white h-[2px] w-8 rounded-full duration-100"
-              }`}
-            ></div>
-          </button>
+          <Link href={"/kontakt"}>
+            <button className="bg-white rounded-full text-black px-4 py-1">
+              Kontakt
+            </button>
+          </Link>
         </div>
       </div>
 
@@ -47,8 +31,8 @@ export default function Header() {
         onClick={() => setIsOpen(!isOpen)}
         className={`${
           isOpen
-            ? "flex flex-col gap-[0px] items-center justify-center z-50 h-16 w-16 rounded-full bg-[#E8E5E3] fixed bottom-3 left-1/2"
-            : "flex flex-col gap-[10px] items-center justify-center z-50 h-16 w-16 rounded-full bg-[#E8E5E3] fixed bottom-3 left-1/2"
+            ? "flex flex-col gap-0 items-center justify-center z-50 h-16 w-16 rounded-full bg-[#E8E5E3] fixed bottom-3 inset-x-0 mx-auto"
+            : "flex flex-col gap-[10px] items-center justify-center z-50 h-16 w-16 rounded-full bg-[#E8E5E3] fixed bottom-3 inset-x-0 mx-auto"
         }`}
       >
         <div
