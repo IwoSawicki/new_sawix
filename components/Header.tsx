@@ -10,7 +10,7 @@ export default function Header() {
 
   return (
     <div>
-      <div className="px-6 flex text-white justify-between py-4 items-center fixed w-screen">
+      <div className="px-6 flex text-white justify-between py-4 items-center fixed w-screen z-50">
         <div>
           <Link href="/">
             <Image src={Logo} alt="Seitenlogo"></Image>
@@ -40,7 +40,7 @@ export default function Header() {
           </button>
         </div>
       </div>
-      <div className={`${isOpen ? "block" : "hidden"}`}>
+      <div className={`${isOpen ? "block z-40" : "hidden"}`}>
         <div className="bg-black/80 h-screen absolute w-screen">
           <h1>test</h1>
         </div>
