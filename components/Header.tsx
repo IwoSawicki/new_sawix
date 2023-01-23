@@ -53,19 +53,9 @@ export default function Header() {
 
       {/* ----------------------------------------------------------------------- */}
 
-      <div className={`${isOpen ? "block z-40" : "hidden"}`}>
-        <div className="bg-black/80 h-screen fixed w-screen backdrop-blur-sm">
-          <nav className="flex gap-4 flex-col pt-24 text-center">
-            <Link href={"/"}>
-              <button>Home</button>
-            </Link>
-            <Link href={"/About"}>
-              <button>About</button>
-            </Link>
-            <Link href={"Webdesign"}>
-              <button>Webdesign- und Entwicklung</button>
-            </Link>
-          </nav>
+      <div className={`${isOpen ? "block z-40 mx-auto w-screen" : "hidden"}`}>
+        <div className="bg-[#E8E5E3] fixed bottom-3 h-1/2 w-screen mx-3 rounded-xl text-black">
+          a
         </div>
       </div>
     </div>
