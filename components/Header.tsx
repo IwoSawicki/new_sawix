@@ -9,7 +9,7 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div>
+    <div className={`${isOpen ? "overflow-y-hidden" : ""}`}>
       <div className="px-6 flex text-white justify-between py-4 items-center fixed w-screen z-50">
         <div>
           <Link href="/">
