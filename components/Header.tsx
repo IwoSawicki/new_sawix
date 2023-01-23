@@ -19,22 +19,20 @@ export default function Header() {
         <div>
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="flex flex-col gap-4"
+            className="flex flex-col gap-[20px]"
           >
             <div
               className={`${
                 isOpen
-                  ? "bg-white -rotate-45 origin-right h-1 w-8 rounded-full duration-500"
-                  : "bg-white h-1 w-16 rounded-full duration-500"
+                  ? "bg-white -rotate-45 origin-right h-[2px] w-8 rounded-full duration-100"
+                  : "bg-white h-[2px] w-8 rounded-full duration-100"
               }`}
-            >
-              <div className="bg-red-700 w-1/2 h-1/2"></div>
-            </div>
+            ></div>
             <div
               className={`${
                 isOpen
-                  ? "bg-white rotate-45 origin-right h-1 w-8 rounded-full duration-500"
-                  : "bg-white h-1 w-16 rounded-full duration-500"
+                  ? "bg-white rotate-45 origin-right h-[2px] w-8 rounded-full duration-100"
+                  : "bg-white h-[2px] w-8 rounded-full duration-100"
               }`}
             ></div>
           </button>
