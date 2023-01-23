@@ -14,7 +14,7 @@ export default function Hero() {
           </p>
         </div>
 
-        <div className=" lg:w-1/3">
+        <div className="px-8 lg:w-1/3">
           <Image src={HeroPhone} alt="Handy mit Portfolio" />
         </div>
       </div>
