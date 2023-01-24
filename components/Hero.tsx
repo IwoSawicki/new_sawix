@@ -27,8 +27,8 @@ export default function Hero() {
           </div>
         </div>
         <div>
-          <div className="w-full lg:w-1/3 h-[800px] relative">
-            <div className="absolute h-[750px] left-1/2 transform -translate-x-1/2 w-full">
+          <div className="w-full lg:w-1/3 h-[850px] flex items-start justify-center relative">
+            <div className="absolute left-1/2 transform -translate-x-1/2 w-full">
               <motion.div
                 initial={{
                   opacity: 0,
@@ -47,11 +47,11 @@ export default function Hero() {
                 <Image
                   src={HeroAcid}
                   alt="Acid Berlin Startbild"
-                  className="h-[750px] object-contain"
+                  className=" object-contain"
                 />
               </motion.div>
             </div>
-            <div className="absolute h-[750px] left-1/2 transform -translate-x-1/2 w-full">
+            <div className="absolute left-1/2 transform -translate-x-1/2 w-full">
               <motion.div
                 initial={{
                   opacity: 0,
@@ -70,11 +70,11 @@ export default function Hero() {
                 <Image
                   src={HeroWeinbau}
                   alt="Weinbau Startbild"
-                  className="h-[750px] object-contain"
+                  className=" object-contain"
                 />
               </motion.div>
             </div>
-            <div className="absolute h-[750px] left-1/2 transform -translate-x-1/2 w-full">
+            <div className="absolute left-1/2 transform -translate-x-1/2 w-full">
               <motion.div
                 initial={{
                   opacity: 0,
@@ -93,7 +93,7 @@ export default function Hero() {
                 <Image
                   src={HeroMediceo}
                   alt="Mediceo Startbild"
-                  className="h-[750px] object-contain"
+                  className="object-contain"
                 />
               </motion.div>
             </div>
