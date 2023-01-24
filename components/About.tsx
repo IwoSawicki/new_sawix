@@ -13,7 +13,7 @@ export default function About() {
         haben.
       </p>
       <Link href={"/about"}>
-        <button className=" bg-transparent border-white border-[1px] rounded-full px-6 py-2 mb-2 mr-2">
+        <button className=" bg-transparent border-blue-700 border-[1px] rounded-full px-6 py-2 mb-2 mr-2">
           Wer wir sind
         </button>
       </Link>

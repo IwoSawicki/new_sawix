@@ -13,10 +13,13 @@ export default function Hero() {
             </span>
             <span className="w-full">Gibt es bei uns nicht!</span>
           </h1>
-          <p className="my-4 pr-3 mb-12">
-            Wir glauben daran, dass unsere Industrie von Zahlen geblendet wird.
-            <br /> Während Kaufentscheidungen auf Emotionen basieren
-          </p>
+          <div className="w-4/5">
+            <p className="my-4 pr-3 mb-12">
+              Wir glauben daran, dass unsere Industrie von Zahlen geblendet
+              wird.
+              <br /> Während Kaufentscheidungen auf Emotionen basieren
+            </p>
+          </div>
         </div>
 
         <div className="px-8 lg:w-1/3">
