@@ -8,12 +8,10 @@ import PortfolioCDU from "../public/Portfolio-CDU.png";
 
 export default function () {
   return (
-    <div className="pt-24 px-3">
+    <div className="my-24 px-3 ">
       <h2 className="text-4xl">Portfolio</h2>
       <div className="text-black pt-8 flex gap-12 flex-col">
-        {/* ----------------------------- */}
-
-        {/* Row 1 */}
+        {/* ----------------------------- Row 1  -----------------------------*/}
         <div className=" bg-[#FFEE62] px-4 pt-4 rounded-2xl">
           <h3 className="text-3xl mb-3">Mediceo </h3>
           <div className="mb-4">
@@ -27,6 +25,7 @@ export default function () {
             className=" rounded-t-2xl"
           />
         </div>
+        {/* ----------------------------- ----------------------------- */}
         <div className=" bg-[#6EE863] px-4 pt-4 rounded-2xl">
           <h3 className="text-3xl mb-3">DMK-Haus </h3>
           <div className="mb-4">
@@ -47,7 +46,7 @@ export default function () {
           />
         </div>
 
-        {/* Row 2 */}
+        {/* ----------------------------- Row 2 -----------------------------*/}
         <div className=" bg-[#9747FF] px-4 pt-4 rounded-2xl">
           <h3 className="text-3xl mb-3">Wohlfühlerei Weinhaus</h3>
           <div className="mb-4">
@@ -64,6 +63,7 @@ export default function () {
             className=" rounded-t-2xl"
           />
         </div>
+        {/* ----------------------------- ----------------------------- */}
         <div className=" bg-[#FF8540] px-4 pt-4 rounded-2xl">
           <h3 className="text-3xl mb-3">CDU Mühltal</h3>
           <div className="mb-4">
@@ -78,7 +78,7 @@ export default function () {
           />
         </div>
 
-        {/* ----------------------------- */}
+        {/* ----------------------------- ----------------------------- */}
       </div>
     </div>
   );
