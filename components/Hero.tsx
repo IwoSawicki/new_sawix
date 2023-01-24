@@ -26,8 +26,8 @@ export default function Hero() {
             </p>
           </div>
         </div>
-        <div>
-          <div className="w-full lg:w-1/3 h-[850px] flex items-start justify-center relative">
+        <div className="sm:flex sm:justify-center">
+          <div className="w-full lg:w-1/3 h-[780px] flex items-start justify-center relative sm:w-1/2 sm:h-[650px]">
             <div className="absolute left-1/2 transform -translate-x-1/2 w-full">
               <motion.div
                 initial={{

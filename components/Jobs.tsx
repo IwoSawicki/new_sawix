@@ -6,7 +6,7 @@ import JobsImg from "../public/Home-Jobs.png";
 
 export default function Jobs() {
   return (
-    <div className="my-24 px-3">
+    <div className="my-36 px-3">
       <div>
         <h2 className="text-4xl my-4">Wir stellen ein</h2>
         <p className="my-4">

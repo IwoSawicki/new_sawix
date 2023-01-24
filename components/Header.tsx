@@ -11,7 +11,7 @@ export default function Header() {
 
   return (
     <div>
-      <div className="px-6 flex text-white justify-between py-4 items-center fixed w-screen z-50">
+      <div className="px-6 flex text-white justify-between py-4 items-center fixed w-screen z-50 backdrop-blur">
         <div>
           <Link href="/">
             <Image src={Logo} alt="Seitenlogo"></Image>
@@ -50,7 +50,7 @@ export default function Header() {
         onClick={() => setIsOpen(!isOpen)}
         className={`${
           isOpen ? "gap-0 bg-black" : "gap-[10px] bg-blue-700"
-        } flex flex-col items-center justify-center z-50 h-16 w-16 rounded-full fixed bottom-3 inset-x-0 mx-auto`}
+        } flex flex-col items-center justify-center z-50 h-16 w-16 rounded-full fixed bottom-5 inset-x-0 mx-auto`}
       >
         <motion.div
           className={`${
