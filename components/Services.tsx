@@ -9,7 +9,7 @@ export default function Services() {
       </h2>
 
       {/* ------------------------- ------------------------- ---------------------- */}
-      <div className="my-16">
+      <div className="my-12">
         <div className="rounded-2xl my-5">
           <div className="bg-[#E8E5E3] rounded-2xl h-60">
             <iframe
@@ -33,7 +33,7 @@ export default function Services() {
       </div>
 
       {/* ------------------------- ------------------------- ---------------------- */}
-      <div className="my-16">
+      <div className="my-12">
         <div className="rounded-2xl my-5">
           <div className="bg-[#E8E5E3] rounded-2xl h-60">
             <iframe
@@ -58,7 +58,7 @@ export default function Services() {
       </div>
 
       {/* ------------------------- ------------------------- ---------------------- */}
-      <div className="my-16">
+      <div className="my-12">
         <div className="rounded-2xl my-5">
           <div className="bg-[#E8E5E3] rounded-2xl h-60">
             <iframe
@@ -82,7 +82,7 @@ export default function Services() {
       </div>
 
       {/* ------------------------- ------------------------- ---------------------- */}
-      <div className="my-16">
+      <div className="my-12">
         <div className="rounded-2xl my-5">
           <div className="bg-[#E8E5E3] rounded-2xl h-60">
             <iframe

@@ -2,11 +2,12 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "@next/font/google";
 
-import Header from "../components/Header";
+import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Portfolio from "@/components/Portfolio";
 import About from "@/components/About";
 import Services from "@/components/Services";
+import Jobs from "@/components/Jobs";
 
 export default function Home() {
   return (
@@ -42,6 +43,9 @@ export default function Home() {
         </section>
 
         {/* Jobs */}
+        <section>
+          <Jobs />
+        </section>
 
         {/* Footer */}
       </main>
