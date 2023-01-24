@@ -14,7 +14,7 @@ export default function Services() {
           <div className="bg-[#E8E5E3] rounded-2xl h-60">
             <iframe
               className="w-full h-full rounded-2xl"
-              src="https://embed.lottiefiles.com/animation/26925"
+              src="https://embed.lottiefiles.com/animation/17667"
             ></iframe>
           </div>
           <div className="p-4 mt-4">
@@ -87,7 +87,7 @@ export default function Services() {
           <div className="bg-[#E8E5E3] rounded-2xl h-60">
             <iframe
               className="w-full h-full rounded-2xl"
-              src="https://embed.lottiefiles.com/animation/38274"
+              src="https://embed.lottiefiles.com/animation/52376"
             ></iframe>
           </div>
           <div className="p-4 mt-4">

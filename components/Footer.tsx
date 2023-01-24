@@ -60,32 +60,38 @@ export default function Footer() {
       <div className="mt-12 flex flex-col px-3">
         <div>
           {/* ---------- Buttons ---------- */}
-          <div className="mb-12">
-            <div>
-              <button className="bg-transparent border-[1px] border-white rounded-full px-5 py-3 w-36">
-                Whatsapp
-              </button>
-              <button className="bg-transparent border-[1px] border-white rounded-full px-5 py-3 w-36">
-                Instagram
-              </button>
+          <div className="mb-12 flex flex-col gap-4">
+            <div className="flex gap-4">
+              <a href="https://wa.me/message/JHZA2OLHWQGGI1">
+                <button className="bg-transparent border-[1px] border-white rounded-full px-5 py-3 w-36">
+                  Whatsapp
+                </button>
+              </a>
+              <a href="https://www.instagram.com/iwo_swx/">
+                <button className="bg-transparent border-[1px] border-white rounded-full px-5 py-3 w-36">
+                  Instagram
+                </button>
+              </a>
             </div>
-            <div>
-              <button className="bg-transparent border-[1px] border-white rounded-full px-5 py-3 w-36 ">
-                Youtube
-              </button>
-              <button className="bg-transparent border-[1px] border-white rounded-full px-5 py-3 w-36">
+            <div className="flex gap-4">
+              <a href="https://www.youtube.com/@iwo_swx">
+                <button className="bg-transparent border-[1px] border-white rounded-full px-5 py-3 w-36 ">
+                  Youtube
+                </button>
+              </a>
+              {/* <button className="bg-transparent border-[1px] border-white rounded-full px-5 py-3 w-36">
                 Facebook
-              </button>
+              </button> */}
             </div>
           </div>
 
           {/* ---------- Links ---------- */}
           <div className="flex flex-col">
-            <p>Ich bin jederzeit erreichbar!</p>
-            <a className="text-3xl mt-6 mb-5" href="">
-              Hello@sawix.de
+            <p>Wir sind jederzeit erreichbar!</p>
+            <a className="text-3xl mt-6 mb-5" href="mailto:info@sawix.de">
+              hello@sawix.de
             </a>
-            <a className="text-3xl mb-12" href="">
+            <a className="text-3xl mb-12" href="tel:+491734388519">
               +49 173 4388519
             </a>
           </div>
