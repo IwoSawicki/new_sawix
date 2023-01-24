@@ -1,5 +1,10 @@
 import Image from "next/image";
+import { motion } from "framer-motion";
+
 import HeroPhone from "../public/Hero-Phone.png";
+import HeroMediceo from "../public/Hero-Mediceo.png";
+import HeroWeinbau from "../public/Hero-Weinbau.png";
+import HeroAcid from "../public/Hero-AcidBerlin.png";
 
 export default function Hero() {
   return (
@@ -21,9 +26,78 @@ export default function Hero() {
             </p>
           </div>
         </div>
-
-        <div className="px-8 lg:w-1/3">
-          <Image src={HeroPhone} alt="Handy mit Portfolio" />
+        <div className="px-8">
+          <div className="w-full lg:w-1/3 h-[800px] relative">
+            <div className="absolute h-[750px] left-1/2 transform -translate-x-1/2 w-full">
+              <motion.div
+                initial={{
+                  opacity: 0,
+                  translateY: 200,
+                }}
+                animate={{
+                  opacity: 1,
+                  translateY: 0,
+                }}
+                transition={{
+                  duration: 1,
+                  delay: 0.9,
+                  ease: "easeInOut",
+                }}
+              >
+                <Image
+                  src={HeroAcid}
+                  alt="Acid Berlin Startbild"
+                  className="h-[750px] object-contain"
+                />
+              </motion.div>
+            </div>
+            <div className="absolute h-[750px] left-1/2 transform -translate-x-1/2 w-full">
+              <motion.div
+                initial={{
+                  opacity: 0,
+                  translateY: 200,
+                }}
+                animate={{
+                  opacity: 1,
+                  translateY: 0,
+                }}
+                transition={{
+                  duration: 1,
+                  delay: 0.6,
+                  ease: "easeInOut",
+                }}
+              >
+                <Image
+                  src={HeroWeinbau}
+                  alt="Weinbau Startbild"
+                  className="h-[750px] object-contain"
+                />
+              </motion.div>
+            </div>
+            <div className="absolute h-[750px] left-1/2 transform -translate-x-1/2 w-full">
+              <motion.div
+                initial={{
+                  opacity: 0,
+                  translateY: 200,
+                }}
+                animate={{
+                  opacity: 1,
+                  translateY: 0,
+                }}
+                transition={{
+                  duration: 1,
+                  delay: 0.3,
+                  ease: "easeInOut",
+                }}
+              >
+                <Image
+                  src={HeroMediceo}
+                  alt="Mediceo Startbild"
+                  className="h-[750px] object-contain"
+                />
+              </motion.div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
