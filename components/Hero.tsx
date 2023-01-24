@@ -47,6 +47,7 @@ export default function Hero() {
                 <Image
                   src={HeroAcid}
                   alt="Acid Berlin Startbild"
+                  priority
                   className=" object-contain"
                 />
               </motion.div>
@@ -70,6 +71,7 @@ export default function Hero() {
                 <Image
                   src={HeroWeinbau}
                   alt="Weinbau Startbild"
+                  priority
                   className=" object-contain"
                 />
               </motion.div>
@@ -93,6 +95,7 @@ export default function Hero() {
                 <Image
                   src={HeroMediceo}
                   alt="Mediceo Startbild"
+                  priority
                   className="object-contain"
                 />
               </motion.div>
