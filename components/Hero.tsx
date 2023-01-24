@@ -26,7 +26,7 @@ export default function Hero() {
             </p>
           </div>
         </div>
-        <div className="px-8">
+        <div>
           <div className="w-full lg:w-1/3 h-[800px] relative">
             <div className="absolute h-[750px] left-1/2 transform -translate-x-1/2 w-full">
               <motion.div
