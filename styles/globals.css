@@ -2,6 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+.hero-section {
+  background-color: relative;
+  overflow: hidden;
+  display: flex;
+}
+
+.loop-container {
+  margin-top: 300px;
+  white-space: nowrap;
+  font-size: 9vw;
+  color: white;
+}
+
+.item {
+  position: absolute;
+}
+
 /* ------------------------------ SCROLLBAR ------------------------------ */
 ::-webkit-scrollbar {
   width: 5px;

@@ -17,7 +17,7 @@ export default function Jobs() {
         </p>
         <Link href={"/jobs"}>
           <button className=" bg-transparent border-blue-700 border-[1px] rounded-full px-6 py-2 mb-2 mr-2">
-            Wer wir sind
+            Zu den Jobs
           </button>
         </Link>
       </div>

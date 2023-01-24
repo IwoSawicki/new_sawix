@@ -8,6 +8,7 @@ import Portfolio from "@/components/Portfolio";
 import About from "@/components/About";
 import Services from "@/components/Services";
 import Jobs from "@/components/Jobs";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -48,6 +49,7 @@ export default function Home() {
         </section>
 
         {/* Footer */}
+        <Footer />
       </main>
     </>
   );
