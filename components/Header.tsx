@@ -49,7 +49,7 @@ export default function Header() {
         }}
         onClick={() => setIsOpen(!isOpen)}
         className={`${
-          isOpen ? "gap-0 bg-black" : "gap-[10px] bg-blue-700 "
+          isOpen ? "gap-0 bg-black" : "gap-[10px] bg-blue-700"
         } flex flex-col items-center justify-center z-50 h-16 w-16 rounded-full fixed bottom-3 inset-x-0 mx-auto`}
       >
         <motion.div
