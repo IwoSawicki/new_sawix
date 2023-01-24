@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion, spring } from "framer-motion";
 
 import Logo from "../public/Sawix-Logo.svg";
 import MenuIcon from "../public/Menu-Icon.svg";
@@ -10,7 +10,7 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="test-idk">
+    <div>
       <div className="px-6 flex text-white justify-between py-4 items-center fixed w-screen z-50">
         <div>
           <Link href="/">
@@ -25,25 +25,27 @@ export default function Header() {
           </Link>
         </div>
       </div>
-
       {/* ----------------------------------------------------------------------- */}
-
       <motion.div
-        initial={{
-          opacity: "0%",
-          translateY: "20px",
-          rotate: 180,
-          scale: 0.5,
-        }}
+        initial={
+          {
+            //opacity: "0%",
+            //translateY: "20px",
+            //rotate: 0,
+            //scale: 0.5,
+          }
+        }
         animate={{
-          opacity: "100%",
-          translateY: "0px",
-          rotate: 0,
-          scale: 1,
+          //opacity: "100%",
+          //translateY: "0px",
+          rotate: 180,
+          //scale: 1,
         }}
         transition={{
-          duration: 1,
-          delay: 1,
+          repeat: Infinity,
+          repeatType: "loop",
+          repeatDelay: 8,
+          duration: 0.25,
         }}
         onClick={() => setIsOpen(!isOpen)}
         className={`${
@@ -61,16 +63,21 @@ export default function Header() {
           } bg-white h-[2px] w-8 rounded-full duration-100`}
         ></motion.div>
       </motion.div>
-
       {/* ----------------------------------------------------------------------- */}
 
+      {/* <AnimatePresence>
+        isOpen && ( */}
       <motion.div
         className={`${
-          isOpen ? "block z-40 opacity-100" : "block -z-40 opacity-0 h-0 w-0"
-        } fixed inset-x-0 mx-auto bottom-3 h-[50vh] w-[95%] bg-[#E8E5E3] rounded-xl text-black transition-all duration-300 p-4`}
+          isOpen
+            ? "block z-40 opacity-100 h-[50vh] w-[95%]"
+            : "block -z-40 opacity-0 h-0 w-0"
+        } fixed inset-x-0 mx-auto bottom-3 bg-[#E8E5E3] rounded-xl text-black transition-all duration-300 p-4`}
       >
         <div className="">Menu coming soon</div>
       </motion.div>
+      {/* )
+      </AnimatePresence> */}
     </div>
   );
 }
