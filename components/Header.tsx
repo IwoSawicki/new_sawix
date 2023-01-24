@@ -4,13 +4,19 @@ import { motion } from "framer-motion";
 
 import Logo from "../public/Sawix-Logo.svg";
 import MenuIcon from "../public/Menu-Icon.svg";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
+  const shiftBody = () => {
+    useEffect(() => {
+      document.querySelector(".test-idk")?.classList.add("shiftUp");
+    });
+  };
+
   return (
-    <div>
+    <div className="test-idk">
       <div className="px-6 flex text-white justify-between py-4 items-center fixed w-screen z-50">
         <div>
           <Link href="/">
@@ -54,6 +60,7 @@ export default function Header() {
         } fixed inset-x-0 mx-auto bottom-3 h-[50vh] w-[95%] bg-[#E8E5E3] rounded-xl text-black transition-all duration-300 p-4`}
       >
         <div className="">Menu coming soon</div>
+        <button onClick={shiftBody}>Shift Up!!</button>
       </div>
     </div>
   );
