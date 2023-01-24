@@ -69,8 +69,8 @@ export default function Services() {
           <div className="p-4 mt-4">
             <h3 className="text-3xl mb-3">Foto- & Videoproduktion</h3>
             <p>
-              Wir spezialisieren uns auf interaktive, skalierbare und
-              Maßgeschneiderte digitale Erfahrungen
+              Menschen arbeiten Visuell. Zeig deshalb deinen Kunden was du
+              machst. Bilder sagen bekanntlich mehr als 1000 Worte.
             </p>
             <Link href={"/webdesign"}>
               <button className=" bg-transparent border-[#9747FF] border-[1px] rounded-full px-6 py-2 mt-4">
@@ -93,8 +93,8 @@ export default function Services() {
           <div className="p-4 mt-4">
             <h3 className="text-3xl mb-3">Social Media Marketing</h3>
             <p>
-              Wir spezialisieren uns auf interaktive, skalierbare und
-              Maßgeschneiderte digitale Erfahrungen
+              Egal ob Facebook, Instagram oder TikTok, mit uns erreichst du mehr
+              Kunden mit deinem Unternehmen.
             </p>
             <Link href={"/webdesign"}>
               <button className=" bg-transparent border-[#FF8540] border-[1px] rounded-full px-6 py-2 mt-4">
