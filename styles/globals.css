@@ -6,6 +6,21 @@
   rotate: 45deg;
 } */
 
+@keyframes background-pan {
+  from {
+    background-position: 0% center;
+  }
+  to {
+    background-position: -200% center;
+  }
+}
+
+.buttonAboutGradient {
+  animation: background-pan 3s linear infinite;
+  background: linear-gradient(to right, #1d4ed8, #60a5fa, #9333ea, #1d4ed8);
+  background-size: 200%;
+}
+
 /* ------------------------------ SCROLLBAR ------------------------------ */
 ::-webkit-scrollbar {
   width: 5px;

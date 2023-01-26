@@ -14,11 +14,13 @@ export default function About() {
         haben.
       </p>
       <Link href={"/about"}>
-        <button className="bg-transparent border-white border-[1px] rounded-full pl-8 mb-2 mr-2 flex justify-between items-center hover:bg-blue-700 hover:border-blue-700 duration-300 group">
-          Wer wir sind
-          <span className="bg-blue-700 rounded-full p-3 m-[1px] ml-6 group-hover:bg-white duration-300">
-            <BsArrowUpRight className=" text-white rounded-full group-hover:text-black duration-300 group-hover:rotate-45" />
-          </span>
+        <button className="buttonAboutGradient  p-px text-white rounded-full">
+          <div className="bg-black pl-8 rounded-full flex items-center bg-blue-700">
+            Wer wir sind{" "}
+            <span className="bg-blue-700 rounded-full p-3 m-[1px] ml-6 group-hover:bg-white duration-300">
+              <BsArrowUpRight className=" text-white rounded-full group-hover:text-black duration-300 group-hover:rotate-45" />
+            </span>
+          </div>
         </button>
       </Link>
     </div>
