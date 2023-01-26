@@ -57,8 +57,8 @@ export default function Footer() {
           </div>
         </Link>
       </div>
-      <div className="mt-12 flex flex-col px-3">
-        <div>
+      <div className="mt-12 flex flex-col px-3 max-w-6xl mx-auto lg:flex-row">
+        <div className="lg:w-1/2">
           {/* ---------- Buttons ---------- */}
           <div className="mb-12 flex flex-col gap-4">
             <div className="flex gap-4">
@@ -96,7 +96,7 @@ export default function Footer() {
             </a>
           </div>
         </div>
-        <div>
+        <div className="lg:w-1/2 lg:pl-12">
           <Image src={FooterImg} alt="Sawix Internes Meeting - Bild Footer" />
         </div>
       </div>
