@@ -23,6 +23,14 @@ export default function Header() {
               Kontakt
             </button>
           </Link>
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className={`${
+              isOpen ? "bg-black text-white rotate-45" : "bg-white text-black"
+            } , rounded-full h-8 w-8 ml-3 duration-300`}
+          >
+            +
+          </button>
         </div>
       </div>
       {/* ----------------------------------------------------------------------- */}
