@@ -27,7 +27,7 @@ export default function Hero() {
           </div>
         </div>
         <div className="sm:flex sm:justify-center">
-          <div className="w-full lg:w-1/3 h-[780px] flex items-start justify-center relative sm:w-1/2 sm:h-[650px]">
+          <div className="w-full lg:w-1/3 h-[650px] flex items-start justify-center relative sm:w-1/2 sm:h-[650px]">
             <div className="absolute left-1/2 transform -translate-x-1/2 w-full">
               <motion.div
                 initial={{
@@ -48,7 +48,7 @@ export default function Hero() {
                   src={HeroAcid}
                   alt="Acid Berlin Startbild"
                   priority
-                  className=" object-contain"
+                  className=" object-contain max-h-[700px]"
                 />
               </motion.div>
             </div>
@@ -72,7 +72,7 @@ export default function Hero() {
                   src={HeroWeinbau}
                   alt="Weinbau Startbild"
                   priority
-                  className=" object-contain"
+                  className=" object-contain max-h-[700px]"
                 />
               </motion.div>
             </div>
@@ -96,7 +96,7 @@ export default function Hero() {
                   src={HeroMediceo}
                   alt="Mediceo Startbild"
                   priority
-                  className="object-contain"
+                  className="object-contain max-h-[700px]"
                 />
               </motion.div>
             </div>
