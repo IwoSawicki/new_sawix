@@ -9,6 +9,8 @@ import { useEffect, useState } from "react";
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
+  function functiontest() {}
+
   return (
     <div>
       <div className="px-6 flex text-white justify-between py-4 items-center fixed w-screen z-50 backdrop-blur ">
@@ -17,24 +19,24 @@ export default function Header() {
             <Image src={Logo} alt="Seitenlogo"></Image>
           </Link>
         </div>
-        <div>
+        <div className="flex">
           <Link href={"/kontakt"}>
             <button className="bg-white rounded-full text-black px-4 py-1">
               Kontakt
             </button>
           </Link>
-          <button
+          <div
             onClick={() => setIsOpen(!isOpen)}
             className={`${
               isOpen ? "bg-black text-white rotate-45" : "bg-white text-black"
-            } , rounded-full h-8 w-8 ml-3 duration-300`}
+            } , rounded-full h-8 w-8 ml-3 duration-300 flex justify-center items-center`}
           >
             +
-          </button>
+          </div>
         </div>
       </div>
       {/* ----------------------------------------------------------------------- */}
-      <motion.div
+      <motion.button
         initial={
           {
             //opacity: "0%",
@@ -70,7 +72,7 @@ export default function Header() {
             isOpen ? "rotate-45" : ""
           } bg-white h-[2px] w-8 rounded-full duration-100`}
         ></motion.div>
-      </motion.div>
+      </motion.button>
       {/* ----------------------------------------------------------------------- */}
 
       {/* <AnimatePresence>

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import { BsArrowUpRight } from "react-icons/bs";
 
 export default function Services() {
   return (
@@ -24,8 +25,11 @@ export default function Services() {
               Maßgeschneiderte digitale Erfahrungen
             </p>
             <Link href={"/webdesign"}>
-              <button className=" bg-transparent border-[#FFEE62] border-[1px] rounded-full px-6 py-2 mt-4">
+              <button className="bg-transparent border-white border-[1px] rounded-full pl-8 mb-2 mr-2 flex justify-between items-center hover:text-black hover:bg-[#FFEE62] hover:border-[#FFEE62] duration-300 group mt-4">
                 Erfahre mehr
+                <span className="bg-[#FFEE62] rounded-full p-3 m-[1px] ml-6 group-hover:bg-white duration-300">
+                  <BsArrowUpRight className=" text-black rounded-full group-hover:text-black duration-300 group-hover:rotate-45" />
+                </span>
               </button>
             </Link>
           </div>
@@ -49,8 +53,11 @@ export default function Services() {
               Online-Shop
             </p>
             <Link href={"/webdesign"}>
-              <button className=" bg-transparent border-[#6EE863] border-[1px] rounded-full px-6 py-2 mt-4">
+              <button className="bg-transparent border-white border-[1px] rounded-full pl-8 mb-2 mr-2 flex justify-between items-center hover:text-black hover:bg-[#6EE863] hover:border-[#6EE863] duration-300 group mt-4">
                 Erfahre mehr
+                <span className="bg-[#6EE863] rounded-full p-3 m-[1px] ml-6 group-hover:bg-white duration-300">
+                  <BsArrowUpRight className=" text-black rounded-full group-hover:text-black duration-300 group-hover:rotate-45" />
+                </span>
               </button>
             </Link>
           </div>
@@ -73,8 +80,11 @@ export default function Services() {
               machst. Bilder sagen bekanntlich mehr als 1000 Worte.
             </p>
             <Link href={"/webdesign"}>
-              <button className=" bg-transparent border-[#9747FF] border-[1px] rounded-full px-6 py-2 mt-4">
+              <button className="bg-transparent border-white border-[1px] rounded-full pl-8 mb-2 mr-2 flex justify-between items-center hover:text-black hover:bg-[#9747FF] hover:border-[#9747FF] duration-300 group mt-4">
                 Erfahre mehr
+                <span className="bg-[#9747FF] rounded-full p-3 m-[1px] ml-6 group-hover:bg-white duration-300">
+                  <BsArrowUpRight className=" text-black rounded-full group-hover:text-black duration-300 group-hover:rotate-45" />
+                </span>
               </button>
             </Link>
           </div>
@@ -97,8 +107,11 @@ export default function Services() {
               Kunden mit deinem Unternehmen.
             </p>
             <Link href={"/webdesign"}>
-              <button className=" bg-transparent border-[#FF8540] border-[1px] rounded-full px-6 py-2 mt-4">
+              <button className="bg-transparent border-white border-[1px] rounded-full pl-8 mb-2 mr-2 flex justify-between items-center hover:text-black hover:bg-[#FF8540] hover:border-[#FF8540] duration-300 group mt-4">
                 Erfahre mehr
+                <span className="bg-[#FF8540] rounded-full p-3 m-[1px] ml-6 group-hover:bg-white duration-300">
+                  <BsArrowUpRight className=" text-black rounded-full group-hover:text-black duration-300 group-hover:rotate-45" />
+                </span>
               </button>
             </Link>
           </div>
