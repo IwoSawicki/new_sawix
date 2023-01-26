@@ -11,15 +11,19 @@ export default function Header() {
 
   return (
     <div>
-      <div className="px-6 flex text-white justify-between py-4 items-center fixed w-screen z-50 backdrop-blur">
+      <div className="px-6 flex text-white justify-between py-4 items-center fixed w-screen z-50 bg-transparent mix-blend-difference invert">
         <div>
           <Link href="/">
-            <Image src={Logo} alt="Seitenlogo"></Image>
+            <Image
+              src={Logo}
+              alt="Seitenlogo"
+              className="mix-blend-difference bg-transparent invert"
+            ></Image>
           </Link>
         </div>
         <div>
           <Link href={"/kontakt"}>
-            <button className="bg-white rounded-full text-black px-4 py-1">
+            <button className="bg-white rounded-full text-black px-4 py-1 invert">
               Kontakt
             </button>
           </Link>
