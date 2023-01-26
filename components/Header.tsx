@@ -28,51 +28,65 @@ export default function Header() {
           <div
             onClick={() => setIsOpen(!isOpen)}
             className={`${
-              isOpen ? "bg-black text-white rotate-45" : "bg-white text-black"
-            } , rounded-full h-8 w-8 ml-3 duration-300 flex justify-center items-center`}
+              isOpen ? " rotate-45" : ""
+            } , rounded-full h-8 w-8 ml-3 duration-300 flex justify-center items-center bg-white text-black`}
           >
             +
           </div>
         </div>
       </div>
       {/* ----------------------------------------------------------------------- */}
-      <motion.button
-        initial={
-          {
-            //opacity: "0%",
-            //translateY: "20px",
-            //rotate: 0,
-            //scale: 0.5,
-          }
-        }
-        animate={{
-          //opacity: "100%",
-          //translateY: "0px",
-          rotate: 180,
-          //scale: 1,
-        }}
-        transition={{
-          repeat: Infinity,
-          repeatType: "loop",
-          repeatDelay: 8,
-          duration: 0.25,
-        }}
+      <div
         onClick={() => setIsOpen(!isOpen)}
         className={`${
           isOpen ? "gap-0 bg-black" : "gap-[10px] bg-blue-700"
         } flex flex-col items-center justify-center z-50 h-16 w-16 rounded-full fixed bottom-5 inset-x-0 mx-auto`}
       >
-        <motion.div
-          className={`${
-            isOpen ? "-rotate-45" : " "
-          } bg-white h-[2px] w-8 rounded-full duration-100`}
-        ></motion.div>
-        <motion.div
-          className={`${
-            isOpen ? "rotate-45" : ""
-          } bg-white h-[2px] w-8 rounded-full duration-100`}
-        ></motion.div>
-      </motion.button>
+        <div className="bg-transparent  flex justify-between items-center duration-300 group">
+          <div className="group relative flex overflow-x-hidden duration-300 max-w-[64px]">
+            <div className={`${isOpen ? "hidden" : "block"}`}>
+              <div className=" animate-marquee whitespace-nowrap flex">
+                <span className="flex  mx-3">Menü</span>
+                <span className="flex  mx-3">Menü</span>
+                <span className="flex  mx-3">Menü</span>
+                <span className="flex  mx-3">Menü</span>
+                <span className="flex  mx-3">Menü</span>
+                <span className="flex  mx-3">Menü</span>
+                <span className="flex  mx-3">Menü</span>
+              </div>
+
+              <div className="absolute top-0 animate-marquee2 whitespace-nowrap flex">
+                <span className="flex  mx-3">Menü</span>
+                <span className="flex  mx-3">Menü</span>
+                <span className="flex  mx-3">Menü</span>
+                <span className="flex  mx-3">Menü</span>
+                <span className="flex  mx-3">Menü</span>
+                <span className="flex  mx-3">Menü</span>
+                <span className="flex  mx-3">Menü</span>
+              </div>
+            </div>
+          </div>
+          <div className="group relative flex overflow-x-hidden duration-300 max-w-[64px]">
+            <div className={`${isOpen ? "block" : "hidden"} `}>
+              <div className=" animate-marquee whitespace-nowrap flex">
+                <span className="flex  mx-3">Schließen</span>
+                <span className="flex  mx-3">Schließen</span>
+                <span className="flex  mx-3">Schließen</span>
+                <span className="flex  mx-3">Schließen</span>
+                <span className="flex  mx-3">Schließen</span>
+              </div>
+
+              <div className="absolute top-0 animate-marquee2 whitespace-nowrap flex">
+                <span className="flex  mx-3">Schließen</span>
+                <span className="flex  mx-3">Schließen</span>
+                <span className="flex  mx-3">Schließen</span>
+                <span className="flex  mx-3">Schließen</span>
+                <span className="flex  mx-3">Schließen</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       {/* ----------------------------------------------------------------------- */}
 
       {/* <AnimatePresence>
