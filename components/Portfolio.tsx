@@ -8,7 +8,7 @@ import PortfolioCDU from "../public/Portfolio-CDU.png";
 
 export default function () {
   return (
-    <div className="my-24 px-3 max-w-6xl mx-auto">
+    <div className="mb-24 mt-12 px-3 max-w-6xl mx-auto">
       <h2 className="text-4xl">Portfolio</h2>
       <div className="text-black pt-8 flex gap-12 flex-col">
         {/* ----------------------------- Row 1  -----------------------------*/}
