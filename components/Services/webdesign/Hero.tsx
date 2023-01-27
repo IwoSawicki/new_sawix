@@ -9,9 +9,9 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <div className="py-20  bg-gradient-to-br from-[#1b232d] to-[#090e12] ">
-      <div className="flex flex-col max-w-6xl mx-auto">
-        <div className="my-16 px-3">
+    <div className="py-20  bg-gradient-to-br from-[#1b232d] to-[#0b1116] ">
+      <div className="flex flex-col max-w-6xl mx-auto lg:flex-row">
+        <div className="my-16 px-3 lg:w-1/2">
           <h1 className="text-4xl mb-4">
             Transformiere dein Unternehmen in einen Kunden-Magneten
           </h1>
@@ -20,13 +20,14 @@ export default function Hero() {
             der Masse abzuheben und neue Kunden generieren zu lassen
           </p>
         </div>
-        <div>
-          <div className="group relative flex overflow-x-hidden duration-300">
+        <div className="lg:w-1/2">
+          <div className="relative flex overflow-x-hidden duration-300">
             <div className="py-6 animate-marquee whitespace-nowrap flex">
               <div className="mx-4  w-full">
                 <Image
                   src={sliderImg1}
                   alt="Webdesign Slider Bild 1"
+                  priority
                   className="min-w-[400px]"
                 />
               </div>
@@ -35,6 +36,7 @@ export default function Hero() {
                 <Image
                   src={sliderImg2}
                   alt="Webdesign Slider Bild 2"
+                  priority
                   className="min-w-[400px]"
                 />
               </div>
@@ -42,6 +44,7 @@ export default function Hero() {
                 <Image
                   src={sliderImg3}
                   alt="Webdesign Slider Bild 3"
+                  priority
                   className="min-w-[400px]"
                 />
               </div>
@@ -50,6 +53,7 @@ export default function Hero() {
                 <Image
                   src={sliderImg4}
                   alt="Webdesign Slider Bild 4"
+                  priority
                   className="min-w-[400px]"
                 />
               </div>
@@ -58,6 +62,7 @@ export default function Hero() {
                 <Image
                   src={sliderImg5}
                   alt="Webdesign Slider Bild 5"
+                  priority
                   className="min-w-[400px]"
                 />
               </div>
@@ -65,6 +70,7 @@ export default function Hero() {
                 <Image
                   src={sliderImg6}
                   alt="Webdesign Slider Bild 6"
+                  priority
                   className="min-w-[400px]"
                 />
               </div>
@@ -75,6 +81,7 @@ export default function Hero() {
                 <Image
                   src={sliderImg1}
                   alt="Webdesign Slider Bild 1"
+                  priority
                   className="min-w-[400px]"
                 />
               </div>
@@ -83,6 +90,7 @@ export default function Hero() {
                 <Image
                   src={sliderImg2}
                   alt="Webdesign Slider Bild 2"
+                  priority
                   className="min-w-[400px]"
                 />
               </div>
@@ -90,6 +98,7 @@ export default function Hero() {
                 <Image
                   src={sliderImg3}
                   alt="Webdesign Slider Bild 3"
+                  priority
                   className="min-w-[400px]"
                 />
               </div>
@@ -98,6 +107,7 @@ export default function Hero() {
                 <Image
                   src={sliderImg4}
                   alt="Webdesign Slider Bild 4"
+                  priority
                   className="min-w-[400px]"
                 />
               </div>
@@ -106,6 +116,7 @@ export default function Hero() {
                 <Image
                   src={sliderImg5}
                   alt="Webdesign Slider Bild 5"
+                  priority
                   className="min-w-[400px]"
                 />
               </div>
@@ -113,6 +124,7 @@ export default function Hero() {
                 <Image
                   src={sliderImg6}
                   alt="Webdesign Slider Bild 6"
+                  priority
                   className="min-w-[400px]"
                 />
               </div>
