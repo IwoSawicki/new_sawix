@@ -3,11 +3,11 @@ import Image from "next/image";
 import { Inter } from "@next/font/google";
 
 import Header from "@/components/Header";
-import Hero from "@/components/Hero";
-import Portfolio from "@/components/Portfolio";
-import About from "@/components/About";
-import Services from "@/components/Services";
-import Jobs from "@/components/Jobs";
+import Hero from "@/components/Home/Hero";
+import Portfolio from "@/components/Home/Portfolio";
+import About from "@/components/Home/About";
+import Services from "@/components/Home/Services";
+import Jobs from "@/components/Home/Jobs";
 import Footer from "@/components/Footer";
 
 export default function Home() {

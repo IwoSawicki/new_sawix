@@ -1,10 +1,10 @@
 import Image from "next/image";
 import React from "react";
 
-import PortfolioMediceo from "../public/Portfolio-Mediceo.png";
-import PortfolioDMK from "../public/Portfolio-DMK.png";
-import PortfolioWeinhaus from "../public/Portfolio-Weinhaus.png";
-import PortfolioCDU from "../public/Portfolio-CDU.png";
+import PortfolioMediceo from "../../public/Portfolio-Mediceo.png";
+import PortfolioDMK from "../../public/Portfolio-DMK.png";
+import PortfolioWeinhaus from "../../public/Portfolio-Weinhaus.png";
+import PortfolioCDU from "../../public/Portfolio-CDU.png";
 
 export default function () {
   return (
