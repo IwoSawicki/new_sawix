@@ -8,19 +8,21 @@ import ImgMedienproduktion from "public/Services/Webdesign/medienproduktion.jpg"
 
 export default function Dienstleistungen() {
   return (
-    <div className="my-12 px-3 max-w-6xl mx-auto">
-      <h2 className="text-4xl mb-8 pt-4 lg:text-5xl">Unsere Services</h2>
-      <div className=" space-y-12">
+    <div className="my-12 lg:my-28 px-3 max-w-7xl mx-auto">
+      <h2 className="text-4xl mb-8 pt-4 lg:text-5xl lg:pt-0 lg:mb-12">
+        Unsere Services
+      </h2>
+      <div className="space-y-40">
         {/* Dienstleistungskarte */}
         <div className="flex flex-col lg:flex-row">
-          <div className="lg:w-1/3">
+          <div className="lg:w-2/5">
             <Image
               src={ImgWebdesign}
               alt="Webdesign Dienste bei Sawix"
-              className="w-screen h-96 object-cover rounded-2xl "
+              className="w-full h-96 lg:h-[600px] object-cover rounded-2xl"
             />
           </div>
-          <div className="flex flex-col gap-3 mt-5 lg:mt-0 justify-center lg:w-2/3 lg:pl-16">
+          <div className="flex flex-col gap-3 mt-5 lg:mt-0 justify-center lg:w-3/5 lg:pl-16 lg:gap-5">
             <h3 className="text-3xl lg:text-5xl">Webdesign</h3>
             <p className="text-base lg:text-xl font-light">
               Eine Webseite ist deine digitale Visitenkarte und oftmals das
@@ -39,14 +41,14 @@ export default function Dienstleistungen() {
         </div>
         {/* Dienstleistungskarte */}
         <div className="flex flex-col lg:flex-row">
-          <div className="lg:w-1/3">
+          <div className="lg:w-2/5">
             <Image
               src={ImgWebdev}
               alt="Webdesign Dienste bei Sawix"
-              className="w-screen h-96 object-cover rounded-2xl "
+              className="w-full h-96 lg:h-[600px] object-cover rounded-2xl"
             />
           </div>
-          <div className="flex flex-col gap-3 mt-5 lg:mt-0 justify-center lg:w-2/3 lg:pl-16">
+          <div className="flex flex-col gap-3 mt-5 lg:mt-0 justify-center lg:w-3/5 lg:pl-16 lg:gap-5">
             <h3 className="text-3xl lg:text-5xl">Webentwicklung</h3>
             <p className="text-base lg:text-xl font-light">
               Bei der heutzutage kurzen Aufmerksamkeitsdauer, müssen die
@@ -67,14 +69,14 @@ export default function Dienstleistungen() {
         </div>
         {/* Dienstleistungskarte */}
         <div className="flex flex-col lg:flex-row">
-          <div className="lg:w-1/3">
+          <div className="lg:w-2/5">
             <Image
               src={ImgMobileApp}
               alt="Webdesign Dienste bei Sawix"
-              className="w-screen h-96 object-cover rounded-2xl "
+              className="w-full h-96 lg:h-[600px] object-cover rounded-2xl"
             />
           </div>
-          <div className="flex flex-col gap-3 mt-5 lg:mt-0 justify-center lg:w-2/3 lg:pl-16">
+          <div className="flex flex-col gap-3 mt-5 lg:mt-0 justify-center lg:w-3/5 lg:pl-16 lg:gap-5">
             <h3 className="text-3xl lg:text-5xl">Mobile Apps</h3>
             <p className="text-base lg:text-xl font-light">
               Tatsächlich gibt es garnicht so ein großen Unterschied, zwischen
@@ -93,14 +95,14 @@ export default function Dienstleistungen() {
         </div>
         {/* Dienstleistungskarte */}
         <div className="flex flex-col lg:flex-row">
-          <div className="lg:w-1/3">
+          <div className="lg:w-2/5">
             <Image
               src={ImgMedienproduktion}
               alt="Webdesign Dienste bei Sawix"
-              className="w-screen h-96 object-cover rounded-2xl "
+              className="w-full h-96 lg:h-[600px] object-cover rounded-2xl"
             />
           </div>
-          <div className="flex flex-col gap-3 mt-5 lg:mt-0 justify-center lg:w-2/3 lg:pl-16">
+          <div className="flex flex-col gap-3 mt-5 lg:mt-0 justify-center lg:w-3/5 lg:pl-16 lg:gap-5">
             <h3 className="text-3xl lg:text-5xl">Fotos und Videos</h3>
             <p className="text-base lg:text-xl font-light">
               Menschen arbeiten Visuell. Wieso also nicht zeigen, was dein
