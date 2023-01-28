@@ -1,5 +1,4 @@
 import Link from "next/link";
-import React from "react";
 import { BsArrowUpRight } from "react-icons/bs";
 
 export default function About() {
@@ -16,7 +15,7 @@ export default function About() {
         </p>
         <Link href={"/about"}>
           <button className="buttonMainGradient  p-px text-white rounded-full group">
-            <div className="bg-black pl-8 rounded-full flex items-center hover:bg-transparent duration-300">
+            <div className="bg-[#0b0d0f] pl-8 rounded-full flex items-center hover:bg-transparent duration-300">
               Wer wir sind{" "}
               <span className="bg-blue-700 rounded-full p-3 m-[1px] ml-6 group-hover:bg-transparent duration-300">
                 <BsArrowUpRight className=" text-white rounded-full duration-300 group-hover:rotate-45" />

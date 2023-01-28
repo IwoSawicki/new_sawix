@@ -2,8 +2,8 @@ import React from "react";
 
 export default function Intro() {
   return (
-    <div className="bg-[#0B0D0F] -mt-8 rounded-t-2xl pt-10">
-      <div className="mx-3">
+    <div className="bg-[#0B0D0F] -mt-8 rounded-t-2xl pt-10 ">
+      <div className="px-3 max-w-6xl mx-auto">
         <h2 className="text-4xl text-center my-4">
           Eine gute Online Präsenz ist ein stategisches Investment
         </h2>
@@ -19,7 +19,6 @@ export default function Intro() {
           Funktionalität zu beeinträchtigen.
         </p>
 
-        <hr className="border-t-px border-whitep my-10" />
         {/* <div className="my-4 flex gap-3">
           <div className="flex flex-col w-1/2 gap-3">
             <button className="w-full border-white border rounded-full py-1">
@@ -52,6 +51,7 @@ export default function Intro() {
         </div>
         <hr className="border-t-px border-whitep my-10" /> */}
       </div>
+      <hr className="border-t-px border-whitep my-10" />
     </div>
   );
 }

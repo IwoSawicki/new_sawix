@@ -39,8 +39,8 @@ export default function Jobs() {
         </Link> */}
         <Link href={"/jobs"}>
           <button className="buttonMainGradient my-4 p-px text-white rounded-full group">
-            <div className="bg-black pl-8 rounded-full flex items-center hover:bg-transparent duration-300">
-              Wer wir sind{" "}
+            <div className="bg-[#0b0d0f] pl-8 rounded-full flex items-center hover:bg-transparent duration-300">
+              Zu den Jobs
               <span className="bg-blue-700 rounded-full p-3 m-[1px] ml-6 group-hover:bg-transparent duration-300">
                 <BsArrowUpRight className=" text-white rounded-full duration-300 group-hover:rotate-45" />
               </span>

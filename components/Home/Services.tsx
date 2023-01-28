@@ -26,7 +26,7 @@ export default function Services() {
             </p>
             <Link href={"/webdesign"}>
               <button className="buttonGradient p-px mt-4 text-white rounded-full group bg-gradient-to-r from-[#FFEE62] via-orange-600 to-[#FFEE62]">
-                <div className="bg-black pl-8 rounded-full flex items-center hover:bg-transparent duration-300 ">
+                <div className="bg-[#0b0d0f] pl-8 rounded-full flex items-center hover:bg-transparent duration-300 ">
                   Erfahre mehr
                   <span className="bg-[#FFEE62] rounded-full p-3 m-[1px] ml-6 group-hover:bg-transparent duration-300">
                     <BsArrowUpRight className=" text-black rounded-full duration-300 group-hover:rotate-45" />
@@ -56,7 +56,7 @@ export default function Services() {
             </p>
             <Link href={"/e-commerce"}>
               <button className="buttonGradient p-px mt-4 text-white rounded-full group bg-gradient-to-r from-[#6EE863] via-lime-800 to-[#6EE863]">
-                <div className="bg-black pl-8 rounded-full flex items-center hover:bg-transparent duration-300 ">
+                <div className="bg-[#0b0d0f] pl-8 rounded-full flex items-center hover:bg-transparent duration-300 ">
                   Erfahre mehr
                   <span className="bg-[#6EE863] rounded-full p-3 m-[1px] ml-6 group-hover:bg-transparent duration-300">
                     <BsArrowUpRight className=" text-black rounded-full duration-300 group-hover:rotate-45" />
@@ -86,7 +86,7 @@ export default function Services() {
 
             <Link href={"/medienproduktion"}>
               <button className="buttonGradient p-px mt-4 text-white rounded-full group bg-gradient-to-r from-[#9747FF] via-blue-700 to-[#9747FF]">
-                <div className="bg-black pl-8 rounded-full flex items-center hover:bg-transparent duration-300 ">
+                <div className="bg-[#0b0d0f] pl-8 rounded-full flex items-center hover:bg-transparent duration-300 ">
                   Erfahre mehr
                   <span className="bg-[#9747FF] rounded-full p-3 m-[1px] ml-6 group-hover:bg-transparent duration-300">
                     <BsArrowUpRight className=" text-black rounded-full duration-300 group-hover:rotate-45" />
@@ -115,7 +115,7 @@ export default function Services() {
             </p>
             <Link href={"/social-media-marketing"}>
               <button className="buttonGradient p-px mt-4 text-white rounded-full group bg-gradient-to-r from-[#FF8540] via-red-600 to-[#FF8540]">
-                <div className="bg-black pl-8 rounded-full flex items-center hover:bg-transparent duration-300 ">
+                <div className="bg-[#0b0d0f] pl-8 rounded-full flex items-center hover:bg-transparent duration-300 ">
                   Erfahre mehr
                   <span className="bg-[#FF8540] rounded-full p-3 m-[1px] ml-6 group-hover:bg-transparent duration-300">
                     <BsArrowUpRight className=" text-black rounded-full duration-300 group-hover:rotate-45" />

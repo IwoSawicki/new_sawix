@@ -2,6 +2,7 @@ import Head from "next/head";
 import Header from "components/Header";
 import Hero from "components/Services/webdesign/Hero";
 import Intro from "@/components/Services/webdesign/Intro";
+import Dienstleistungen from "@/components/Services/webdesign/Dienstleistungen";
 
 export default function webdesign() {
   return (
@@ -20,6 +21,9 @@ export default function webdesign() {
           </section>
           <section>
             <Intro />
+          </section>
+          <section>
+            <Dienstleistungen />
           </section>
         </main>
       </div>
