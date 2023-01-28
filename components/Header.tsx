@@ -106,7 +106,7 @@ export default function Header() {
       <motion.div
         initial={{
           scale: 1,
-          opacity: 0.5,
+          opacity: 0.6,
         }}
         animate={{
           scale: 1.2,
@@ -122,7 +122,7 @@ export default function Header() {
       <motion.div
         initial={{
           scale: 1,
-          opacity: 0.6,
+          opacity: 0.7,
         }}
         animate={{
           scale: 1.3,
@@ -147,9 +147,9 @@ export default function Header() {
         }}
         transition={{
           delay: 0.6,
-          duration: 1,
+          duration: 0.8,
           repeat: Infinity,
-          repeatDelay: 2,
+          repeatDelay: 2.2,
         }}
         className="flex flex-col items-center justify-center z-30 h-16 w-16 rounded-full fixed bottom-6 inset-x-0 mx-auto cursor-pointer bg-blue-600"
       ></motion.div>

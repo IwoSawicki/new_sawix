@@ -16,7 +16,7 @@ export default function webdesign() {
       <div>
         <Header />
         <main>
-          <section>
+          <section className="overflow-y-hidden">
             <Hero />
           </section>
           <section>
