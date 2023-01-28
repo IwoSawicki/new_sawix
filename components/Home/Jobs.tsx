@@ -48,7 +48,7 @@ export default function Jobs() {
           </button>
         </Link>
       </div>
-      <div className="lg:w-1/2 lg:first-letter:pl-12">
+      <div className="lg:w-1/2 lg:pl-12">
         <Image
           className="rounded-2xl my-6"
           src={JobsImg}

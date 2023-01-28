@@ -30,7 +30,7 @@ export default function Header() {
               onClick={() => setIsOpen(!isOpen)}
               className={`${
                 isOpen ? " rotate-45" : ""
-              } , rounded-full h-8 w-8 ml-3 duration-300 flex justify-center items-center bg-white text-black`}
+              } , rounded-full h-8 w-8 ml-3 duration-300 flex justify-center items-center bg-white text-black cursor-pointer`}
             >
               +
             </div>
@@ -38,13 +38,17 @@ export default function Header() {
         </div>
       </div>
       {/* ----------------------------------------------------------------------- */}
+
       <div
         onClick={() => setIsOpen(!isOpen)}
         className={`${
           isOpen ? "gap-0 bg-black" : "gap-[10px] bg-blue-700 shadow-2xl"
-        } flex flex-col items-center justify-center z-50 h-16 w-16 rounded-full fixed bottom-6 inset-x-0 mx-auto`}
+        } flex flex-col items-center justify-center z-50 h-16 w-16 rounded-full fixed bottom-6 inset-x-0 mx-auto cursor-pointer`}
       >
-        <div className="bg-transparent  flex justify-between items-center duration-300 group">
+        <div className="w-8 h-[3px] bg-white rounded-full"></div>
+        <div className="w-8 h-[3px] bg-white rounded-full"></div>
+
+        {/* <div className="bg-transparent  flex justify-between items-center duration-300 group">
           <div className="group relative flex overflow-x-hidden duration-300 max-w-[64px]">
             <div className={`${isOpen ? "hidden" : "block"}`}>
               <div className=" animate-marquee whitespace-nowrap flex">
@@ -89,8 +93,58 @@ export default function Header() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
+      <motion.div
+        initial={{
+          scale: 1,
+          opacity: 0.5,
+        }}
+        animate={{
+          scale: 1.2,
+          opacity: 0,
+        }}
+        transition={{
+          duration: 1,
+          repeat: Infinity,
+          repeatDelay: 2,
+        }}
+        className="flex flex-col items-center justify-center z-40 h-16 w-16 rounded-full fixed bottom-6 inset-x-0 mx-auto cursor-pointer bg-blue-600"
+      ></motion.div>
+      <motion.div
+        initial={{
+          scale: 1,
+          opacity: 0.6,
+        }}
+        animate={{
+          scale: 1.3,
+          opacity: 0,
+        }}
+        transition={{
+          delay: 0.3,
+          duration: 1,
+          repeat: Infinity,
+          repeatDelay: 2,
+        }}
+        className="flex flex-col items-center justify-center z-30 h-16 w-16 rounded-full fixed bottom-6 inset-x-0 mx-auto cursor-pointer bg-blue-600"
+      ></motion.div>
+      <motion.div
+        initial={{
+          scale: 1,
+          opacity: 0.4,
+        }}
+        animate={{
+          scale: 1.5,
+          opacity: 0,
+        }}
+        transition={{
+          delay: 0.6,
+          duration: 1,
+          repeat: Infinity,
+          repeatDelay: 2,
+        }}
+        className="flex flex-col items-center justify-center z-30 h-16 w-16 rounded-full fixed bottom-6 inset-x-0 mx-auto cursor-pointer bg-blue-600"
+      ></motion.div>
       {/* ----------------------------------------------------------------------- */}
 
       {/* <AnimatePresence>
