@@ -45,8 +45,16 @@ export default function Header() {
           isOpen ? "gap-0 bg-black" : "gap-[10px] bg-blue-700 shadow-2xl"
         } flex flex-col items-center justify-center z-50 h-16 w-16 rounded-full fixed bottom-6 inset-x-0 mx-auto cursor-pointer`}
       >
-        <div className="w-8 h-[3px] bg-white rounded-full"></div>
-        <div className="w-8 h-[3px] bg-white rounded-full"></div>
+        <div
+          className={`${
+            isOpen ? "absolute rotate-45" : ""
+          } w-8 h-[2px] bg-white rounded-full duration-100`}
+        ></div>
+        <div
+          className={`${
+            isOpen ? "absolute -rotate-45" : ""
+          } w-8 h-[2px] bg-white rounded-full duration-100`}
+        ></div>
 
         {/* <div className="bg-transparent  flex justify-between items-center duration-300 group">
           <div className="group relative flex overflow-x-hidden duration-300 max-w-[64px]">
