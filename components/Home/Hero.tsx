@@ -8,26 +8,28 @@ import HeroAcid from "../../public/Hero-AcidBerlin.png";
 
 export default function Hero() {
   return (
-    <div className="pt-20  bg-gradient-to-b from-[#22282E] to-[#0B0D0F00] ">
-      <div className="flex flex-col lg:flex-row px-3 max-w-6xl mx-auto">
-        <div className="items-center justify-center md:w-2/3">
-          <p className="mt-12 my-4 text-base text-slate-500">Sawix Studio</p>
-          <h1 className="text-5xl my-4">
+    <div className="pt-20  bg-gradient-to-b from-[#22282E] to-[#0B0D0F00] lg:pt-36">
+      <div className="flex flex-col md:flex-row px-3 max-w-6xl mx-auto lg:items-center">
+        <div className="items-center justify-center md:w-1/2">
+          <p className="mt-12 my-4 text-base text-slate-500 lg:pl-2">
+            Sawix Studio
+          </p>
+          <h1 className="text-5xl my-4 md:text-6xl">
             <span className="w-full">
               Grenzen? <br />
             </span>
             <span className="w-full">Gibt es bei uns nicht!</span>
           </h1>
           <div className="w-4/5">
-            <p className="my-4 pr-3 mb-12">
+            <p className="text-base md:text-xl font-light my-4 pr-3 mb-12">
               Wir glauben daran, dass unsere Industrie von Zahlen geblendet
               wird.
               <br /> Während Kaufentscheidungen auf Emotionen basieren
             </p>
           </div>
         </div>
-        <div className="sm:flex sm:justify-center">
-          <div className="w-full lg:w-1/3 h-[600px] flex items-start justify-center relative sm:w-1/2 sm:h-[650px]">
+        <div className="sm:flex sm:justify-center md:w-1/2">
+          <div className="w-full h-[600px] flex items-start justify-center relative sm:w-1/2 md:w-full">
             <div className="absolute left-1/2 transform -translate-x-1/2 w-full">
               <motion.div
                 initial={{

@@ -19,17 +19,19 @@ export default function Services() {
             ></iframe>
           </div>
           <div className="p-4 mt-4 flex flex-col justify-center gap-3">
-            <h3 className="text-3xl mb-3">Webdesign & Entwicklung</h3>
-            <p>
+            <h3 className="text-3xl mb-3 lg:text-4xl">
+              Webdesign & Entwicklung
+            </h3>
+            <p className="text-base lg:text-xl font-light">
               Wir spezialisieren uns auf interaktive, skalierbare und
               Maßgeschneiderte digitale Erfahrungen
             </p>
             <Link href={"/webdesign"}>
-              <button className="buttonGradient p-px mt-4 text-white rounded-full group bg-gradient-to-r from-[#FFEE62] via-orange-600 to-[#FFEE62]">
+              <button className="buttonGradient p-px mt-4 text-white text-base lg:text-xl font-light rounded-full group bg-gradient-to-r from-[#FFEE62] via-orange-600 to-[#FFEE62]">
                 <div className="bg-[#0b0d0f] pl-8 rounded-full flex items-center hover:bg-transparent duration-300 ">
                   Erfahre mehr
                   <span className="bg-[#FFEE62] rounded-full p-3 m-[1px] ml-6 group-hover:bg-transparent duration-300">
-                    <BsArrowUpRight className=" text-black rounded-full duration-300 group-hover:rotate-45" />
+                    <BsArrowUpRight className=" text-black rounded-full duration-300 group-hover:rotate-45 group-hover:text-white" />
                   </span>
                 </div>
               </button>
@@ -48,18 +50,18 @@ export default function Services() {
             ></iframe>
           </div>
           <div className="p-4 mt-4 flex flex-col justify-center gap-3">
-            <h3 className="text-3xl mb-3">Online-Shops</h3>
-            <p>
+            <h3 className="text-3xl mb-3 lg:text-4xl">Online-Shops</h3>
+            <p className="text-base lg:text-xl font-light">
               Sicherheit, Skalierbarkeit und vorallem Kundenzufriedenheit.
               Darauf legen wir besonderen Wert bei der Erstellung von einem
               Online-Shop
             </p>
             <Link href={"/e-commerce"}>
-              <button className="buttonGradient p-px mt-4 text-white rounded-full group bg-gradient-to-r from-[#6EE863] via-lime-800 to-[#6EE863]">
+              <button className="buttonGradient p-px mt-4 text-white text-base lg:text-xl font-light rounded-full group bg-gradient-to-r from-[#6EE863] via-emerald-500 to-[#6EE863]">
                 <div className="bg-[#0b0d0f] pl-8 rounded-full flex items-center hover:bg-transparent duration-300 ">
                   Erfahre mehr
                   <span className="bg-[#6EE863] rounded-full p-3 m-[1px] ml-6 group-hover:bg-transparent duration-300">
-                    <BsArrowUpRight className=" text-black rounded-full duration-300 group-hover:rotate-45" />
+                    <BsArrowUpRight className=" text-black rounded-full duration-300 group-hover:rotate-45 group-hover:text-white" />
                   </span>
                 </div>
               </button>
@@ -78,18 +80,20 @@ export default function Services() {
             ></iframe>
           </div>
           <div className="p-4 mt-4 flex flex-col justify-center gap-3">
-            <h3 className="text-3xl mb-3">Foto- & Videoproduktion</h3>
-            <p>
+            <h3 className="text-3xl mb-3 lg:text-4xl">
+              Foto- & Videoproduktion
+            </h3>
+            <p className="text-base lg:text-xl font-light">
               Menschen arbeiten Visuell. Zeig deshalb deinen Kunden was du
               machst. Bilder sagen bekanntlich mehr als 1000 Worte.
             </p>
 
             <Link href={"/medienproduktion"}>
-              <button className="buttonGradient p-px mt-4 text-white rounded-full group bg-gradient-to-r from-[#9747FF] via-blue-700 to-[#9747FF]">
+              <button className="buttonGradient p-px mt-4 text-white text-base lg:text-xl font-light rounded-full group bg-gradient-to-r from-[#9747FF] via-blue-700 to-[#9747FF]">
                 <div className="bg-[#0b0d0f] pl-8 rounded-full flex items-center hover:bg-transparent duration-300 ">
                   Erfahre mehr
                   <span className="bg-[#9747FF] rounded-full p-3 m-[1px] ml-6 group-hover:bg-transparent duration-300">
-                    <BsArrowUpRight className=" text-black rounded-full duration-300 group-hover:rotate-45" />
+                    <BsArrowUpRight className=" text-black rounded-full duration-300 group-hover:rotate-45 group-hover:text-white" />
                   </span>
                 </div>
               </button>
@@ -108,17 +112,19 @@ export default function Services() {
             ></iframe>
           </div>
           <div className="p-4 mt-4 flex flex-col justify-center gap-3">
-            <h3 className="text-3xl mb-3">Social Media Marketing</h3>
-            <p>
+            <h3 className="text-3xl mb-3 xl:text-4xl">
+              Social Media Marketing
+            </h3>
+            <p className="text-base lg:text-xl font-light">
               Egal ob Facebook, Instagram oder TikTok, mit uns erreichst du mehr
               Kunden mit deinem Unternehmen.
             </p>
             <Link href={"/social-media-marketing"}>
-              <button className="buttonGradient p-px mt-4 text-white rounded-full group bg-gradient-to-r from-[#FF8540] via-red-600 to-[#FF8540]">
+              <button className="buttonGradient p-px mt-4 text-white text-base lg:text-xl font-light rounded-full group bg-gradient-to-r from-[#FF8540] via-red-600 to-[#FF8540]">
                 <div className="bg-[#0b0d0f] pl-8 rounded-full flex items-center hover:bg-transparent duration-300 ">
                   Erfahre mehr
                   <span className="bg-[#FF8540] rounded-full p-3 m-[1px] ml-6 group-hover:bg-transparent duration-300">
-                    <BsArrowUpRight className=" text-black rounded-full duration-300 group-hover:rotate-45" />
+                    <BsArrowUpRight className=" text-black rounded-full duration-300 group-hover:rotate-45 group-hover:text-white" />
                   </span>
                 </div>
               </button>

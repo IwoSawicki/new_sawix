@@ -8,7 +8,7 @@ import ImgMedienproduktion from "public/Services/Webdesign/medienproduktion.jpg"
 
 export default function Dienstleistungen() {
   return (
-    <div className="my-12 lg:my-28 px-3 max-w-7xl mx-auto">
+    <div className="my-12 lg:my-28 px-3 max-w-6xl mx-auto">
       <h2 className="text-4xl mb-8 pt-4 lg:text-5xl lg:pt-0 lg:mb-12">
         Unsere Services
       </h2>
