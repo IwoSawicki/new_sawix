@@ -12,7 +12,7 @@ export default function Hero() {
     <div className="py-20 lg:py-0  bg-gradient-to-br from-[#1b232d] to-[#0b1116] ">
       <div className="flex flex-col max-w-screen-2xl mx-auto lg:flex-row lg:items-center ">
         <div className="my-16 px-3 lg:w-1/2 lg:pr-20">
-          <h1 className="text-4xl mb-4 lg:text-6xl">
+          <h1 className="text-4xl mb-4 lg:mb-6 lg:text-6xl">
             Transformiere dein Unternehmen in einen Kunden-Magneten
           </h1>
           <p className="text-base lg:text-xl font-light">

@@ -10,8 +10,8 @@ export default function Jobs() {
   return (
     <div className="my-36 px-3 max-w-6xl mx-auto flex flex-col lg:flex-row">
       <div className="lg:w-1/2 flex flex-col justify-center ">
-        <h2 className="text-4xl my-4">Wir stellen ein</h2>
-        <p className="my-4">
+        <h2 className="text-4xl my-4 lg:text-5xl">Wir stellen ein</h2>
+        <p className="my-4 text-base lg:text-xl font-light">
           Als eine schnellwachsende Agentur sind wir auf der ständigen Suche
           nach talentierten Menschen, die sich für digitale Erfahrungen
           begeistern. Schau dir doch mal an was für offene Stellen wir zur
@@ -38,7 +38,7 @@ export default function Jobs() {
           </button>
         </Link> */}
         <Link href={"/jobs"}>
-          <button className="buttonMainGradient my-4 p-px text-white rounded-full group">
+          <button className="buttonMainGradient my-4 p-px text-white text-base lg:text-xl font-light rounded-full group">
             <div className="bg-[#0b0d0f] pl-8 rounded-full flex items-center hover:bg-transparent duration-300">
               Zu den Jobs
               <span className="bg-blue-700 rounded-full p-3 m-[1px] ml-6 group-hover:bg-transparent duration-300">
