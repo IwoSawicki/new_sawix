@@ -2,10 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { BsArrowUpRight } from "react-icons/bs";
 //import ImgWebdesign from "@/public/Services/webdesign/webdesign.jpg";
-import webdesignImg from "public/Services/webdesign/webdesign.jpg";
-import ImgWebdev from "../../../public/Services/webdesign/webdev.jpg";
-import ImgMobileApp from "public/Services/webdesign/mobileapps.jpg";
-import ImgMedienproduktion from "public/Services/webdesign/medienproduktion.jpg";
+import webdesignImg from "public/Services/Webdesign/webdesign.jpg";
+import ImgWebdev from "../../../public/Services/Webdesign/webdev.jpg";
+import ImgMobileApp from "public/Services/Webdesign/mobileapps.jpg";
+import ImgMedienproduktion from "public/Services/Webdesign/medienproduktion.jpg";
 
 export default function Dienstleistungen() {
   return (
