@@ -40,67 +40,55 @@ export default function Header() {
       {/* ----------------------------------------------------------------------- */}
 
       <motion.div
-      initial={{
-        opacity: 0,
-      }}
-      animate={{
-        opacity: 1,
-      }}
-      transition={{
-        duration: .2,
-        delay: 1.8,
-      }}>
+        initial={{
+          //width: 300,
+          //maxWidth: "80vw",
+          scale: 2,
+        }}
+        animate={{
+          //width: 64,
+          scale: 1,
+        }}
+        transition={{
+          duration: 1,
+          delay: 1.5,
+          type: easeInOut,
+        }}
+        onClick={() => setIsOpen(!isOpen)}
+        className={`${
+          isOpen ? "gap-0 bg-black" : "gap-[10px] bg-blue-700 shadow-2xl"
+        } flex flex-col items-center justify-center z-50 h-16 w-16 rounded-full fixed bottom-6 inset-x-0 mx-auto cursor-pointer duration-0`}
+      >
         <motion.div
           initial={{
-            //width: 300,
-            //maxWidth: "80vw",
-            scale: 2,
+            opacity: 0,
           }}
           animate={{
-            //width: 64,
-            scale: 1,
+            opacity: 1,
           }}
           transition={{
-            duration: 1,
-            delay: 1.5,
-            type: easeInOut,
+            delay: 2.5,
+            duration: 0.5,
           }}
-          onClick={() => setIsOpen(!isOpen)}
           className={`${
-            isOpen ? "gap-0 bg-black" : "gap-[10px] bg-blue-700 shadow-2xl"
-          } flex flex-col items-center justify-center z-50 h-16 w-16 rounded-full fixed bottom-6 inset-x-0 mx-auto cursor-pointer duration-0`}
-        >
-          <motion.div
-            initial={{
-              opacity: 0,
-            }}
-            animate={{
-              opacity: 1,
-            }}
-            transition={{
-              delay: 2.5,
-              duration: 0.5,
-            }}
-            className={`${
-              isOpen ? "absolute rotate-45" : ""
-            } w-8 h-[2px] bg-white rounded-full duration-100`}
-          ></motion.div>
-          <motion.div
-            initial={{
-              opacity: 0,
-            }}
-            animate={{
-              opacity: 1,
-            }}
-            transition={{
-              delay: 2.5,
-              duration: 0.5,
-            }}
-            className={`${
-              isOpen ? "absolute -rotate-45" : ""
-            } w-8 h-[2px] bg-white rounded-full duration-100`}
-          ></motion.div>
-        </motion.div>
+            isOpen ? "absolute rotate-45" : ""
+          } w-8 h-[2px] bg-white rounded-full duration-100`}
+        ></motion.div>
+        <motion.div
+          initial={{
+            opacity: 0,
+          }}
+          animate={{
+            opacity: 1,
+          }}
+          transition={{
+            delay: 2.5,
+            duration: 0.5,
+          }}
+          className={`${
+            isOpen ? "absolute -rotate-45" : ""
+          } w-8 h-[2px] bg-white rounded-full duration-100`}
+        ></motion.div>
       </motion.div>
 
       {/* ----------------------------------------------------- */}
