@@ -24,7 +24,7 @@ export default function Hero() {
             <p className="text-base md:text-xl font-light my-4 pr-3 mb-12">
               Wir glauben daran, dass unsere Industrie von Zahlen geblendet
               wird.
-              <br /> Während Kaufentscheidungen auf Emotionen basieren.
+              <br /> Während Kaufentscheidungen auf Emotionen basieren!
             </p>
           </div>
         </div>
