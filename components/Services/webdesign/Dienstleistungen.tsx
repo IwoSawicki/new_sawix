@@ -1,8 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import { BsArrowUpRight } from "react-icons/bs";
-import ImgWebdesign from "public/Services/webdesign/webdesign.jpg";
-import ImgWebdev from "public/Services/webdesign/webdev.jpg";
+//import ImgWebdesign from "@/public/Services/webdesign/webdesign.jpg";
+import webdesignImg from "public/Services/webdesign/webdesign.jpg";
+import ImgWebdev from "@/public/Services/webdesign/webdev.jpg";
 import ImgMobileApp from "public/Services/webdesign/mobileapps.jpg";
 import ImgMedienproduktion from "public/Services/webdesign/medienproduktion.jpg";
 
@@ -17,7 +18,7 @@ export default function Dienstleistungen() {
         <div className="flex flex-col lg:flex-row">
           <div className="lg:w-2/5">
             <Image
-              src={ImgWebdesign}
+              src={webdesignImg}
               alt="Webdesign Dienste bei Sawix"
               className="w-full h-96 lg:h-[600px] object-cover rounded-2xl"
             />

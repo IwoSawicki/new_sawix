@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { AnimatePresence, motion, spring } from "framer-motion";
+import { AnimatePresence, easeInOut, motion, spring } from "framer-motion";
 
 import Logo from "../public/Sawix-Logo.svg";
 import MenuIcon from "../public/Menu-Icon.svg";
@@ -22,7 +22,7 @@ export default function Header() {
           </div>
           <div className="flex">
             <Link href={"/kontakt"}>
-              <button className="bg-white rounded-full text-black px-4 py-1">
+              <button className="bg-white rounded-full text-black px-4 py-1 text-sm">
                 Kontakt
               </button>
             </Link>
@@ -30,7 +30,7 @@ export default function Header() {
               onClick={() => setIsOpen(!isOpen)}
               className={`${
                 isOpen ? " rotate-45" : ""
-              } , rounded-full h-8 w-8 ml-3 duration-300 flex justify-center items-center bg-white text-black cursor-pointer`}
+              } , rounded-full h-7 w-7 ml-3 duration-300 flex justify-center items-center bg-white text-black cursor-pointer`}
             >
               +
             </div>
@@ -40,52 +40,71 @@ export default function Header() {
       {/* ----------------------------------------------------------------------- */}
 
       <motion.div
-        initial={{
-          width: 300,
-        }}
-        animate={{
-          width: 64,
-        }}
-        transition={{
-          duration: 1,
-          delay: 1,
-        }}
-        onClick={() => setIsOpen(!isOpen)}
-        className={`${
-          isOpen ? "gap-0 bg-black" : "gap-[10px] bg-blue-700 shadow-2xl"
-        } flex flex-col items-center justify-center z-50 h-16 w-16 rounded-full fixed bottom-6 inset-x-0 mx-auto cursor-pointer`}
-      >
+      initial={{
+        opacity: 0,
+      }}
+      animate={{
+        opacity: 1,
+      }}
+      transition={{
+        duration: .2,
+        delay: 1.8,
+      }}>
         <motion.div
           initial={{
-            opacity: 0,
+            //width: 300,
+            //maxWidth: "80vw",
+            scale: 2,
           }}
           animate={{
-            opacity: 1,
+            //width: 64,
+            scale: 1,
           }}
           transition={{
-            delay: 2,
-            duration: 0.5,
+            duration: 1,
+            delay: 1.5,
+            type: easeInOut,
           }}
+          onClick={() => setIsOpen(!isOpen)}
           className={`${
-            isOpen ? "absolute rotate-45" : ""
-          } w-8 h-[2px] bg-white rounded-full duration-100`}
-        ></motion.div>
-        <motion.div
-          initial={{
-            opacity: 0,
-          }}
-          animate={{
-            opacity: 1,
-          }}
-          transition={{
-            delay: 2,
-            duration: 0.5,
-          }}
-          className={`${
-            isOpen ? "absolute -rotate-45" : ""
-          } w-8 h-[2px] bg-white rounded-full duration-100`}
-        ></motion.div>
+            isOpen ? "gap-0 bg-black" : "gap-[10px] bg-blue-700 shadow-2xl"
+          } flex flex-col items-center justify-center z-50 h-16 w-16 rounded-full fixed bottom-6 inset-x-0 mx-auto cursor-pointer duration-0`}
+        >
+          <motion.div
+            initial={{
+              opacity: 0,
+            }}
+            animate={{
+              opacity: 1,
+            }}
+            transition={{
+              delay: 2.5,
+              duration: 0.5,
+            }}
+            className={`${
+              isOpen ? "absolute rotate-45" : ""
+            } w-8 h-[2px] bg-white rounded-full duration-100`}
+          ></motion.div>
+          <motion.div
+            initial={{
+              opacity: 0,
+            }}
+            animate={{
+              opacity: 1,
+            }}
+            transition={{
+              delay: 2.5,
+              duration: 0.5,
+            }}
+            className={`${
+              isOpen ? "absolute -rotate-45" : ""
+            } w-8 h-[2px] bg-white rounded-full duration-100`}
+          ></motion.div>
+        </motion.div>
       </motion.div>
+
+      {/* ----------------------------------------------------- */}
+
       <motion.div
         initial={{
           scale: 1,
@@ -96,7 +115,7 @@ export default function Header() {
           opacity: 0,
         }}
         transition={{
-          delay: 3,
+          delay: 4,
           duration: 1,
           repeat: Infinity,
           repeatDelay: 2,
@@ -113,7 +132,7 @@ export default function Header() {
           opacity: 0,
         }}
         transition={{
-          delay: 3.3,
+          delay: 4.3,
           duration: 1,
           repeat: Infinity,
           repeatDelay: 2,
@@ -130,7 +149,7 @@ export default function Header() {
           opacity: 0,
         }}
         transition={{
-          delay: 3.6,
+          delay: 4.6,
           duration: 0.8,
           repeat: Infinity,
           repeatDelay: 2.2,
