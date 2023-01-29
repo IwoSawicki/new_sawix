@@ -6,7 +6,7 @@ export default function About() {
     <div className="my-36 px-3 max-w-6xl mx-auto">
       <div className="lg:max-w-[60%]">
         <h2 className="text-4xl my-4 lg:text-5xl">
-          Weil eine gute Online Präsenz ein strategisches Investment ist
+          Erfahre mehr über unsere interne Prozesse
         </h2>
         <p className="my-4 text-base lg:text-xl font-light">
           Wir sind eine Full-Service-Design-Agentur bestehend aus vielfältigen

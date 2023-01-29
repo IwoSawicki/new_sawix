@@ -39,24 +39,125 @@ export default function Header() {
       </div>
       {/* ----------------------------------------------------------------------- */}
 
-      <div
+      <motion.div
+        initial={{
+          width: 300,
+        }}
+        animate={{
+          width: 64,
+        }}
+        transition={{
+          duration: 1,
+          delay: 1,
+        }}
         onClick={() => setIsOpen(!isOpen)}
         className={`${
           isOpen ? "gap-0 bg-black" : "gap-[10px] bg-blue-700 shadow-2xl"
         } flex flex-col items-center justify-center z-50 h-16 w-16 rounded-full fixed bottom-6 inset-x-0 mx-auto cursor-pointer`}
       >
-        <div
+        <motion.div
+          initial={{
+            opacity: 0,
+          }}
+          animate={{
+            opacity: 1,
+          }}
+          transition={{
+            delay: 2,
+            duration: 0.5,
+          }}
           className={`${
             isOpen ? "absolute rotate-45" : ""
           } w-8 h-[2px] bg-white rounded-full duration-100`}
-        ></div>
-        <div
+        ></motion.div>
+        <motion.div
+          initial={{
+            opacity: 0,
+          }}
+          animate={{
+            opacity: 1,
+          }}
+          transition={{
+            delay: 2,
+            duration: 0.5,
+          }}
           className={`${
             isOpen ? "absolute -rotate-45" : ""
           } w-8 h-[2px] bg-white rounded-full duration-100`}
-        ></div>
+        ></motion.div>
+      </motion.div>
+      <motion.div
+        initial={{
+          scale: 1,
+          opacity: 0.6,
+        }}
+        animate={{
+          scale: 1.2,
+          opacity: 0,
+        }}
+        transition={{
+          delay: 3,
+          duration: 1,
+          repeat: Infinity,
+          repeatDelay: 2,
+        }}
+        className="flex flex-col items-center justify-center z-40 h-16 w-16 rounded-full fixed bottom-6 inset-x-0 mx-auto cursor-pointer bg-blue-600"
+      ></motion.div>
+      <motion.div
+        initial={{
+          scale: 1,
+          opacity: 0.7,
+        }}
+        animate={{
+          scale: 1.3,
+          opacity: 0,
+        }}
+        transition={{
+          delay: 3.3,
+          duration: 1,
+          repeat: Infinity,
+          repeatDelay: 2,
+        }}
+        className="flex flex-col items-center justify-center z-30 h-16 w-16 rounded-full fixed bottom-6 inset-x-0 mx-auto cursor-pointer bg-blue-600"
+      ></motion.div>
+      <motion.div
+        initial={{
+          scale: 1,
+          opacity: 0.4,
+        }}
+        animate={{
+          scale: 1.5,
+          opacity: 0,
+        }}
+        transition={{
+          delay: 3.6,
+          duration: 0.8,
+          repeat: Infinity,
+          repeatDelay: 2.2,
+        }}
+        className="flex flex-col items-center justify-center z-30 h-16 w-16 rounded-full fixed bottom-6 inset-x-0 mx-auto cursor-pointer bg-blue-600"
+      ></motion.div>
+      {/* ----------------------------------------------------------------------- */}
 
-        {/* <div className="bg-transparent  flex justify-between items-center duration-300 group">
+      {/* <AnimatePresence>
+        isOpen && ( */}
+      <motion.div
+        className={`${
+          isOpen
+            ? "block z-40 opacity-100 h-[50vh] w-[95%]"
+            : "block -z-40 opacity-0 h-0 w-0"
+        } fixed inset-x-0 mx-auto bottom-3 bg-[#E8E5E3] rounded-xl text-black transition-all duration-300 p-4`}
+      >
+        <div className="">Menu coming soon</div>
+      </motion.div>
+      {/* )
+      </AnimatePresence> */}
+    </div>
+  );
+}
+
+{
+  /* <div className="bg-transparent  flex justify-between items-center duration-300 group">
           <div className="group relative flex overflow-x-hidden duration-300 max-w-[64px]">
             <div className={`${isOpen ? "hidden" : "block"}`}>
               <div className=" animate-marquee whitespace-nowrap flex">
@@ -101,73 +202,5 @@ export default function Header() {
               </div>
             </div>
           </div>
-        </div> */}
-      </div>
-      <motion.div
-        initial={{
-          scale: 1,
-          opacity: 0.6,
-        }}
-        animate={{
-          scale: 1.2,
-          opacity: 0,
-        }}
-        transition={{
-          duration: 1,
-          repeat: Infinity,
-          repeatDelay: 2,
-        }}
-        className="flex flex-col items-center justify-center z-40 h-16 w-16 rounded-full fixed bottom-6 inset-x-0 mx-auto cursor-pointer bg-blue-600"
-      ></motion.div>
-      <motion.div
-        initial={{
-          scale: 1,
-          opacity: 0.7,
-        }}
-        animate={{
-          scale: 1.3,
-          opacity: 0,
-        }}
-        transition={{
-          delay: 0.3,
-          duration: 1,
-          repeat: Infinity,
-          repeatDelay: 2,
-        }}
-        className="flex flex-col items-center justify-center z-30 h-16 w-16 rounded-full fixed bottom-6 inset-x-0 mx-auto cursor-pointer bg-blue-600"
-      ></motion.div>
-      <motion.div
-        initial={{
-          scale: 1,
-          opacity: 0.4,
-        }}
-        animate={{
-          scale: 1.5,
-          opacity: 0,
-        }}
-        transition={{
-          delay: 0.6,
-          duration: 0.8,
-          repeat: Infinity,
-          repeatDelay: 2.2,
-        }}
-        className="flex flex-col items-center justify-center z-30 h-16 w-16 rounded-full fixed bottom-6 inset-x-0 mx-auto cursor-pointer bg-blue-600"
-      ></motion.div>
-      {/* ----------------------------------------------------------------------- */}
-
-      {/* <AnimatePresence>
-        isOpen && ( */}
-      <motion.div
-        className={`${
-          isOpen
-            ? "block z-40 opacity-100 h-[50vh] w-[95%]"
-            : "block -z-40 opacity-0 h-0 w-0"
-        } fixed inset-x-0 mx-auto bottom-3 bg-[#E8E5E3] rounded-xl text-black transition-all duration-300 p-4`}
-      >
-        <div className="">Menu coming soon</div>
-      </motion.div>
-      {/* )
-      </AnimatePresence> */}
-    </div>
-  );
+        </div> */
 }
