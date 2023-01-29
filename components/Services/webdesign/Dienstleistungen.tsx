@@ -1,10 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import { BsArrowUpRight } from "react-icons/bs";
-import ImgWebdesign from "public/services/webdesign/webdesign.jpg";
-import ImgWebdev from "public/services/webdesign/webdev.jpg";
-import ImgMobileApp from "public/services/webdesign/mobileapps.jpg";
-import ImgMedienproduktion from "public/services/webdesign/medienproduktion.jpg";
+import ImgWebdesign from "public/Services/webdesign/webdesign.jpg";
+import ImgWebdev from "public/Services/webdesign/webdev.jpg";
+import ImgMobileApp from "public/Services/webdesign/mobileapps.jpg";
+import ImgMedienproduktion from "public/Services/webdesign/medienproduktion.jpg";
 
 export default function Dienstleistungen() {
   return (
