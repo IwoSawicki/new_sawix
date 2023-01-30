@@ -1,6 +1,9 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Head from "next/head";
+import Hero from "@/components/Services/medienproduktion/Hero";
+import Intro from "@/components/Services/medienproduktion/Intro";
+import Dienstleistungen from "@/components/Services/medienproduktion/Dienstleistungen";
 
 export default function medienproduktion() {
   return (
@@ -13,7 +16,15 @@ export default function medienproduktion() {
       </Head>
       <Header />
       <main>
-        <section></section>
+        <section className="overflow-hidden">
+          <Hero />
+        </section>
+        <section>
+          <Intro />
+        </section>
+        <section>
+          <Dienstleistungen />
+        </section>
       </main>
       <Footer />
     </>
