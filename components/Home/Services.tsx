@@ -26,7 +26,7 @@ export default function Services() {
               Wir spezialisieren uns auf interaktive, skalierbare und
               Maßgeschneiderte digitale Erfahrungen
             </p>
-            <Link href={"/webdesign"}>
+            <Link href={"services/webdesign"}>
               <button className="buttonGradient p-px mt-4 text-white text-base lg:text-xl font-light rounded-full group bg-gradient-to-r from-[#FFEE62] via-orange-600 to-[#FFEE62]">
                 <div className="bg-[#0b0d0f] pl-8 rounded-full flex items-center hover:bg-transparent duration-300 ">
                   Erfahre mehr
@@ -56,7 +56,7 @@ export default function Services() {
               Darauf legen wir besonderen Wert bei der Erstellung von einem
               Online-Shop
             </p>
-            <Link href={"/e-commerce"}>
+            <Link href={"services/e-commerce"}>
               <button className="buttonGradient p-px mt-4 text-white text-base lg:text-xl font-light rounded-full group bg-gradient-to-r from-[#6EE863] via-emerald-500 to-[#6EE863]">
                 <div className="bg-[#0b0d0f] pl-8 rounded-full flex items-center hover:bg-transparent duration-300 ">
                   Erfahre mehr
@@ -88,7 +88,7 @@ export default function Services() {
               machst. Bilder sagen bekanntlich mehr als 1000 Worte.
             </p>
 
-            <Link href={"/medienproduktion"}>
+            <Link href={"services/medienproduktion"}>
               <button className="buttonGradient p-px mt-4 text-white text-base lg:text-xl font-light rounded-full group bg-gradient-to-r from-[#9747FF] via-blue-700 to-[#9747FF]">
                 <div className="bg-[#0b0d0f] pl-8 rounded-full flex items-center hover:bg-transparent duration-300 ">
                   Erfahre mehr
@@ -119,7 +119,7 @@ export default function Services() {
               Egal ob Facebook, Instagram oder TikTok, mit uns erreichst du mehr
               Kunden mit deinem Unternehmen.
             </p>
-            <Link href={"/social-media-marketing"}>
+            <Link href={"services/social-media-marketing"}>
               <button className="buttonGradient p-px mt-4 text-white text-base lg:text-xl font-light rounded-full group bg-gradient-to-r from-[#FF8540] via-red-600 to-[#FF8540]">
                 <div className="bg-[#0b0d0f] pl-8 rounded-full flex items-center hover:bg-transparent duration-300 ">
                   Erfahre mehr
