@@ -1,10 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
-import { AnimatePresence, easeInOut, motion, spring } from "framer-motion";
+//import { AnimatePresence, easeInOut, motion, spring } from "framer-motion";
 
 import Logo from "../public/Sawix-Logo.svg";
-import MenuIcon from "../public/Menu-Icon.svg";
-import { useEffect, useState } from "react";
+import SawixIcon from "@/public/sawix-icon.svg";
+import { useState } from "react";
+import ImgTemp from "@/public/Footer-Img.png";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,8 +17,19 @@ export default function Header() {
       <div className="px-6 py-4 fixed w-screen z-50 backdrop-blur ">
         <div className="flex justify-between w-full  max-w-6xl mx-auto">
           <div className="z-20">
-            <Link href="/">
-              <Image src={Logo} alt="Seitenlogo"></Image>
+            <Link href="/" className="flex gap-3 items-center">
+              <Image
+                src={SawixIcon}
+                alt="Seitenlogo"
+                className="h-6 w-6"
+              ></Image>
+              <span
+                className={`${
+                  isOpen ? "text-black" : ""
+                } , text-xl duration-500`}
+              >
+                Sawix
+              </span>
             </Link>
           </div>
           <div className="flex z-10">
@@ -48,6 +60,90 @@ export default function Header() {
                   isOpen ? "scale-[80] md:scale-[200]" : ""
                 } , absolute z-0 bg-white h-7 w-7 rounded-full duration-1000`}
               ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className={`${
+          isOpen
+            ? "z-50 bg-red-700/0 delay-150 flex flex-col justify-between mt-12 pb-12"
+            : "-z-50 delay-300"
+        } , fixed duration-300 px-6 w-full h-screen text-black`}
+      >
+        <div
+          className={`${
+            isOpen ? "opacity-100 delay-700" : "opacity-0"
+          } , duration-300 w-full max-w-6xl mx-auto flex flex-col justify-between h-full`}
+        >
+          <div className="bg-yellow-600/0 w-full max-w-6xl mx-auto h-2"></div>
+          <div className="flex">
+            <div className="bg-blue-600/0 md:w-3/5 flex flex-col justify-center">
+              <div className="flex flex-col gap-3 text-2xl md:gap-4 md:text-4xl font-medium">
+                <Link href={"/"}>Home</Link>
+                <Link href={"/services"}>Services</Link>
+                <Link href={"/services/webdesign/"}>Design & Entwicklung</Link>
+                <Link href={"/services/e-commerce/"}>Online-Shops</Link>
+                <Link href={"/services/medienproduktion"}>
+                  Medienproduktion
+                </Link>
+                <Link href={"/services/social-media-marketing"}>
+                  Social Media Marketing
+                </Link>
+                {/* <div className="">
+                  <ul className="list-disc pl-6 space-y-2">
+                    <li>
+                      <Link href={"/services/webdesign"}>
+                        Webdesign & Entwicklung
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href={"/services/webdesign"}>Online-Shops</Link>
+                    </li>
+                    <li>
+                      <Link href={"/services/webdesign"}>Medienproduktion</Link>
+                    </li>
+                    <li>
+                      <Link href={"/services/webdesign"}>
+                        Social Media Marketing
+                      </Link>
+                    </li>
+                  </ul>
+                </div> */}
+                <Link href={"/kontakt"}>Kontakt</Link>
+              </div>
+            </div>
+            <div className="hidden md:block md:w-2/5">
+              <Image
+                src={ImgTemp}
+                alt="Sawix Header Bild"
+                className="h-[500px] object-cover rounded-2xl"
+              ></Image>
+            </div>
+          </div>
+          <div>
+            <div className="bg-green-700/0 w-full max-w-6xl mx-auto pb-6 flex flex-col md:flex-row">
+              <div className="md:w-1/2 flex flex-col">
+                <p className="text-base lg:text-xl font-light">
+                  Erreiche uns jederzeit:
+                </p>
+                <a
+                  className="text-3xl my-3 md:mt-6 md:mb-5 lg:text-4xl"
+                  href="mailto:info@sawix.de"
+                >
+                  hello@sawix.de
+                </a>
+                <a className="text-3xl lg:text-4xl" href="tel:+491734388519">
+                  +49 173 4388519
+                </a>
+              </div>
+              <div className="md:w-1/2 flex items-end md:justify-end bg-yellow-400/0 mt-6">
+                <Link href={"/kontakt"}>
+                  <button className="bg-black py-4 px-9 rounded-full text-white">
+                    Jetzt Projekt Starten!
+                  </button>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
