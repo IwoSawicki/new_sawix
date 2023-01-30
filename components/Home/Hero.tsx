@@ -8,7 +8,7 @@ import HeroAcid from "../../public/Hero-AcidBerlin.png";
 
 export default function Hero() {
   return (
-    <div className="pt-20  bg-gradient-to-b from-[#22282E] to-[#0B0D0F00] lg:pt-28">
+    <div className="pt-16  bg-gradient-to-b from-[#22282E] to-[#0B0D0F00] lg:pt-28">
       <div className="flex flex-col md:flex-row px-3 max-w-6xl mx-auto lg:items-center">
         <div className="items-center justify-center md:w-1/2">
           <p className="mt-12 my-4 text-base text-slate-500 lg:pl-2">

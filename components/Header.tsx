@@ -13,41 +13,65 @@ export default function Header() {
 
   return (
     <div>
-      <div className="px-6  text-white py-4 fixed w-screen z-50 backdrop-blur ">
+      <div className="px-6 py-4 fixed w-screen z-50 backdrop-blur ">
         <div className="flex justify-between w-full  max-w-6xl mx-auto">
-          <div>
+          <div className="z-20">
             <Link href="/">
               <Image src={Logo} alt="Seitenlogo"></Image>
             </Link>
           </div>
-          <div className="flex">
-            <Link href={"/kontakt"}>
-              <button className="bg-white rounded-full text-black px-4 py-1 text-sm">
+          <div className="flex z-10">
+            {/* <Link className="z-20" href={"/kontakt"}>
+              <button
+                className={`${
+                  isOpen
+                    ? "bg-black text-white"
+                    : "bg-white text-black delay-500"
+                } ,  rounded-full  px-4 py-1 text-sm z-20 duration-500`}
+              >
                 Kontakt
               </button>
-            </Link>
-            <div
-              onClick={() => setIsOpen(!isOpen)}
-              className={`${
-                isOpen ? " rotate-45" : ""
-              } , rounded-full h-7 w-7 ml-3 duration-300 flex justify-center items-center bg-white text-black cursor-pointer`}
-            >
-              +
+            </Link> */}
+            <div className="relative flex justify-end z-10">
+              <div
+                onClick={() => setIsOpen(!isOpen)}
+                className={`${
+                  isOpen
+                    ? " rotate-45 bg-black text-white"
+                    : "bg-white text-black"
+                } , relative z-10 rounded-full h-7 w-7 ml-3 duration-500 flex justify-center items-center cursor-pointer`}
+              >
+                +
+              </div>
+              <div
+                className={`${
+                  isOpen ? "scale-[80] md:scale-[200]" : ""
+                } , absolute z-0 bg-white h-7 w-7 rounded-full duration-1000`}
+              ></div>
             </div>
           </div>
         </div>
       </div>
       {/* ----------------------------------------------------------------------- */}
-<div>
+      <div className="fixed bottom-5 w-screen flex justify-center z-40">
+        <div className=" bg-blue-700 py-1 px-[6px] rounded-full flex gap-2  text-sm font-light  justify-center items-center md:text-lg ">
+          <Link
+            href={"/"}
+            className="bg-transparent text-white py-1 px-3 rounded-full"
+          >
+            Home
+          </Link>
 
-              <div className="fixed bottom-5 bg-blue-700 py-1 rounded-full flex gap-2 z-50 text-sm font-light w-64 justify-center items-center inset-x-0 mx-auto md:text-lg md:w-[292px]">
-                <Link href={"/"} className="bg-white text-black py-1 px-3 rounded-full">Home</Link>
-                <Link href={"/services"} className=" py-1 px-3 rounded-full ">Services</Link>
-                {/* <Link href={"/about"}>About</Link> */}
-                <Link href={"/kontakt"} className=" py-1 px-3 rounded-full">Kontakt</Link>
-              </div>
-</div>
+          <Link href={"/services"} className=" py-1 px-3 rounded-full ">
+            Services
+          </Link>
 
+          {/* <Link href={"/about"}>About</Link> */}
+          <Link href={"/kontakt"} className=" py-1 px-3 rounded-full">
+            Kontakt
+          </Link>
+        </div>
+      </div>
 
       {/* <motion.div
         initial={{
@@ -103,7 +127,7 @@ export default function Header() {
 
       {/* ----------------------------------------------------- */}
 
-{/*
+      {/*
       <motion.div
         initial={{
           scale: 1,
@@ -159,7 +183,7 @@ export default function Header() {
 
       {/* <AnimatePresence>
         isOpen && ( */}
-      <motion.div
+      {/*<motion.div
         className={`${
           isOpen
             ? "block z-40 opacity-100 h-[50vh] w-[95%]"
