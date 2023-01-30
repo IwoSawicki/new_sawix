@@ -32,7 +32,7 @@ export default function Dienstleistungen() {
                 <li>Imagefilm</li>
                 <li>Immobilienvideo</li>
               </ul>
-              <Link href={"/about"}>
+              <Link href={"/webdesign"}>
                 <button className="buttonMainGradient  p-px text-white rounded-full group">
                   <div className="bg-[#0b0d0f] pl-8 rounded-full flex items-center hover:bg-transparent duration-300">
                     Zurück zu Design & Entwicklung

@@ -39,7 +39,14 @@ export default function Header() {
       </div>
       {/* ----------------------------------------------------------------------- */}
 
-      <motion.div
+              <div className="fixed bottom-5 bg-blue-700 py-1 rounded-full flex gap-2 z-50 text-sm font-light w-64 justify-center items-center inset-x-0 mx-auto md:text-lg md:w-[292px]">
+                <Link href={"/"} className="bg-white text-black py-1 px-3 rounded-full">Home</Link>
+                <Link href={"/services"} className=" py-1 px-3 rounded-full ">Services</Link>
+                {/* <Link href={"/about"}>About</Link> */}
+                <Link href={"/kontakt"} className=" py-1 px-3 rounded-full">Kontakt</Link>
+              </div>
+
+      {/* <motion.div
         initial={{
           //width: 300,
           //maxWidth: "80vw",
@@ -93,6 +100,7 @@ export default function Header() {
 
       {/* ----------------------------------------------------- */}
 
+{/*
       <motion.div
         initial={{
           scale: 1,
@@ -156,7 +164,7 @@ export default function Header() {
         } fixed inset-x-0 mx-auto bottom-3 bg-[#E8E5E3] rounded-xl text-black transition-all duration-300 p-4`}
       >
         <div className="">Menu coming soon</div>
-      </motion.div>
+      </motion.div> */}
       {/* )
       </AnimatePresence> */}
     </div>
