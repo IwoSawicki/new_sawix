@@ -40,19 +40,14 @@ export default function Header() {
       {/* ----------------------------------------------------------------------- */}
 <div>
 
-<div>
-  
-</div>
               <div className="fixed bottom-5 bg-blue-700 py-1 rounded-full flex gap-2 z-50 text-sm font-light w-64 justify-center items-center inset-x-0 mx-auto md:text-lg md:w-[292px]">
                 <Link href={"/"} className="bg-white text-black py-1 px-3 rounded-full">Home</Link>
                 <Link href={"/services"} className=" py-1 px-3 rounded-full ">Services</Link>
                 {/* <Link href={"/about"}>About</Link> */}
                 <Link href={"/kontakt"} className=" py-1 px-3 rounded-full">Kontakt</Link>
               </div>
-              <div>
-
-              </div>
 </div>
+
 
       {/* <motion.div
         initial={{
