@@ -18,38 +18,6 @@ export default function Intro() {
           Elemente zu kombinieren, um Ihre Benutzer zu beeindrucken, ohne die
           Funktionalität zu beeinträchtigen.
         </p>
-
-        {/* <div className="my-4 flex gap-3">
-          <div className="flex flex-col w-1/2 gap-3">
-            <button className="w-full border-white border rounded-full py-1">
-              Webdesign
-            </button>
-            <button className="w-full border-white border rounded-full py-1">
-              Webentwicklung
-            </button>
-            <button className="w-full border-white border rounded-full py-1">
-              SEO Optimierung
-            </button>
-            <button className="w-full border-white border rounded-full py-1">
-              Web apps
-            </button>
-          </div>
-          <div className="flex flex-col w-1/2 gap-3">
-            <button className="w-full border-white border rounded-full py-1">
-              Filmproduktion
-            </button>
-            <button className="w-full border-white border rounded-full py-1">
-              Werbevideos
-            </button>
-            <button className="w-full border-white border rounded-full py-1">
-              Produktfotografie
-            </button>
-            <button className="w-full border-white border rounded-full py-1">
-              Social Media
-            </button>
-          </div>
-        </div>
-        <hr className="border-t-px border-whitep my-10" /> */}
       </div>
       <hr className="border-t-px border-whitep my-10 lg:my-0" />
     </div>

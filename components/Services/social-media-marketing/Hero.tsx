@@ -13,12 +13,10 @@ export default function Hero() {
       <div className="flex flex-col max-w-screen-2xl mx-auto lg:flex-row lg:items-center ">
         <div className="my-16 px-3 lg:w-1/2 lg:pr-20">
           <h1 className="text-4xl mb-4 lg:mb-6 lg:text-6xl">
-            Verkaufe überall & jederzeit.
+            Skaliere dein Unternehmen über Social Media
           </h1>
           <p className="text-base lg:text-xl font-light">
-            Ob Prdukte, Dienstleistungen, Kurse, Gutscheine oder Lebensmittel.
-            Heute kann man alles Online verkaufen. Nutze diese Trend aus,
-            steigere dein Umsatz und skaliere dein Unternehmen Online
+            Nutze Instagram, Facebook & TikTok um mehr Neukunden zu gewinnen.
           </p>
         </div>
         <div className="lg:w-1/2 lg:h-screen">

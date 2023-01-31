@@ -73,8 +73,10 @@ export default function Header() {
       >
         <div
           className={`${
-            isOpen ? "opacity-100 delay-500" : "opacity-0"
-          } , duration-500 w-full max-w-6xl mx-auto flex flex-col justify-between h-full`}
+            isOpen
+              ? "opacity-100 delay-500 duration-500"
+              : "opacity-0 duration-200"
+          } ,  w-full max-w-6xl mx-auto flex flex-col justify-between h-full`}
         >
           <div className="bg-yellow-600/0 w-full max-w-6xl mx-auto h-2"></div>
           <div className="flex">

@@ -24,24 +24,18 @@ export default function Dienstleistungen() {
             />
           </div>
           <div className="flex flex-col gap-3 mt-5 lg:mt-0 justify-center lg:w-3/5 lg:pl-16 lg:gap-5">
-            <h3 className="text-3xl lg:text-5xl">Design & Entwicklung</h3>
-            <p className="text-base lg:text-xl font-light">Comming Soon</p>
+            <h3 className="text-3xl lg:text-5xl">Beitragserstellung</h3>
+            <p className="text-base lg:text-xl font-light">
+              Mit einem Hausinternem Medienproduktions Team sind wir in der Lage
+              hochqualitative Fotos und Videos für dein Unternehmen
+              aufzunehemen. Sei es in Form eines Beitrags, Storys oder Video für
+              Instagram, Facebook, Tiktok und Youtube
+            </p>
             <div className="flex flex-col gap-3 lg:gap-5 lg:flex-row">
               <ul className="text-base lg:text-xl font-light list-disc ml-5">
-                <li>Produktfotos</li>
-                <li>Imagefilm</li>
-                <li>Immobilienvideo</li>
+                <li>Foto & Video</li>
+                <li>Storys & Reels</li>
               </ul>
-              <Link href={"/webdesign"}>
-                <button className="bg-gradient-to-r from-[#FF8540] via-red-600 to-[#FF8540] buttonGradient p-px text-white rounded-full group">
-                  <div className="bg-[#0b0d0f] pl-8 rounded-full flex items-center hover:bg-transparent duration-300">
-                    Zurück zu Design & Entwicklung
-                    <span className="bg-[#FF8540] rounded-full p-3 m-[1px] ml-5 group-hover:bg-transparent duration-300">
-                      <BsArrowUpRight className=" text-white rounded-full duration-300 group-hover:rotate-45" />
-                    </span>
-                  </div>
-                </button>
-              </Link>
             </div>
           </div>
         </div>
@@ -55,13 +49,19 @@ export default function Dienstleistungen() {
             />
           </div>
           <div className="flex flex-col gap-3 mt-5 lg:mt-0 justify-center lg:w-3/5 lg:pl-16 lg:gap-5">
-            <h3 className="text-3xl lg:text-5xl">CMS Shopsystem</h3>
-            <p className="text-base lg:text-xl font-light">Comming Soon</p>
+            <h3 className="text-3xl lg:text-5xl">
+              Plannung & Veröffentlichung
+            </h3>
+            <p className="text-base lg:text-xl font-light">
+              Egal ob wir die Beiträge erstellen oder du uns das Material
+              zuschickst, können wir den Inhalt dann Bearbeiten, Gestalten und
+              Plannen. Im Anschluss kann dieser dann strategisch Veröffentlicht
+              werden, um mehr Aufmerksamkeit auf dein Inhalt zu ziehen.
+            </p>
             <ul className="text-base lg:text-xl font-light list-disc ml-5">
-              <li>Wordpress CMS</li>
-              <li>React JS</li>
-              <li>Schnelligkeit</li>
-              <li>Sicherheit</li>
+              <li>Gestaltung</li>
+              <li>Plannung</li>
+              <li>Veröffentlichung</li>
             </ul>
           </div>
         </div>
@@ -75,13 +75,18 @@ export default function Dienstleistungen() {
             />
           </div>
           <div className="flex flex-col gap-3 mt-5 lg:mt-0 justify-center lg:w-3/5 lg:pl-16 lg:gap-5">
-            <h3 className="text-3xl lg:text-5xl">Internes Shopsystem</h3>
-            <p className="text-base lg:text-xl font-light">Comming Soon</p>
+            <h3 className="text-3xl lg:text-5xl">Analyze & Berichte</h3>
+            <p className="text-base lg:text-xl font-light">
+              Für die meisten Kunden führen wir Anfangs eine Konkurrenz, sowie
+              Branchen- und Accountanalyze durch, um zu sehen was für dein
+              Unternehmen Sinn macht, und was nicht. Dabei beachten wir zum
+              Beispiel, wer die Zielgruppe ist, was für diese Interessant ist
+              und wie man möglichst organischen Traffic auf deinen Account
+              bekommt.
+            </p>
             <ul className="text-base lg:text-xl font-light list-disc ml-5">
-              <li>Wordpress CMS</li>
-              <li>React JS</li>
-              <li>Schnelligkeit</li>
-              <li>Sicherheit</li>
+              <li>Ausführliche Analyze</li>
+              <li>Monatliche Berichte</li>
             </ul>
           </div>
         </div>
@@ -95,7 +100,7 @@ export default function Dienstleistungen() {
             />
           </div>
           <div className="flex flex-col gap-3 mt-5 lg:mt-0 justify-center lg:w-3/5 lg:pl-16 lg:gap-5">
-            <h3 className="text-3xl lg:text-5xl">SEO & bezahlte Werbung</h3>
+            <h3 className="text-3xl lg:text-5xl">Bezahlte Werbung</h3>
             <p className="text-base lg:text-xl font-light">Comming Soon</p>
             <ul className="text-base lg:text-xl font-light list-disc ml-5">
               <li>React Native</li>
