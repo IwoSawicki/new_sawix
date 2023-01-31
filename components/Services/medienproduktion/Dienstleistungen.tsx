@@ -16,7 +16,7 @@ export default function Dienstleistungen() {
       <div className="space-y-40">
         {/* Dienstleistungskarte */}
         <div className="flex flex-col lg:flex-row">
-          <div className="lg:w-2/5">
+          <div className="lg:w-2/5 bg-gradient-to-r from-[#9747FF] via-blue-700 to-[#9747FF] buttonGradient p-[2px] rounded-2xl">
             <Image
               src={webdesignImg}
               alt="Webdesign Dienste bei Sawix"
@@ -47,7 +47,7 @@ export default function Dienstleistungen() {
         </div>
         {/* Dienstleistungskarte */}
         <div className="flex flex-col lg:flex-row">
-          <div className="lg:w-2/5">
+          <div className="lg:w-2/5 bg-gradient-to-r from-[#9747FF] via-blue-700 to-[#9747FF] buttonGradient p-[2px] rounded-2xl">
             <Image
               src={ImgWebdev}
               alt="Webdesign Dienste bei Sawix"
@@ -67,7 +67,7 @@ export default function Dienstleistungen() {
         </div>
         {/* Dienstleistungskarte */}
         <div className="flex flex-col lg:flex-row">
-          <div className="lg:w-2/5">
+          <div className="lg:w-2/5 bg-gradient-to-r from-[#9747FF] via-blue-700 to-[#9747FF] buttonGradient p-[2px] rounded-2xl">
             <Image
               src={ImgWebdev}
               alt="Webdesign Dienste bei Sawix"
@@ -87,7 +87,7 @@ export default function Dienstleistungen() {
         </div>
         {/* Dienstleistungskarte */}
         <div className="flex flex-col lg:flex-row">
-          <div className="lg:w-2/5">
+          <div className="lg:w-2/5 bg-gradient-to-r from-[#9747FF] via-blue-700 to-[#9747FF] buttonGradient p-[2px] rounded-2xl">
             <Image
               src={ImgMobileApp}
               alt="Webdesign Dienste bei Sawix"
@@ -106,7 +106,7 @@ export default function Dienstleistungen() {
         </div>
         {/* Dienstleistungskarte */}
         <div className="flex flex-col lg:flex-row">
-          <div className="lg:w-2/5">
+          <div className="lg:w-2/5 bg-gradient-to-r from-[#9747FF] via-blue-700 to-[#9747FF] buttonGradient p-[2px] rounded-2xl">
             <Image
               src={ImgMedienproduktion}
               alt="Webdesign Dienste bei Sawix"

@@ -16,7 +16,7 @@ export default function Dienstleistungen() {
       <div className="space-y-40">
         {/* Dienstleistungskarte */}
         <div className="flex flex-col lg:flex-row">
-          <div className="lg:w-2/5">
+          <div className="lg:w-2/5 p-[2px] rounded-2xl bg-gradient-to-r from-[#FFEE62] via-orange-600 to-[#FFEE62] buttonGradient">
             <Image
               src={webdesignImg}
               alt="Webdesign Dienste bei Sawix"
@@ -42,7 +42,7 @@ export default function Dienstleistungen() {
         </div>
         {/* Dienstleistungskarte */}
         <div className="flex flex-col lg:flex-row">
-          <div className="lg:w-2/5">
+          <div className="lg:w-2/5 p-[2px] rounded-2xl bg-gradient-to-r from-[#FFEE62] via-orange-600 to-[#FFEE62] buttonGradient">
             <Image
               src={ImgWebdev}
               alt="Webdesign Dienste bei Sawix"
@@ -70,7 +70,7 @@ export default function Dienstleistungen() {
         </div>
         {/* Dienstleistungskarte */}
         <div className="flex flex-col lg:flex-row">
-          <div className="lg:w-2/5">
+          <div className="lg:w-2/5 p-[2px] rounded-2xl bg-gradient-to-r from-[#FFEE62] via-orange-600 to-[#FFEE62] buttonGradient">
             <Image
               src={ImgMobileApp}
               alt="Webdesign Dienste bei Sawix"
@@ -96,7 +96,7 @@ export default function Dienstleistungen() {
         </div>
         {/* Dienstleistungskarte */}
         <div className="flex flex-col lg:flex-row">
-          <div className="lg:w-2/5">
+          <div className="lg:w-2/5 p-[2px] rounded-2xl bg-gradient-to-r from-[#FFEE62] via-orange-600 to-[#FFEE62] buttonGradient hover:scale-[1.01] duration-500">
             <Image
               src={ImgMedienproduktion}
               alt="Webdesign Dienste bei Sawix"
@@ -121,10 +121,10 @@ export default function Dienstleistungen() {
                 <li>Immobilienvideo</li>
               </ul>
               <Link href={"/about"}>
-                <button className="buttonMainGradient  p-px text-white rounded-full group">
+                <button className="bg-gradient-to-r from-[#FFEE62] via-orange-600 to-[#FFEE62] buttonGradient p-px text-white rounded-full group">
                   <div className="bg-[#0b0d0f] pl-8 rounded-full flex items-center hover:bg-transparent duration-300">
                     Zur Medienproduktion
-                    <span className="bg-blue-700 rounded-full p-3 m-[1px] ml-5 group-hover:bg-transparent duration-300">
+                    <span className="bg-[#f7aa10] rounded-full p-3 m-[1px] ml-5 group-hover:bg-transparent duration-300">
                       <BsArrowUpRight className=" text-white rounded-full duration-300 group-hover:rotate-45" />
                     </span>
                   </div>

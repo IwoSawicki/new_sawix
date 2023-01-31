@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Intro() {
   return (
-    <div className="bg-[#0B0D0F] rounded-t-2xl pt-10 lg:pt-0">
+    <div className="rounded-t-2xl pt-10 lg:pt-0">
       <div className="px-3 max-w-5xl mx-auto lg:py-28">
         <h2 className="text-4xl text-center my-4 lg:text-5xl lg:mb-10">
           Ab wann macht es Sinn einen Online Shop aufzumachen?

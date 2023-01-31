@@ -13,10 +13,10 @@ export default function Dienstleistungen() {
       <h2 className="text-4xl mb-8 pt-4 lg:text-5xl lg:pt-0 lg:mb-12">
         Unsere Services
       </h2>
-      <div className="space-y-40">
+      <div className="space-y-20 lg:space-y-40">
         {/* Dienstleistungskarte */}
         <div className="flex flex-col lg:flex-row">
-          <div className="lg:w-2/5">
+          <div className="lg:w-2/5 bg-gradient-to-r from-[#FF8540] via-red-600 to-[#FF8540] buttonGradient p-[2px] rounded-2xl">
             <Image
               src={webdesignImg}
               alt="Webdesign Dienste bei Sawix"
@@ -33,10 +33,10 @@ export default function Dienstleistungen() {
                 <li>Immobilienvideo</li>
               </ul>
               <Link href={"/webdesign"}>
-                <button className="buttonMainGradient  p-px text-white rounded-full group">
+                <button className="bg-gradient-to-r from-[#FF8540] via-red-600 to-[#FF8540] buttonGradient p-px text-white rounded-full group">
                   <div className="bg-[#0b0d0f] pl-8 rounded-full flex items-center hover:bg-transparent duration-300">
                     Zurück zu Design & Entwicklung
-                    <span className="bg-blue-700 rounded-full p-3 m-[1px] ml-5 group-hover:bg-transparent duration-300">
+                    <span className="bg-[#FF8540] rounded-full p-3 m-[1px] ml-5 group-hover:bg-transparent duration-300">
                       <BsArrowUpRight className=" text-white rounded-full duration-300 group-hover:rotate-45" />
                     </span>
                   </div>
@@ -47,7 +47,7 @@ export default function Dienstleistungen() {
         </div>
         {/* Dienstleistungskarte */}
         <div className="flex flex-col lg:flex-row">
-          <div className="lg:w-2/5">
+          <div className="lg:w-2/5 bg-gradient-to-r from-[#FF8540] via-red-600 to-[#FF8540] buttonGradient p-[2px] rounded-2xl">
             <Image
               src={ImgWebdev}
               alt="Webdesign Dienste bei Sawix"
@@ -67,7 +67,7 @@ export default function Dienstleistungen() {
         </div>
         {/* Dienstleistungskarte */}
         <div className="flex flex-col lg:flex-row">
-          <div className="lg:w-2/5">
+          <div className="lg:w-2/5 bg-gradient-to-r from-[#FF8540] via-red-600 to-[#FF8540] buttonGradient p-[2px] rounded-2xl">
             <Image
               src={ImgWebdev}
               alt="Webdesign Dienste bei Sawix"
@@ -87,7 +87,7 @@ export default function Dienstleistungen() {
         </div>
         {/* Dienstleistungskarte */}
         <div className="flex flex-col lg:flex-row">
-          <div className="lg:w-2/5">
+          <div className="lg:w-2/5 bg-gradient-to-r from-[#FF8540] via-red-600 to-[#FF8540] buttonGradient p-[2px] rounded-2xl">
             <Image
               src={ImgMobileApp}
               alt="Webdesign Dienste bei Sawix"
@@ -102,38 +102,6 @@ export default function Dienstleistungen() {
               <li>Benutzererfahrung</li>
               <li>Shop-Systeme</li>
             </ul>
-          </div>
-        </div>
-        {/* Dienstleistungskarte */}
-        <div className="flex flex-col lg:flex-row">
-          <div className="lg:w-2/5">
-            <Image
-              src={ImgMedienproduktion}
-              alt="Webdesign Dienste bei Sawix"
-              className="w-full h-96 lg:h-[600px] object-cover rounded-2xl"
-            />
-          </div>
-          <div className="flex flex-col gap-3 mt-5 lg:mt-0 justify-center lg:w-3/5 lg:pl-16 lg:gap-5">
-            <h3 className="text-3xl lg:text-5xl">Überarbeitung</h3>
-            <p className="text-base lg:text-xl font-light">Comming Soon</p>
-
-            <div className="flex flex-col gap-3 lg:gap-5 lg:flex-row">
-              <ul className="text-base lg:text-xl font-light list-disc ml-5">
-                <li>Produktfotos</li>
-                <li>Imagefilm</li>
-                <li>Immobilienvideo</li>
-              </ul>
-              <Link href={"/about"}>
-                <button className="buttonMainGradient  p-px text-white rounded-full group">
-                  <div className="bg-[#0b0d0f] pl-8 rounded-full flex items-center hover:bg-transparent duration-300">
-                    Zur Medienproduktion
-                    <span className="bg-blue-700 rounded-full p-3 m-[1px] ml-5 group-hover:bg-transparent duration-300">
-                      <BsArrowUpRight className=" text-white rounded-full duration-300 group-hover:rotate-45" />
-                    </span>
-                  </div>
-                </button>
-              </Link>
-            </div>
           </div>
         </div>
       </div>

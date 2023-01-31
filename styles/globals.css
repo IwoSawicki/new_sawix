@@ -25,6 +25,10 @@
   animation: background-pan 3s linear infinite;
   background-size: 200%;
 }
+.backgroundGradient {
+  animation: background-pan 10s linear infinite;
+  background-size: 200%;
+}
 
 /* ------------------------------ SCROLLBAR ------------------------------ */
 ::-webkit-scrollbar {
