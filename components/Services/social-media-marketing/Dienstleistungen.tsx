@@ -49,14 +49,12 @@ export default function Dienstleistungen() {
             />
           </div>
           <div className="flex flex-col gap-3 mt-5 lg:mt-0 justify-center lg:w-3/5 lg:pl-16 lg:gap-5">
-            <h3 className="text-3xl lg:text-5xl">
-              Plannung & Veröffentlichung
-            </h3>
+            <h3 className="text-3xl lg:text-5xl">Planung & Veröffentlichung</h3>
             <p className="text-base lg:text-xl font-light">
               Egal ob wir die Beiträge erstellen oder du uns das Material
               zuschickst, können wir den Inhalt dann Bearbeiten, Gestalten und
-              Plannen. Im Anschluss kann dieser dann strategisch Veröffentlicht
-              werden, um mehr Aufmerksamkeit auf dein Inhalt zu ziehen.
+              Planen. Im Anschluss kann dieser dann strategisch Veröffentlicht
+              werden, um mehr Aufmerksamkeit auf deinen Inhalt zu ziehen.
             </p>
             <ul className="text-base lg:text-xl font-light list-disc ml-5">
               <li>Gestaltung</li>
@@ -75,17 +73,17 @@ export default function Dienstleistungen() {
             />
           </div>
           <div className="flex flex-col gap-3 mt-5 lg:mt-0 justify-center lg:w-3/5 lg:pl-16 lg:gap-5">
-            <h3 className="text-3xl lg:text-5xl">Analyze & Berichte</h3>
+            <h3 className="text-3xl lg:text-5xl">Analyse & Berichte</h3>
             <p className="text-base lg:text-xl font-light">
               Für die meisten Kunden führen wir Anfangs eine Konkurrenz, sowie
-              Branchen- und Accountanalyze durch, um zu sehen was für dein
+              Branchen- und Accountanalyse durch, um zu sehen was für dein
               Unternehmen Sinn macht, und was nicht. Dabei beachten wir zum
               Beispiel, wer die Zielgruppe ist, was für diese Interessant ist
               und wie man möglichst organischen Traffic auf deinen Account
               bekommt.
             </p>
             <ul className="text-base lg:text-xl font-light list-disc ml-5">
-              <li>Ausführliche Analyze</li>
+              <li>Ausführliche Analyse</li>
               <li>Monatliche Berichte</li>
             </ul>
           </div>
@@ -101,7 +99,14 @@ export default function Dienstleistungen() {
           </div>
           <div className="flex flex-col gap-3 mt-5 lg:mt-0 justify-center lg:w-3/5 lg:pl-16 lg:gap-5">
             <h3 className="text-3xl lg:text-5xl">Bezahlte Werbung</h3>
-            <p className="text-base lg:text-xl font-light">Comming Soon</p>
+            <p className="text-base lg:text-xl font-light">
+              Wir nutzen Anzeigen auf Facebook, Instagram, Linkedin und anderen
+              Communities zum Boosten von Reichweite und Interaktion von Posts,
+              Videos, Stories oder Reels, zur Bewerbung einer Landingpage bzw.
+              eines Shops, zum Aufbau eines CRM oder zum Push für App
+              Installationen – um nur einige Ziele zu nennen, die uns die
+              Werbeanzeigenmanager der verschiedenen Communities anbieten.
+            </p>
             <ul className="text-base lg:text-xl font-light list-disc ml-5">
               <li>React Native</li>
               <li>Benutzererfahrung</li>

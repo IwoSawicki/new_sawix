@@ -81,8 +81,9 @@ export default function Header() {
           <div className="bg-yellow-600/0 w-full max-w-6xl mx-auto h-2"></div>
           <div className="flex">
             <div className="bg-blue-600/0 md:w-3/5 flex flex-col justify-center">
-              <div className="flex flex-col gap-3 text-2xl md:gap-4 md:text-4xl font-medium">
+              <div className="flex flex-col gap-3 text-2xl md:gap-3 md:text-4xl font-normal">
                 <Link href={"/"}>Home</Link>
+                <Link href={"/about"}>About</Link>
                 <Link href={"/services"}>Services</Link>
                 <Link href={"/services/webdesign/"}>Design & Entwicklung</Link>
                 <Link href={"/services/e-commerce/"}>Online-Shops</Link>

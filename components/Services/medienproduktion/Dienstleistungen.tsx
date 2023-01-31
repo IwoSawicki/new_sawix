@@ -25,7 +25,7 @@ export default function Dienstleistungen() {
           </div>
           <div className="flex flex-col gap-3 mt-5 lg:mt-0 justify-center lg:w-3/5 lg:pl-16 lg:gap-5">
             <h3 className="text-3xl lg:text-5xl">Imagefilm</h3>
-            <p className="text-base lg:text-xl font-light">Comming Soon</p>
+            <p className="text-base lg:text-xl font-light">Coming Soon</p>
             <div className="flex flex-col gap-3 lg:gap-5 lg:flex-row">
               {/* <ul className="text-base lg:text-xl font-light list-disc ml-5">
                 <li>Produktfotos</li>
@@ -56,7 +56,7 @@ export default function Dienstleistungen() {
           </div>
           <div className="flex flex-col gap-3 mt-5 lg:mt-0 justify-center lg:w-3/5 lg:pl-16 lg:gap-5">
             <h3 className="text-3xl lg:text-5xl">Werbevideos</h3>
-            <p className="text-base lg:text-xl font-light">Comming Soon</p>
+            <p className="text-base lg:text-xl font-light">Coming Soon</p>
             {/* <ul className="text-base lg:text-xl font-light list-disc ml-5">
               <li>Wordpress CMS</li>
               <li>React JS</li>
@@ -76,7 +76,7 @@ export default function Dienstleistungen() {
           </div>
           <div className="flex flex-col gap-3 mt-5 lg:mt-0 justify-center lg:w-3/5 lg:pl-16 lg:gap-5">
             <h3 className="text-3xl lg:text-5xl">Produktfotos</h3>
-            <p className="text-base lg:text-xl font-light">Comming Soon</p>
+            <p className="text-base lg:text-xl font-light">Coming Soon</p>
             {/* <ul className="text-base lg:text-xl font-light list-disc ml-5">
               <li>Wordpress CMS</li>
               <li>React JS</li>
