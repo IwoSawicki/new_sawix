@@ -24,15 +24,15 @@ export default function Dienstleistungen() {
             />
           </div>
           <div className="flex flex-col gap-3 mt-5 lg:mt-0 justify-center lg:w-3/5 lg:pl-16 lg:gap-5">
-            <h3 className="text-3xl lg:text-5xl">Design & Entwicklung</h3>
+            <h3 className="text-3xl lg:text-5xl">Imagefilm</h3>
             <p className="text-base lg:text-xl font-light">Comming Soon</p>
             <div className="flex flex-col gap-3 lg:gap-5 lg:flex-row">
-              <ul className="text-base lg:text-xl font-light list-disc ml-5">
+              {/* <ul className="text-base lg:text-xl font-light list-disc ml-5">
                 <li>Produktfotos</li>
                 <li>Imagefilm</li>
                 <li>Immobilienvideo</li>
-              </ul>
-              <Link href={"/webdesign"}>
+              </ul> */}
+              {/* <Link href={"/webdesign"}>
                 <button className="buttonMainGradient  p-px text-white rounded-full group">
                   <div className="bg-[#0b0d0f] pl-8 rounded-full flex items-center hover:bg-transparent duration-300">
                     Zurück zu Design & Entwicklung
@@ -41,7 +41,7 @@ export default function Dienstleistungen() {
                     </span>
                   </div>
                 </button>
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>
@@ -55,14 +55,14 @@ export default function Dienstleistungen() {
             />
           </div>
           <div className="flex flex-col gap-3 mt-5 lg:mt-0 justify-center lg:w-3/5 lg:pl-16 lg:gap-5">
-            <h3 className="text-3xl lg:text-5xl">CMS Shopsystem</h3>
+            <h3 className="text-3xl lg:text-5xl">Werbevideos</h3>
             <p className="text-base lg:text-xl font-light">Comming Soon</p>
-            <ul className="text-base lg:text-xl font-light list-disc ml-5">
+            {/* <ul className="text-base lg:text-xl font-light list-disc ml-5">
               <li>Wordpress CMS</li>
               <li>React JS</li>
               <li>Schnelligkeit</li>
               <li>Sicherheit</li>
-            </ul>
+            </ul> */}
           </div>
         </div>
         {/* Dienstleistungskarte */}
@@ -75,65 +75,14 @@ export default function Dienstleistungen() {
             />
           </div>
           <div className="flex flex-col gap-3 mt-5 lg:mt-0 justify-center lg:w-3/5 lg:pl-16 lg:gap-5">
-            <h3 className="text-3xl lg:text-5xl">Internes Shopsystem</h3>
+            <h3 className="text-3xl lg:text-5xl">Produktfotos</h3>
             <p className="text-base lg:text-xl font-light">Comming Soon</p>
-            <ul className="text-base lg:text-xl font-light list-disc ml-5">
+            {/* <ul className="text-base lg:text-xl font-light list-disc ml-5">
               <li>Wordpress CMS</li>
               <li>React JS</li>
               <li>Schnelligkeit</li>
               <li>Sicherheit</li>
-            </ul>
-          </div>
-        </div>
-        {/* Dienstleistungskarte */}
-        <div className="flex flex-col lg:flex-row">
-          <div className="lg:w-2/5 bg-gradient-to-r from-[#9747FF] via-blue-700 to-[#9747FF] buttonGradient p-[2px] rounded-2xl">
-            <Image
-              src={ImgMobileApp}
-              alt="Webdesign Dienste bei Sawix"
-              className="w-full h-96 lg:h-[600px] object-cover rounded-2xl"
-            />
-          </div>
-          <div className="flex flex-col gap-3 mt-5 lg:mt-0 justify-center lg:w-3/5 lg:pl-16 lg:gap-5">
-            <h3 className="text-3xl lg:text-5xl">SEO & bezahlte Werbung</h3>
-            <p className="text-base lg:text-xl font-light">Comming Soon</p>
-            <ul className="text-base lg:text-xl font-light list-disc ml-5">
-              <li>React Native</li>
-              <li>Benutzererfahrung</li>
-              <li>Shop-Systeme</li>
-            </ul>
-          </div>
-        </div>
-        {/* Dienstleistungskarte */}
-        <div className="flex flex-col lg:flex-row">
-          <div className="lg:w-2/5 bg-gradient-to-r from-[#9747FF] via-blue-700 to-[#9747FF] buttonGradient p-[2px] rounded-2xl">
-            <Image
-              src={ImgMedienproduktion}
-              alt="Webdesign Dienste bei Sawix"
-              className="w-full h-96 lg:h-[600px] object-cover rounded-2xl"
-            />
-          </div>
-          <div className="flex flex-col gap-3 mt-5 lg:mt-0 justify-center lg:w-3/5 lg:pl-16 lg:gap-5">
-            <h3 className="text-3xl lg:text-5xl">Überarbeitung</h3>
-            <p className="text-base lg:text-xl font-light">Comming Soon</p>
-
-            <div className="flex flex-col gap-3 lg:gap-5 lg:flex-row">
-              <ul className="text-base lg:text-xl font-light list-disc ml-5">
-                <li>Produktfotos</li>
-                <li>Imagefilm</li>
-                <li>Immobilienvideo</li>
-              </ul>
-              <Link href={"/about"}>
-                <button className="buttonMainGradient  p-px text-white rounded-full group">
-                  <div className="bg-[#0b0d0f] pl-8 rounded-full flex items-center hover:bg-transparent duration-300">
-                    Zur Medienproduktion
-                    <span className="bg-blue-700 rounded-full p-3 m-[1px] ml-5 group-hover:bg-transparent duration-300">
-                      <BsArrowUpRight className=" text-white rounded-full duration-300 group-hover:rotate-45" />
-                    </span>
-                  </div>
-                </button>
-              </Link>
-            </div>
+            </ul> */}
           </div>
         </div>
       </div>

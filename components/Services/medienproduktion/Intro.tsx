@@ -5,17 +5,17 @@ export default function Intro() {
     <div className="bg-[#0B0D0F] rounded-t-2xl pt-10 lg:pt-0">
       <div className="px-3 max-w-5xl mx-auto lg:py-28">
         <h2 className="text-4xl text-center my-4 lg:text-5xl lg:mb-10">
-          Ab wann macht es Sinn einen Online Shop aufzumachen?
+          "Das kann dich doch auch mit dem Handy machen.."
         </h2>
         <p className="text-base lg:text-xl font-light my-4 text-center">
-          Das ist ja auch sehr viel Arbeit sowas zu Pflegen oder? Überhaupt
-          nicht! Die Arbeit machen wir uns bei der Konzeption und Entwicklung.
-          Den Shop danach zu Pflegen, aktuell zu halten und neue Produkte
-          einzustellen, sind dann nurnoch ein paar wenige Mausklicks.
+          Natürlich kannst du das. Beachte dabei jedoch, dass Kunden die
+          Qualität deines Auftritts direkt mit der Qualität deiner Arbeit oder
+          Produkte asozzieren.
           <br /> <br />
-          Ein reiner Online Shop macht hierbei für sehr viele Unternehmen Sinn.
-          Hauptsächlich aber für Produkte und Dienstleistungen, die nicht stark
-          personalisiert sind und immer wieder verkauft werden.
+          Deshalb stecken wir 110% in alles war wir machen, und scheuen dabei
+          kein Blut, Schweiß und Tränen. Unser Job ist es deine Qualität und
+          Werte rüberbringen und Neukunden generieren. Das Unternehmen
+          anschließend zu Skalieren ist dein Job.
         </p>
 
         {/* <div className="my-4 flex gap-3">
