@@ -8,7 +8,7 @@ export default function Intro() {
           Aber benutzen das nicht nur Jugendliche?
         </h2>
         <p className="text-base lg:text-xl font-light my-4 text-center">
-          Comming Soon
+          Coming Soon
           <br /> <br />
         </p>
 

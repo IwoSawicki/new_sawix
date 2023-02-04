@@ -51,6 +51,7 @@ export default function () {
         {/* ----------------------------- Row 2 -----------------------------*/}
         <div className="flex gap-12 flex-col lg:flex-row">
           <div className=" bg-[#9747FF] px-4 pt-4 rounded-2xl">
+            {/* bg-[#9747FF] */}
             <h3 className="text-3xl mb-3">Wohlfühlerei Weinhaus</h3>
             <div className="mb-4">
               <button className=" bg-transparent border-black border-[1px] rounded-full px-3 py-1 mb-2 mr-2 text-xs md:text-sm font-light">

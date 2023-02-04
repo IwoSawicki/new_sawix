@@ -160,9 +160,9 @@ export default function Header() {
           >
             Home
           </Link>
-          <Link href={"/about"} className="text-white py-1 px-3 rounded-full ">
+          {/* <Link href={"/about"} className="text-white py-1 px-3 rounded-full ">
             About
-          </Link>
+          </Link> */}
           <Link
             href={"/services"}
             className="text-white py-1 px-3 rounded-full "

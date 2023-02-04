@@ -2,10 +2,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { BsArrowUpRight } from "react-icons/bs";
 //import ImgWebdesign from "@/public/Services/webdesign/webdesign.jpg";
-import webdesignImg from "public/Services/Webdesign/webdesign.jpg";
 import ImgWebdev from "../../../public/Services/Webdesign/webdev.jpg";
 import ImgMobileApp from "public/Services/Webdesign/mobileapps.jpg";
-import ImgMedienproduktion from "public/Services/Webdesign/medienproduktion.jpg";
+
+import ImgCMS from "@/public/Services/e-com/ImgCMS.jpg";
+import ImgIntern from "@/public/Services/e-com/ImgIntern3.png";
+import ImgSEO from "@/public/Services/e-com/ImgSEO.jpg";
+import ImgRework from "@/public/Services/e-com/ImgRework.jpeg";
 
 export default function Dienstleistungen() {
   return (
@@ -15,41 +18,10 @@ export default function Dienstleistungen() {
       </h2>
       <div className="space-y-40">
         {/* Dienstleistungskarte */}
-        {/* <div className="flex flex-col lg:flex-row">
-          <div className="lg:w-2/5 bg-gradient-to-r from-[#6EE863] via-emerald-500 to-[#6EE863] buttonGradient p-[2px] rounded-2xl">
-            <Image
-              src={webdesignImg}
-              alt="Webdesign Dienste bei Sawix"
-              className="w-full h-96 lg:h-[600px] object-cover rounded-2xl"
-            />
-          </div>
-          <div className="flex flex-col gap-3 mt-5 lg:mt-0 justify-center lg:w-3/5 lg:pl-16 lg:gap-5">
-            <h3 className="text-3xl lg:text-5xl">Design & Entwicklung</h3>
-            <p className="text-base lg:text-xl font-light">Comming Soon</p>
-            <div className="flex flex-col gap-3 lg:gap-5 lg:flex-row">
-              <ul className="text-base lg:text-xl font-light list-disc ml-5">
-                <li>Produktfotos</li>
-                <li>Imagefilm</li>
-                <li>Immobilienvideo</li>
-              </ul>
-              <Link href={"/webdesign"}>
-                <button className="bg-gradient-to-r from-[#6EE863] via-emerald-500 to-[#6EE863] buttonGradient  p-px text-white rounded-full group">
-                  <div className="bg-[#0b0d0f] pl-8 rounded-full flex items-center hover:bg-transparent duration-300">
-                    Zurück zu Design & Entwicklung
-                    <span className="bg-[#16a00c] rounded-full p-3 m-[1px] ml-5 group-hover:bg-transparent duration-300">
-                      <BsArrowUpRight className=" text-white rounded-full duration-300 group-hover:rotate-45" />
-                    </span>
-                  </div>
-                </button>
-              </Link>
-            </div>
-          </div>
-        </div> */}
-        {/* Dienstleistungskarte */}
         <div className="flex flex-col lg:flex-row">
           <div className="lg:w-2/5 bg-gradient-to-r from-[#6EE863] via-emerald-500 to-[#6EE863] buttonGradient p-[2px] rounded-2xl">
             <Image
-              src={ImgWebdev}
+              src={ImgCMS}
               alt="Webdesign Dienste bei Sawix"
               className="w-full h-96 lg:h-[600px] object-cover rounded-2xl"
             />
@@ -58,12 +30,12 @@ export default function Dienstleistungen() {
             <h3 className="text-3xl lg:text-5xl">CMS Shopsystem</h3>
             <p className="text-base lg:text-xl font-light">
               Für knapp 80% der Aufträge greifen wir auf eine CMS Lösung wie
-              Wordpress, Shopify oder Webflow zurück. Hierbei nehmen wir uns
-              immer Zeit um die verschiendenen Vor- und Nachteile zu besprechen
-              und zusammen mit dir die beste Auswahl zu treffen. Davor kommt
-              auch eine Brainstorming runde, in der wir über das gesamte Konzept
-              von deinem Shop durchgehen und dir gerne nochmals Hilfestellung
-              und Ratschläge geben. <br />
+              Wordpress oder Shopify zurück. Hierbei nehmen wir uns immer Zeit
+              um die verschiendenen Vor- und Nachteile zu besprechen und
+              zusammen mit dir die beste Auswahl zu treffen. Davor kommt auch
+              eine Brainstorming runde, in der wir über das gesamte Konzept von
+              deinem Shop durchgehen und dir gerne nochmals Hilfestellung und
+              Ratschläge geben. <br />
               <br />
               Alles andere, wie Artikel einpflegen, Bilder austauschen, Texte
               ändern, und, und, und .. ist nach der Fertigstellung ein
@@ -73,7 +45,6 @@ export default function Dienstleistungen() {
             <ul className="text-base lg:text-xl font-light list-disc ml-5">
               <li>Wordpress</li>
               <li>Shopify</li>
-              <li>Webflow</li>
             </ul>
           </div>
         </div>
@@ -81,7 +52,7 @@ export default function Dienstleistungen() {
         <div className="flex flex-col lg:flex-row">
           <div className="lg:w-2/5 bg-gradient-to-r from-[#6EE863] via-emerald-500 to-[#6EE863] buttonGradient p-[2px] rounded-2xl">
             <Image
-              src={ImgWebdev}
+              src={ImgIntern}
               alt="Webdesign Dienste bei Sawix"
               className="w-full h-96 lg:h-[600px] object-cover rounded-2xl"
             />
@@ -114,7 +85,7 @@ export default function Dienstleistungen() {
         <div className="flex flex-col lg:flex-row">
           <div className="lg:w-2/5 bg-gradient-to-r from-[#6EE863] via-emerald-500 to-[#6EE863] buttonGradient p-[2px] rounded-2xl">
             <Image
-              src={ImgMobileApp}
+              src={ImgSEO}
               alt="Webdesign Dienste bei Sawix"
               className="w-full h-96 lg:h-[600px] object-cover rounded-2xl"
             />
@@ -133,9 +104,9 @@ export default function Dienstleistungen() {
               Unternehmen noch schneller skalieren und Kunden gewinnen.{" "}
             </p>
             <ul className="text-base lg:text-xl font-light list-disc ml-5">
-              <li>React Native</li>
-              <li>Benutzererfahrung</li>
-              <li>Shop-Systeme</li>
+              <li>Suchmaschinen Optimierung</li>
+              <li>Mehr Reichweite</li>
+              <li>Schneller Skalieren</li>
             </ul>
           </div>
         </div>
@@ -143,7 +114,7 @@ export default function Dienstleistungen() {
         <div className="flex flex-col lg:flex-row">
           <div className="lg:w-2/5 bg-gradient-to-r from-[#6EE863] via-emerald-500 to-[#6EE863] buttonGradient p-[2px] rounded-2xl">
             <Image
-              src={ImgMobileApp}
+              src={ImgRework}
               alt="Webdesign Dienste bei Sawix"
               className="w-full h-96 lg:h-[600px] object-cover rounded-2xl"
             />
@@ -160,9 +131,9 @@ export default function Dienstleistungen() {
               du es weißt, am besten auch mit was Sie umgesetzt wurde.
             </p>
             <ul className="text-base lg:text-xl font-light list-disc ml-5">
-              <li>React Native</li>
-              <li>Benutzererfahrung</li>
-              <li>Shop-Systeme</li>
+              <li>Neues Design</li>
+              <li>Konzeption</li>
+              <li>Funktionserweiterung</li>
             </ul>
           </div>
         </div>

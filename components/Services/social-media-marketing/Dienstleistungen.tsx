@@ -1,11 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import { BsArrowUpRight } from "react-icons/bs";
-//import ImgWebdesign from "@/public/Services/webdesign/webdesign.jpg";
-import webdesignImg from "public/Services/Webdesign/webdesign.jpg";
-import ImgWebdev from "../../../public/Services/Webdesign/webdev.jpg";
-import ImgMobileApp from "public/Services/Webdesign/mobileapps.jpg";
-import ImgMedienproduktion from "public/Services/Webdesign/medienproduktion.jpg";
+
+import ImgErstellung from "@/public/Services/social-media-management/ImgErstellung.jpg";
+import ImgPlanung from "@/public/Services/social-media-management/ImgPlanung.jpg";
+import ImgAnalyse from "@/public/Services/social-media-management/ImgAnalyse.jpg";
+import ImgAds from "@/public/Services/social-media-management/ImgAds.jpg";
 
 export default function Dienstleistungen() {
   return (
@@ -18,7 +18,7 @@ export default function Dienstleistungen() {
         <div className="flex flex-col lg:flex-row">
           <div className="lg:w-2/5 bg-gradient-to-r from-[#FF8540] via-red-600 to-[#FF8540] buttonGradient p-[2px] rounded-2xl">
             <Image
-              src={webdesignImg}
+              src={ImgErstellung}
               alt="Webdesign Dienste bei Sawix"
               className="w-full h-96 lg:h-[600px] object-cover rounded-2xl"
             />
@@ -43,7 +43,7 @@ export default function Dienstleistungen() {
         <div className="flex flex-col lg:flex-row">
           <div className="lg:w-2/5 bg-gradient-to-r from-[#FF8540] via-red-600 to-[#FF8540] buttonGradient p-[2px] rounded-2xl">
             <Image
-              src={ImgWebdev}
+              src={ImgPlanung}
               alt="Webdesign Dienste bei Sawix"
               className="w-full h-96 lg:h-[600px] object-cover rounded-2xl"
             />
@@ -67,7 +67,7 @@ export default function Dienstleistungen() {
         <div className="flex flex-col lg:flex-row">
           <div className="lg:w-2/5 bg-gradient-to-r from-[#FF8540] via-red-600 to-[#FF8540] buttonGradient p-[2px] rounded-2xl">
             <Image
-              src={ImgWebdev}
+              src={ImgAnalyse}
               alt="Webdesign Dienste bei Sawix"
               className="w-full h-96 lg:h-[600px] object-cover rounded-2xl"
             />
@@ -92,7 +92,7 @@ export default function Dienstleistungen() {
         <div className="flex flex-col lg:flex-row">
           <div className="lg:w-2/5 bg-gradient-to-r from-[#FF8540] via-red-600 to-[#FF8540] buttonGradient p-[2px] rounded-2xl">
             <Image
-              src={ImgMobileApp}
+              src={ImgAds}
               alt="Webdesign Dienste bei Sawix"
               className="w-full h-96 lg:h-[600px] object-cover rounded-2xl"
             />
