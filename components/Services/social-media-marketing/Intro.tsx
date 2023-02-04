@@ -5,10 +5,19 @@ export default function Intro() {
     <div className="rounded-t-2xl pt-10 lg:pt-0">
       <div className="px-3 max-w-5xl mx-auto lg:py-28">
         <h2 className="text-4xl text-center my-4 lg:text-5xl lg:mb-10">
-          Aber benutzen das nicht nur Jugendliche?
+          Für wenn lohnt sicht Social Media Marketing?
         </h2>
         <p className="text-base lg:text-xl font-light my-4 text-center">
-          Coming Soon
+          Social Media Marketing lohnt sich für alle Unternehmen, die ihre Marke
+          bekannt machen, mehr Menschen erreichen und ihre Verkäufe steigern
+          möchten. Man kann durch Soziale Netzwerke seine Zielgruppe direkt
+          erreichen und oftmals Interaktionen mit potenziellen Kunden aufbauen.
+          Sowie auch seine Produkte, Leistungen und Werte in visueller Form
+          übermitteln.
+          <br /> <br />
+          Außerdem kann man Daten und Insights sammeln, um seine
+          Marketingstrategie zu verbessern und seine ROI (Return on Investment)
+          zu maximieren.
           <br /> <br />
         </p>
 

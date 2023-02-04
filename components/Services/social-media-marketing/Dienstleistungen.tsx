@@ -51,14 +51,15 @@ export default function Dienstleistungen() {
           <div className="flex flex-col gap-3 mt-5 lg:mt-0 justify-center lg:w-3/5 lg:pl-16 lg:gap-5">
             <h3 className="text-3xl lg:text-5xl">Planung & Veröffentlichung</h3>
             <p className="text-base lg:text-xl font-light">
-              Egal ob wir die Beiträge erstellen oder du uns das Material
-              zuschickst, können wir den Inhalt dann Bearbeiten, Gestalten und
-              Planen. Im Anschluss kann dieser dann strategisch Veröffentlicht
-              werden, um mehr Aufmerksamkeit auf deinen Inhalt zu ziehen.
+              Unabhängig ob wir die Beiträge erstellen oder du uns das Material
+              zuschickst. Wir können anschließend den Inhalt Bearbeiten,
+              Gestalten und Planen. Im Anschluss kann dieser dann strategisch
+              Veröffentlicht werden, um mehr Aufmerksamkeit auf deinen Inhalt zu
+              ziehen.
             </p>
             <ul className="text-base lg:text-xl font-light list-disc ml-5">
               <li>Gestaltung</li>
-              <li>Plannung</li>
+              <li>Planung</li>
               <li>Veröffentlichung</li>
             </ul>
           </div>
