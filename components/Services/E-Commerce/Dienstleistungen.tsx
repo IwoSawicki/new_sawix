@@ -1,12 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import { BsArrowUpRight } from "react-icons/bs";
-//import ImgWebdesign from "@/public/Services/webdesign/webdesign.jpg";
-import ImgWebdev from "../../../public/Services/Webdesign/webdev.jpg";
-import ImgMobileApp from "public/Services/Webdesign/mobileapps.jpg";
 
 import ImgCMS from "@/public/Services/e-com/ImgCMS.jpg";
 import ImgIntern from "@/public/Services/e-com/ImgIntern3.png";
+import ImgMobile from "@/public/Services/e-com/ImgMobile.jpg";
 import ImgSEO from "@/public/Services/e-com/ImgSEO.jpg";
 import ImgRework from "@/public/Services/e-com/ImgRework.jpeg";
 
@@ -78,6 +76,31 @@ export default function Dienstleistungen() {
               <li>Personalisierung</li>
               <li>Sicherheit</li>
               <li>Schnelligkeit</li>
+            </ul>
+          </div>
+        </div>
+        {/* Dienstleistungskarte */}
+        <div className="flex flex-col lg:flex-row">
+          <div className="lg:w-2/5 p-[2px] rounded-2xl bg-gradient-to-r from-[#FFEE62] via-orange-600 to-[#FFEE62] buttonGradient">
+            <Image
+              src={ImgMobile}
+              alt="Webdesign Dienste bei Sawix"
+              className="w-full h-96 lg:h-[600px] object-cover rounded-2xl"
+            />
+          </div>
+          <div className="flex flex-col gap-3 mt-5 lg:mt-0 justify-center lg:w-3/5 lg:pl-16 lg:gap-5">
+            <h3 className="text-3xl lg:text-5xl">Mobile Apps</h3>
+            <p className="text-base lg:text-xl font-light">
+              Tatsächlich gibt es garnicht so ein großen Unterschied, zwischen
+              Web- und Appentwicklung. Jedoch ist die Benutzererfahrung oftmals
+              deutlich hochwertiger, schneller und Intuitiver. Und da wir uns in
+              diesem Bereich spezialisieren, sind wir in der Lage hochwertige
+              und schnelle Arbeit abzuliefern.
+            </p>
+            <ul className="text-base lg:text-xl font-light list-disc ml-5">
+              <li>React Native</li>
+              <li>Benutzererfahrung</li>
+              <li>Shop-Systeme</li>
             </ul>
           </div>
         </div>
