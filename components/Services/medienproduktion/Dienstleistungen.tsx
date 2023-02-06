@@ -34,6 +34,14 @@ export default function Dienstleistungen() {
               möchten. Unsere Erfahrung und unser Fachwissen in der Produktion
               von Imagefilmen garantieren ein Ergebnis, das Ihre Ziele und Ihre
               Vision widerspiegelt. */}
+              Ein Imagefilm dient als Allrounder Video für dein gesamtes
+              Unternehmen. Hierbei handelt es sich meistens um ein knapp 2
+              Minuten langes Video, dass dann nochmal auf 30 Sekunden für
+              Instagram und Co runtergeschnitten werden kann.
+              <br /> <br />
+              In dem Video wird das Unternehmen als ganzes dargestellt. Von den
+              Produkten oder Dienstleistungen, über die Menschen und Geräte bis
+              hin zu Arbeitsstätten, Büros, Lager- und Produktionshallen.
             </p>
             <ul className="text-base lg:text-xl font-light list-disc ml-5">
               <li>Unternehmenspräsentaiton</li>
@@ -63,6 +71,17 @@ export default function Dienstleistungen() {
               Ob Sie einen kurzen Werbefilm für soziale Medien oder einen
               längeren Imagefilm für Ihre Website benötigen, wir sind hier, um
               Ihnen zu helfen.{" "} */}
+              In einem Werbdevideo liegt der Fokus anders als bei einem
+              Imagefilm schwerwiegend auf dem Produkt oder der Dienstleistung.
+              Hierbei wird das ganze aus der Sicht des potentiellen Kunden
+              betrachtet, den man durch einen Werbefilm oftmals ansprechen und
+              zum Kauf überzeugen möchte.
+              <br />
+              <br />
+              Ob es ein kurzer Werbefilm für Social Media oder etwas länger für
+              Youtube und die eigene Webseite, spezialisieren wir uns darauf,
+              die Qualität, Werte und Emotionen rüberzubringen, um ihr
+              Unternehmen zu skalieren.
             </p>
             <div className="flex flex-col gap-3 lg:gap-5 lg:flex-row">
               <ul className="text-base lg:text-xl font-light list-disc ml-5">
@@ -94,30 +113,15 @@ export default function Dienstleistungen() {
           </div>
           <div className="flex flex-col gap-3 mt-5 lg:mt-0 justify-center lg:w-3/5 lg:pl-16 lg:gap-5">
             <h3 className="text-3xl lg:text-5xl">Fotoproduktion</h3>
-            <p className="text-base lg:text-xl font-light">Coming Soon</p>
+            <p className="text-base lg:text-xl font-light">
+              Ob das Büro, die Produktions- und Lagerhallen, das Restaurant und
+              die Gerichte, die Mitarbeiter, Klamotten oder Produkte. Egal ob
+              bei dir vor Ort oder bei uns im Fotostudio.
+              <br /> <br />
+            </p>
             <ul className="text-base lg:text-xl font-light list-disc ml-5">
               <li>Produktvorstellung</li>
-              <li>Dienstleitungen</li>
-              <li>Service</li>
-            </ul>
-          </div>
-        </div>
-        {/* Dienstleistungskarte */}
-        <div className="flex flex-col lg:flex-row">
-          <div className="lg:w-2/5 bg-gradient-to-r from-[#9747FF] via-blue-700 to-[#9747FF] buttonGradient p-[2px] rounded-2xl">
-            <Image
-              src={ImgInterview}
-              alt="Webdesign Dienste bei Sawix"
-              className="w-full h-96 lg:h-[600px] object-cover rounded-2xl"
-            />
-          </div>
-          <div className="flex flex-col gap-3 mt-5 lg:mt-0 justify-center lg:w-3/5 lg:pl-16 lg:gap-5">
-            <h3 className="text-3xl lg:text-5xl">Interview</h3>
-            <p className="text-base lg:text-xl font-light">Coming Soon</p>
-            <ul className="text-base lg:text-xl font-light list-disc ml-5">
-              <li>Produktvorstellung</li>
-              <li>Dienstleitungen</li>
-              <li>Service</li>
+              <li>Dienstleistungen</li>
             </ul>
           </div>
         </div>
@@ -142,8 +146,36 @@ export default function Dienstleistungen() {
               Allgemeinen.
             </p>
             <ul className="text-base lg:text-xl font-light list-disc ml-5">
+              <li>Mehr Reichweite</li>
               <li>Qualifizierte Mitarbeiter</li>
-              <li>Reichweite</li>
+            </ul>
+          </div>
+        </div>
+        {/* Dienstleistungskarte */}
+        <div className="flex flex-col lg:flex-row">
+          <div className="lg:w-2/5 bg-gradient-to-r from-[#9747FF] via-blue-700 to-[#9747FF] buttonGradient p-[2px] rounded-2xl">
+            <Image
+              src={ImgInterview}
+              alt="Webdesign Dienste bei Sawix"
+              className="w-full h-96 lg:h-[600px] object-cover rounded-2xl"
+            />
+          </div>
+          <div className="flex flex-col gap-3 mt-5 lg:mt-0 justify-center lg:w-3/5 lg:pl-16 lg:gap-5">
+            <h3 className="text-3xl lg:text-5xl">Interview</h3>
+            <p className="text-base lg:text-xl font-light">
+              Ein gut produziertes Interview kann eingesetzt werden, um die
+              Authentizität und Persönlichkeit deiner Marke zu unterstreichen,
+              oder als Testimonial für deine Produkte und Dienstleistungen
+              dienen. Du kannst auch auf die Geschichte oder Werte des
+              Unternehmens eingehen und so Emotionen in dem Kunden wecken.
+              <br /> <br />
+              Ein Interview kann entweder als einzelnes Video fungieren oder,
+              wie in den meisten fällen, mit den anderen Videoarten kombiniert
+              werden, um so Persönlichkeit reinzubringen.
+            </p>
+            <ul className="text-base lg:text-xl font-light list-disc ml-5">
+              <li>Persönlichkeit</li>
+              <li>Authentizität</li>
             </ul>
           </div>
         </div>

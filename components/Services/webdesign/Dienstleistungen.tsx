@@ -28,7 +28,7 @@ export default function Dienstleistungen() {
             <h3 className="text-3xl lg:text-5xl">Webdesign</h3>
             <p className="text-base lg:text-xl font-light">
               Eine Webseite ist deine digitale Visitenkarte und oftmals das
-              erste, was potnetielle Kunden von deinem Unternehmen sehen. Seien
+              erste, was potentielle Kunden von deinem Unternehmen sehen. Seien
               es Speisekarte, Produktfotos oder interne Arbeitsprozesse. Wir
               sorgen dafür, dass diese Erfahrung unvergesslich bleibt, mehr
               Neukunden generiert und dein Wachstum beschleunight.
