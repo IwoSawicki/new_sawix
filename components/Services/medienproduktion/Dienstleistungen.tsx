@@ -116,7 +116,9 @@ export default function Dienstleistungen() {
             <p className="text-base lg:text-xl font-light">
               Ob das Büro, die Produktions- und Lagerhallen, das Restaurant und
               die Gerichte, die Mitarbeiter, Klamotten oder Produkte. Egal ob
-              bei dir vor Ort oder bei uns im Fotostudio.
+              bei dir vor Ort oder bei uns im Fotostudio. Gute Bilder sind ein
+              wichtiger Bestandteil der Marketingstrategie und können einen
+              riesigen Unterschied bei deinem Online Auftritt machen.
               <br /> <br />
             </p>
             <ul className="text-base lg:text-xl font-light list-disc ml-5">
