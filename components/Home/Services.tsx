@@ -1,6 +1,13 @@
+import { LottiePlayer } from "@lottiefiles/lottie-player";
+import { Player, Controls } from "@lottiefiles/react-lottie-player";
+import Lottie from "lottie-web";
 import Link from "next/link";
 import React from "react";
 import { BsArrowUpRight } from "react-icons/bs";
+import AnimationWebdesign from "@/public/Services/AnimationWebdesign.json";
+import AnimationShops from "@/public/Services/AnimationShops.json";
+import AnimationMedien from "@/public/Services/AnimationMedien.json";
+import AnimationSSM from "@/public/Services/AnimationSSM.json";
 
 export default function Services() {
   return (
@@ -12,11 +19,9 @@ export default function Services() {
       {/* ------------------------- ------------------------- ---------------------- */}
       <div className="my-12">
         <div className="rounded-2xl my-5 flex flex-col lg:flex-row">
-          <div className="bg-[#E8E5E3] rounded-2xl h-60 lg:aspect-square lg:h-96 lg:mr-12">
-            <iframe
-              className="w-full h-full rounded-2xl"
-              src="https://embed.lottiefiles.com/animation/17667"
-            ></iframe>
+          <div className="bg-white rounded-2xl h-60 lg:aspect-square lg:h-96 lg:mr-12">
+            {/* bg-[#E8E5E3] */}
+            <Player autoplay loop src={AnimationWebdesign}></Player>
           </div>
           <div className="p-4 mt-4 flex flex-col justify-center gap-3">
             <h3 className="text-3xl mb-3 lg:text-4xl">
@@ -43,11 +48,8 @@ export default function Services() {
       {/* ------------------------- ------------------------- ---------------------- */}
       <div className="my-12">
         <div className="rounded-2xl my-5 flex flex-col lg:flex-row">
-          <div className="bg-[#E8E5E3] rounded-2xl h-60 lg:aspect-square lg:h-96 lg:mr-12">
-            <iframe
-              className="w-full h-full rounded-2xl"
-              src="https://embed.lottiefiles.com/animation/65730"
-            ></iframe>
+          <div className="bg-white rounded-2xl h-60 lg:aspect-square lg:h-96 lg:mr-12">
+            <Player autoplay loop src={AnimationShops}></Player>
           </div>
           <div className="p-4 mt-4 flex flex-col justify-center gap-3">
             <h3 className="text-3xl mb-3 lg:text-4xl">Online-Shops</h3>
@@ -73,11 +75,8 @@ export default function Services() {
       {/* ------------------------- ------------------------- ---------------------- */}
       <div className="my-12">
         <div className="rounded-2xl my-5 flex flex-col lg:flex-row">
-          <div className="bg-[#E8E5E3] rounded-2xl h-60 lg:aspect-square lg:h-96 lg:mr-12">
-            <iframe
-              className="w-full h-full rounded-2xl"
-              src="https://embed.lottiefiles.com/animation/59621"
-            ></iframe>
+          <div className="bg-white rounded-2xl h-60 lg:aspect-square lg:h-96 lg:mr-12">
+            <Player autoplay loop src={AnimationMedien}></Player>
           </div>
           <div className="p-4 mt-4 flex flex-col justify-center gap-3">
             <h3 className="text-3xl mb-3 lg:text-4xl">
@@ -105,11 +104,8 @@ export default function Services() {
       {/* ------------------------- ------------------------- ---------------------- */}
       <div className="my-12">
         <div className="rounded-2xl my-5 flex flex-col lg:flex-row">
-          <div className="bg-[#E8E5E3] rounded-2xl h-60 lg:aspect-square lg:h-96 lg:mr-12">
-            <iframe
-              className="w-full h-full rounded-2xl"
-              src="https://embed.lottiefiles.com/animation/52376"
-            ></iframe>
+          <div className="bg-white rounded-2xl h-60 lg:aspect-square lg:h-96 lg:mr-12">
+            <Player autoplay loop src={AnimationSSM}></Player>
           </div>
           <div className="p-4 mt-4 flex flex-col justify-center gap-3">
             <h3 className="text-3xl mb-3 xl:text-4xl">
