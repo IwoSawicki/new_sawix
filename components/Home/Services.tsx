@@ -1,6 +1,4 @@
-import { LottiePlayer } from "@lottiefiles/lottie-player";
-import { Player, Controls } from "@lottiefiles/react-lottie-player";
-import Lottie from "lottie-web";
+import { Player } from "@lottiefiles/react-lottie-player";
 import Link from "next/link";
 import React from "react";
 import { BsArrowUpRight } from "react-icons/bs";
