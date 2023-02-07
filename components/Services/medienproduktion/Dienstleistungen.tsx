@@ -119,7 +119,7 @@ export default function Dienstleistungen() {
               bei dir vor Ort oder bei uns im Fotostudio. Gute Bilder sind ein
               wichtiger Bestandteil der Marketingstrategie und können einen
               riesigen Unterschied bei deinem Online Auftritt machen.
-              {/* <br /> <br /> */}
+              <br /> <br />
             </p>
             <ul className="text-base lg:text-xl font-light list-disc ml-5">
               <li>Produktvorstellung</li>
