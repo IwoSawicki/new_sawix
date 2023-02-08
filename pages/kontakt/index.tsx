@@ -20,11 +20,10 @@ export default function Kontakt() {
       name: "",
       email: "",
       telefon: "",
-      // serviceWebseite: "",
-      // serviceShop: "",
-      // serviceProduktion: "",
-      // serviceSSM: "",
-      serivce: "",
+      serviceWebseite: "",
+      serviceShops: "",
+      serviceProduktion: "",
+      serviceSSM: "",
       budget: "Auswählen..",
       nachricht: "",
       datenschutz: "",
@@ -33,8 +32,13 @@ export default function Kontakt() {
     //Validation
     validationSchema: Yup.object({
       name: Yup.string()
-        .max(40, "Name darf nicht länger als 40 Zeichen sein")
-        .required("Name ist notwendig"),
+        .max(40, "Name darf nicht länger als 40 Zeichen sein.")
+        .required("Name ist notwendig."),
+      email: Yup.string().required("Email ist notwendig."),
+      nachricht: Yup.string().required("Bitte hinterlasse dein Anliegen."),
+      datenschutz: Yup.array()
+        .min(1, "Bitte akzeptiere den Datenschutz.")
+        .required("Bitte akzeptiere den Datenschutz.."),
     }),
 
     //Senden
@@ -112,8 +116,8 @@ export default function Kontakt() {
                   />
                 </div>
                 {/* Services */}
-                <div className="flex gap-3 flex-col text-sm pb-6">
-                  <h2 className="">Dienstleistungen:</h2>
+                <div className="flex gap-3 flex-col text-sm pb-6 lg:text-base">
+                  <h2 className="text-base">Dienstleistungen:</h2>
                   <div className="flex flex-col md:flex-row gap-3">
                     {/* Webseite */}
                     <div className="w-full">
@@ -136,7 +140,7 @@ export default function Kontakt() {
                     <div className="w-full">
                       <input
                         type="checkbox"
-                        name="serviceShop"
+                        name="serviceShops"
                         id="online-shop"
                         className="hidden peer"
                         onChange={formik.handleChange}
@@ -221,22 +225,28 @@ export default function Kontakt() {
                     onBlur={formik.handleBlur}
                   />
                 </div>
-                <div className="flex gap-2">
-                  <input
-                    type="checkbox"
-                    name="datenschutz"
-                    value="Datenschutz akzeptiert"
-                    onChange={formik.handleChange}
-                    onBlur={formik.handleBlur}
-                    className="h-5 w-5 text-blue-600 focus:border-blue-600 focus:ring-border-600"
-                  />
-                  <p>
-                    Mit dem versenden des Formulares ekläre ich mich mit der{" "}
-                    <a className="underline hover:text-blue-600" href="">
-                      Datenschutzerklärung
-                    </a>{" "}
-                    einverstanden
-                  </p>
+                {/* Datenschutz */}
+                <div>
+                  <label htmlFor="datenschutz" className="block pb-2">
+                    Datenschutz
+                  </label>
+                  <div className="flex gap-2">
+                    <input
+                      type="checkbox"
+                      name="datenschutz"
+                      value="Datenschutz akzeptiert"
+                      onChange={formik.handleChange}
+                      onBlur={formik.handleBlur}
+                      className="h-5 w-5 text-blue-600 focus:border-blue-600 focus:ring-border-600"
+                    />
+                    <p>
+                      Mit dem versenden des Formulares ekläre ich mich mit der
+                      <a className="underline hover:text-blue-600" href="">
+                        Datenschutzerklärung
+                      </a>
+                      einverstanden
+                    </p>
+                  </div>
                 </div>
                 <button
                   type="submit"
