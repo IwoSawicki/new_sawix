@@ -55,7 +55,7 @@ export default function Kontakt() {
                   />
                 </div>
                 {/* Services */}
-                <div className="flex gap-3 flex-col">
+                <div className="flex gap-3 flex-col text-sm">
                   <h2 className="font-bold">Dienstleistungen:</h2>
                   <div className="flex flex-col md:flex-row gap-3">
                     {/* Webseite */}
@@ -70,7 +70,7 @@ export default function Kontakt() {
                         htmlFor="webseite"
                         className="w-full rounded-full flex py-2 justify-center peer-checked:bg-transparent cursor-pointer bg-white peer-checked:text-white duration-300"
                       >
-                        Webseite
+                        Webseites
                       </label>
                     </div>
                     {/* Online Shop */}
@@ -85,7 +85,7 @@ export default function Kontakt() {
                         htmlFor="online-shop"
                         className="w-full rounded-full flex py-2 justify-center peer-checked:bg-transparent cursor-pointer bg-white peer-checked:text-white duration-300"
                       >
-                        Webseite
+                        Online-Shops
                       </label>
                     </div>
                   </div>
@@ -117,12 +117,13 @@ export default function Kontakt() {
                         htmlFor="social-media-marketing"
                         className="w-full rounded-full flex py-2 justify-center peer-checked:bg-transparent cursor-pointer bg-white peer-checked:text-white duration-300"
                       >
-                        Social Media
+                        Social Media Marketing
                       </label>
                     </div>
                     {/* Ende */}
                   </div>
                 </div>
+                {/* Service Ende */}
               </div>
             </form>
           </div>
