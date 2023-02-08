@@ -20,10 +20,11 @@ export default function Kontakt() {
       name: "",
       email: "",
       telefon: "",
-      serviceWebseite: "",
-      serviceShops: "",
-      serviceProduktion: "",
-      serviceSSM: "",
+      // serviceWebseite: "",
+      // serviceShop: "",
+      // serviceProduktion: "",
+      // serviceSSM: "",
+      serivce: "",
       budget: "Auswählen..",
       nachricht: "",
       datenschutz: "",
@@ -120,7 +121,6 @@ export default function Kontakt() {
                         type="checkbox"
                         name="serviceWebseite"
                         id="webseite"
-                        value="Webseite checked"
                         className="hidden peer"
                         onChange={formik.handleChange}
                         onBlur={formik.handleBlur}
@@ -138,7 +138,6 @@ export default function Kontakt() {
                         type="checkbox"
                         name="serviceShop"
                         id="online-shop"
-                        value="Shops checked"
                         className="hidden peer"
                         onChange={formik.handleChange}
                         onBlur={formik.handleBlur}
