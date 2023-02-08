@@ -166,7 +166,7 @@ export default function Kontakt() {
                         htmlFor="webseite"
                         className="w-full rounded-full flex py-2 justify-center cursor-pointer border-[1px] border-blue-600 bg-white peer-checked:bg-blue-600 peer-checked:text-white duration-300"
                       >
-                        Webseites
+                        Webseiten
                       </label>
                     </div>
                     {/* Online Shop */}
