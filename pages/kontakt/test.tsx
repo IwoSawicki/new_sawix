@@ -287,3 +287,100 @@ export default function Kontakt() {
     </motion.div>
   );
 }
+
+{
+  /* Services Bunt */
+}
+{
+  /* <div className="flex gap-3 flex-col text-sm pb-8">
+<h2 className="">Dienstleistungen:</h2>
+<div className="flex flex-col md:flex-row gap-3"> */
+}
+{
+  /* Webseite */
+}
+{
+  /* <div className="w-full p-[2px] rounded-full buttonGradient bg-gradient-to-r from-[#FFEE62] via-orange-600 to-[#FFEE62]">
+    <input
+      type="checkbox"
+      name="webseite"
+      id="webseite"
+      className="hidden peer"
+    />
+    <label
+      htmlFor="webseite"
+      className="w-full rounded-full flex py-2 justify-center peer-checked:bg-transparent cursor-pointer bg-white peer-checked:text-white duration-300"
+    >
+      Webseites
+    </label>
+  </div> */
+}
+{
+  /* Online Shop */
+}
+{
+  /* <div className="w-full p-[2px] rounded-full buttonGradient bg-gradient-to-r from-[#6EE863] via-emerald-500 to-[#6EE863]">
+    <input
+      type="checkbox"
+      name="online-shop"
+      id="online-shop"
+      className="hidden peer"
+    />
+    <label
+      htmlFor="online-shop"
+      className="w-full rounded-full flex py-2 justify-center peer-checked:bg-transparent cursor-pointer bg-white peer-checked:text-white duration-300"
+    >
+      Online-Shops
+    </label>
+  </div>
+</div>
+<div className="flex flex-col md:flex-row gap-3"> */
+}
+{
+  /* Medienproduktion */
+}
+{
+  /* <div className="w-full p-[2px] rounded-full buttonGradient bg-gradient-to-r from-[#9747FF] via-blue-700 to-[#9747FF]">
+    <input
+      type="checkbox"
+      name="medienproduktion"
+      id="medienproduktion"
+      className="hidden peer"
+    />
+    <label
+      htmlFor="medienproduktion"
+      className="w-full rounded-full flex py-2 justify-center peer-checked:bg-transparent cursor-pointer bg-white peer-checked:text-white duration-300"
+    >
+      Medienproduktion
+    </label>
+  </div> */
+}
+{
+  /* Social Media Marketing */
+}
+{
+  /* <div className="w-full p-[2px] rounded-full buttonGradient bg-gradient-to-r from-[#FF8540] via-red-600 to-[#FF8540]">
+    <input
+      type="checkbox"
+      name="Social-Media-Marketing"
+      id="social-media-marketing"
+      className="hidden peer"
+    />
+    <label
+      htmlFor="social-media-marketing"
+      className="w-full rounded-full flex py-2 justify-center peer-checked:bg-transparent cursor-pointer bg-white peer-checked:text-white duration-300"
+    >
+      Social Media Marketing
+    </label>
+  </div> */
+}
+{
+  /* Ende */
+}
+{
+  /* </div>
+</div> */
+}
+{
+  /* Service Ende */
+}
