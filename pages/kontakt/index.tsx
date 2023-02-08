@@ -60,9 +60,24 @@ export default function Kontakt() {
         {/* Heading */}
         <section>
           <h1 className="text-3xl my-4 md:text-5xl md:w-2/3">
-            Wenn du Erfahren möchtest, wie wir deinem Unternehmen helfen können,
-            kontaktiere uns!
+            Lass uns dein Unternehmen zusammen voranbringen!
           </h1>
+          <p className="md:w-1/2">
+            Hinterlasse uns einfach eine Nachricht via Kontaktformular oder
+            erreiche uns jederzeit über:
+          </p>
+          <a
+            className="text-3xl mt-6 mb-5 lg:text-4xl block"
+            href="mailto:info@sawix.de"
+          >
+            hallo@sawix.de
+          </a>
+          <a
+            className="text-3xl mb-12 lg:text-4xl block"
+            href="tel:+491734388519"
+          >
+            +49 173 4388519
+          </a>
         </section>
         {/*  -------------------------------------------------------- */}
         <section className="flex flex-col md:flex-row gap-10 mt-10 md:mt-20">
@@ -72,8 +87,17 @@ export default function Kontakt() {
               <div>
                 {/* Name */}
                 <div className="pb-6">
-                  <label htmlFor="name" className="block pb-2">
-                    Name*
+                  <label
+                    htmlFor="name"
+                    className={`block pb-2 ${
+                      formik.touched.name && formik.errors.name
+                        ? "text-red-400"
+                        : ""
+                    }`}
+                  >
+                    {formik.touched.name && formik.errors.name
+                      ? formik.errors.name
+                      : "Name*"}
                   </label>
                   <input
                     type="text"
@@ -87,8 +111,17 @@ export default function Kontakt() {
                 </div>
                 {/* Email */}
                 <div className="pb-6">
-                  <label htmlFor="email" className="block pb-2">
-                    Email*
+                  <label
+                    htmlFor="email"
+                    className={`block pb-2 ${
+                      formik.touched.email && formik.errors.email
+                        ? "text-red-400"
+                        : ""
+                    }`}
+                  >
+                    {formik.touched.email && formik.errors.email
+                      ? formik.errors.email
+                      : "Email*"}
                   </label>
                   <input
                     type="email"
@@ -116,7 +149,7 @@ export default function Kontakt() {
                   />
                 </div>
                 {/* Services */}
-                <div className="flex gap-3 flex-col text-sm pb-6 lg:text-base">
+                <div className="flex gap-3 flex-col text-sm pb-6">
                   <h2 className="text-base">Dienstleistungen:</h2>
                   <div className="flex flex-col md:flex-row gap-3">
                     {/* Webseite */}
@@ -213,8 +246,17 @@ export default function Kontakt() {
                 </div>
                 {/* Nachricht */}
                 <div className="pb-6">
-                  <label htmlFor="nachricht" className="block pb-2">
-                    Deine Nachricht*
+                  <label
+                    htmlFor="nachricht"
+                    className={`block pb-2 ${
+                      formik.touched.nachricht && formik.errors.nachricht
+                        ? "text-red-400"
+                        : ""
+                    }`}
+                  >
+                    {formik.touched.nachricht && formik.errors.nachricht
+                      ? formik.errors.nachricht
+                      : "Deine Nachricht*"}
                   </label>
                   <textarea
                     name="nachricht"
@@ -227,8 +269,17 @@ export default function Kontakt() {
                 </div>
                 {/* Datenschutz */}
                 <div>
-                  <label htmlFor="datenschutz" className="block pb-2">
-                    Datenschutz
+                  <label
+                    htmlFor="datenschutz"
+                    className={`block pb-2 ${
+                      formik.touched.datenschutz && formik.errors.datenschutz
+                        ? "text-red-400"
+                        : ""
+                    }`}
+                  >
+                    {formik.touched.datenschutz && formik.errors.datenschutz
+                      ? formik.errors.datenschutz
+                      : "Datenschutz"}
                   </label>
                   <div className="flex gap-2">
                     <input
