@@ -100,6 +100,15 @@ export default function Footer() {
               +49 173 4388519
             </a>
           </div>
+          {/* Rechtliches */}
+          <div className="flex gap-6 pb-5">
+            <Link href="/impressum" className="text-base font-light">
+              Impressum
+            </Link>
+            <Link href="/datenschutz" className="text-base font-light">
+              Datenschutz
+            </Link>
+          </div>
         </div>
         <div className="lg:w-1/2 lg:pl-12">
           <Image src={FooterImg} alt="Sawix Internes Meeting - Bild Footer" />
