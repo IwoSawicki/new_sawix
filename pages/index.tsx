@@ -34,9 +34,9 @@ export default function Home() {
         </section>
 
         {/* About */}
-        <section>
+        {/* <section>
           <About />
-        </section>
+        </section> */}
 
         {/* Services */}
         <section>
@@ -44,9 +44,9 @@ export default function Home() {
         </section>
 
         {/* Jobs */}
-        <section>
+        {/* <section>
           <Jobs />
-        </section>
+        </section> */}
 
         {/* Footer */}
         <Footer />

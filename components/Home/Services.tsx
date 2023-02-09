@@ -9,7 +9,7 @@ import AnimationSSM from "@/public/Services/AnimationSSM.json";
 
 export default function Services() {
   return (
-    <div className="my-24 px-3  max-w-6xl mx-auto">
+    <div className="my-36 px-3  max-w-6xl mx-auto">
       <h2 className="text-4xl">
         Finde den Service, <br /> den du brauchst
       </h2>
@@ -17,9 +17,14 @@ export default function Services() {
       {/* ------------------------- ------------------------- ---------------------- */}
       <div className="my-12">
         <div className="rounded-2xl my-5 flex flex-col lg:flex-row">
-          <div className="bg-white rounded-2xl h-60 lg:aspect-square lg:h-96 lg:mr-12">
+          <div className="bg-white rounded-2xl h-60 lg:aspect-square lg:h-96 lg:mr-12 flex items-center justify-center">
             {/* bg-[#E8E5E3] */}
-            <Player autoplay loop src={AnimationWebdesign}></Player>
+            <Player
+              autoplay
+              loop
+              src={AnimationWebdesign}
+              className="h-80 lg:h-96"
+            ></Player>
           </div>
           <div className="p-4 mt-4 flex flex-col justify-center gap-3">
             <h3 className="text-3xl mb-3 lg:text-4xl">
@@ -46,8 +51,13 @@ export default function Services() {
       {/* ------------------------- ------------------------- ---------------------- */}
       <div className="my-12">
         <div className="rounded-2xl my-5 flex flex-col lg:flex-row">
-          <div className="bg-white rounded-2xl h-60 lg:aspect-square lg:h-96 lg:mr-12">
-            <Player autoplay loop src={AnimationShops}></Player>
+          <div className="bg-white rounded-2xl h-60 lg:aspect-square lg:h-96 lg:mr-12 flex items-center justify-center">
+            <Player
+              autoplay
+              loop
+              src={AnimationShops}
+              className="h-80 lg:h-96"
+            ></Player>
           </div>
           <div className="p-4 mt-4 flex flex-col justify-center gap-3">
             <h3 className="text-3xl mb-3 lg:text-4xl">Online-Shops</h3>
@@ -73,8 +83,13 @@ export default function Services() {
       {/* ------------------------- ------------------------- ---------------------- */}
       <div className="my-12">
         <div className="rounded-2xl my-5 flex flex-col lg:flex-row">
-          <div className="bg-white rounded-2xl h-60 lg:aspect-square lg:h-96 lg:mr-12">
-            <Player autoplay loop src={AnimationMedien}></Player>
+          <div className="bg-white rounded-2xl h-60 lg:aspect-square lg:h-96 lg:mr-12 flex items-center justify-center">
+            <Player
+              autoplay
+              loop
+              src={AnimationMedien}
+              className="h-80 lg:h-96"
+            ></Player>
           </div>
           <div className="p-4 mt-4 flex flex-col justify-center gap-3">
             <h3 className="text-3xl mb-3 lg:text-4xl">
@@ -102,8 +117,13 @@ export default function Services() {
       {/* ------------------------- ------------------------- ---------------------- */}
       <div className="my-12">
         <div className="rounded-2xl my-5 flex flex-col lg:flex-row">
-          <div className="bg-white rounded-2xl h-60 lg:aspect-square lg:h-96 lg:mr-12">
-            <Player autoplay loop src={AnimationSSM}></Player>
+          <div className="bg-white rounded-2xl h-60 lg:aspect-square lg:h-96 lg:mr-12 flex items-center justify-center">
+            <Player
+              autoplay
+              loop
+              src={AnimationSSM}
+              className="h-80 lg:h-96"
+            ></Player>
           </div>
           <div className="p-4 mt-4 flex flex-col justify-center gap-3">
             <h3 className="text-3xl mb-3 xl:text-4xl">
