@@ -2,11 +2,24 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Image from "next/image";
 import HeroImg from "@/public/about/hero-img.jpg";
+import Head from "next/head";
 //import Hero from "@/components/about/hero";
 
 export default function about() {
   return (
     <>
+      <Head>
+        <title>Über uns - Sawix Studio</title>
+        <meta
+          name="description"
+          content="Lerne die kreativen Köpfe hinter Sawix kennen und schau dir unsere internen Prozesse an."
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.svg" />
+        {/* ENTFERNEN WENN FERTIG */}
+        <meta name="robots" content="noindex"></meta>
+        {/* ENTFERNEN WENN FERTIG */}
+      </Head>
       <Header />
       <main className="pb-20">
         <section>
