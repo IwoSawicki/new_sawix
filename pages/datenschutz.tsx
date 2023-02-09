@@ -16,7 +16,7 @@ export default function Datenschutz() {
         </Head>
         <div>
           <Header />
-          <main></main>
+          <main className="px-3 max-w-6xl mx-auto"></main>
         </div>
       </div>
     </>
