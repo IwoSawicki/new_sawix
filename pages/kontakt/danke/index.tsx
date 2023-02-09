@@ -17,12 +17,12 @@ export default function Danke() {
     stopConfetti();
   }, []);
 
-  // useEffect(() => {
-  //   if (!router.query.name) {
-  //     router.push("/kontakt");
-  //     return;
-  //   }
-  // });
+  useEffect(() => {
+    if (!router.query.name) {
+      router.push("/kontakt");
+      return;
+    }
+  });
 
   return (
     <>
