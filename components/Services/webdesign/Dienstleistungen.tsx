@@ -176,7 +176,7 @@ export default function Dienstleistungen() {
                 <li>Imagefilm</li>
                 <li>Immobilienvideo</li>
               </ul>
-              <Link href={"/about"}>
+              <Link href={"/services/medienproduktion"}>
                 <button className="bg-gradient-to-r from-[#FFEE62] via-orange-600 to-[#FFEE62] buttonGradient p-px text-white rounded-full group">
                   <div className="bg-[#0b0d0f] pl-8 rounded-full flex items-center hover:bg-transparent duration-300">
                     Zur Medienproduktion
