@@ -1,13 +1,15 @@
 import Header from "@/components/Header";
 import Head from "next/head";
 
-import { useRef } from "react";
 import React from "react";
+import { useState } from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import { useRouter } from "next/router";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
+import Confetti from "react-confetti";
 
 import Image from "next/image";
 import KontaktImg from "@/public/Home-Jobs.png";
@@ -15,6 +17,10 @@ import KontaktImg from "@/public/Home-Jobs.png";
 export default function Kontakt() {
   //Router
   const router = useRouter();
+
+  //Button Text
+  const [buttonText, setButtonText] = useState("Senden");
+  const [pieces, setPieces] = useState(0);
 
   //Formik Logic
   const formik = useFormik({
@@ -45,7 +51,7 @@ export default function Kontakt() {
 
     //Senden
     onSubmit: (values) => {
-      console.log(values);
+      setButtonText("Wird versendet..");
       try {
         emailjs
           .send(
@@ -56,6 +62,11 @@ export default function Kontakt() {
           )
           .then(() => {
             console.log("success");
+            toast.success("Formular versendet 🤙", {
+              position: toast.POSITION.TOP_CENTER,
+              autoClose: 1500,
+            });
+            setButtonText("Versendet!");
           });
       } catch {
         console.log("error");
@@ -102,234 +113,236 @@ export default function Kontakt() {
         <section className="flex flex-col md:flex-row gap-10 mt-10 md:mt-20">
           {/* Kontaktformular */}
           <div className="w-full rounded-2xl p-4 bg-white text-black">
-            <form onSubmit={formik.handleSubmit}>
-              <div>
-                {/* Name */}
-                <div className="pb-6">
-                  <label
-                    htmlFor="name"
-                    className={`block pb-2 ${
-                      formik.touched.name && formik.errors.name
-                        ? "text-red-400"
-                        : ""
-                    }`}
-                  >
-                    {formik.touched.name && formik.errors.name
-                      ? formik.errors.name
-                      : "Name*"}
-                  </label>
-                  <input
-                    type="text"
-                    name="name"
-                    placeholder="Name Eingeben..."
-                    value={formik.values.name}
-                    onChange={formik.handleChange}
-                    onBlur={formik.handleBlur}
-                    className="rounded-full w-full border-slate-600 focus:border-blue-500 focus:ring-blue-500"
-                  />
-                </div>
-                {/* Email */}
-                <div className="pb-6">
-                  <label
-                    htmlFor="email"
-                    className={`block pb-2 ${
-                      formik.touched.email && formik.errors.email
-                        ? "text-red-400"
-                        : ""
-                    }`}
-                  >
-                    {formik.touched.email && formik.errors.email
-                      ? formik.errors.email
-                      : "Email*"}
-                  </label>
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder="Email Eingeben..."
-                    value={formik.values.email}
-                    onChange={formik.handleChange}
-                    onBlur={formik.handleBlur}
-                    className="rounded-full w-full border-slate-600 focus:border-blue-500 focus:ring-blue-500"
-                  />
-                </div>
-                {/* Telefonnummer */}
-                <div className="pb-6">
-                  <label htmlFor="telefon" className="block pb-2">
-                    Telefonnummer
-                  </label>
-                  <input
-                    type="text"
-                    name="telefon"
-                    placeholder="Nummer Eingeben..."
-                    value={formik.values.telefon}
-                    onChange={formik.handleChange}
-                    onBlur={formik.handleBlur}
-                    className="rounded-full w-full border-slate-600 focus:border-blue-500 focus:ring-blue-500"
-                  />
-                </div>
-                {/* Services */}
-                <div className="flex gap-3 flex-col text-sm pb-6">
-                  <h2 className="text-base">Dienstleistungen:</h2>
-                  <div className="flex flex-col md:flex-row gap-3">
-                    {/* Webseite */}
-                    <div className="w-full">
-                      <input
-                        type="checkbox"
-                        name="serviceWebseite"
-                        value="Webseiten, "
-                        id="webseite"
-                        className="hidden peer"
-                        onChange={formik.handleChange}
-                        onBlur={formik.handleBlur}
-                      />
-                      <label
-                        htmlFor="webseite"
-                        className="w-full rounded-full flex py-2 justify-center cursor-pointer border-[1px] border-blue-600 bg-white peer-checked:bg-blue-600 peer-checked:text-white duration-300"
-                      >
-                        Webseiten
-                      </label>
-                    </div>
-                    {/* Online Shop */}
-                    <div className="w-full">
-                      <input
-                        type="checkbox"
-                        name="serviceShops"
-                        value="Online-Shops, "
-                        id="online-shop"
-                        className="hidden peer"
-                        onChange={formik.handleChange}
-                        onBlur={formik.handleBlur}
-                      />
-                      <label
-                        htmlFor="online-shop"
-                        className="w-full rounded-full flex py-2 justify-center cursor-pointer border-[1px] border-blue-600 bg-white peer-checked:bg-blue-600 peer-checked:text-white duration-300"
-                      >
-                        Online-Shops
-                      </label>
-                    </div>
-                  </div>
-                  <div className="flex flex-col md:flex-row gap-3">
-                    {/* Medienproduktion */}
-                    <div className="w-full">
-                      <input
-                        type="checkbox"
-                        name="serviceProduktion"
-                        value="Produktion, "
-                        id="medienproduktion"
-                        className="hidden peer"
-                        onChange={formik.handleChange}
-                        onBlur={formik.handleBlur}
-                      />
-                      <label
-                        htmlFor="medienproduktion"
-                        className="w-full rounded-full flex py-2 justify-center cursor-pointer border-[1px] border-blue-600 bg-white peer-checked:bg-blue-600 peer-checked:text-white duration-300"
-                      >
-                        Medienproduktion
-                      </label>
-                    </div>
-                    {/* Social Media Marketing */}
-                    <div className="w-full">
-                      <input
-                        type="checkbox"
-                        name="serviceSSM"
-                        value="Social Media Marketing, "
-                        id="social-media-marketing"
-                        className="hidden peer"
-                        onChange={formik.handleChange}
-                        onBlur={formik.handleBlur}
-                      />
-                      <label
-                        htmlFor="social-media-marketing"
-                        className="w-full rounded-full flex py-2 justify-center cursor-pointer border-[1px] border-blue-600 bg-white peer-checked:bg-blue-600 peer-checked:text-white duration-300"
-                      >
-                        Social Media Marketing
-                      </label>
-                    </div>
-                    {/* Ende */}
-                  </div>
-                </div>
-                {/* Service Ende */}
-                {/* Budget */}
-                <div className="pb-6">
-                  <label htmlFor="budget" className="block pb-2">
-                    Budget
-                  </label>
-                  <select
-                    name="budget"
-                    className="w-full rounded-full"
-                    value={formik.values.budget}
-                    onChange={formik.handleChange}
-                  >
-                    <option>Auswählen..</option>
-                    <option>Unter 5.000€</option>
-                    <option>5.000€ - 15.000€</option>
-                    <option>15.000€ - 25.000€</option>
-                    <option>25.000€+</option>
-                  </select>
-                </div>
-                {/* Nachricht */}
-                <div className="pb-6">
-                  <label
-                    htmlFor="nachricht"
-                    className={`block pb-2 ${
-                      formik.touched.nachricht && formik.errors.nachricht
-                        ? "text-red-400"
-                        : ""
-                    }`}
-                  >
-                    {formik.touched.nachricht && formik.errors.nachricht
-                      ? formik.errors.nachricht
-                      : "Deine Nachricht*"}
-                  </label>
-                  <textarea
-                    name="nachricht"
-                    className="w-full h-40 rounded-3xl"
-                    placeholder="Hallo Team Sawix, .."
-                    value={formik.values.nachricht}
-                    onChange={formik.handleChange}
-                    onBlur={formik.handleBlur}
-                  />
-                </div>
-                {/* Datenschutz */}
+            <div className="form-wrapper">
+              <form onSubmit={formik.handleSubmit}>
                 <div>
-                  <label
-                    htmlFor="datenschutz"
-                    className={`block pb-2 ${
-                      formik.touched.datenschutz && formik.errors.datenschutz
-                        ? "text-red-400"
-                        : ""
-                    }`}
-                  >
-                    {formik.touched.datenschutz && formik.errors.datenschutz
-                      ? formik.errors.datenschutz
-                      : "Datenschutz"}
-                  </label>
-                  <div className="flex gap-2">
+                  {/* Name */}
+                  <div className="pb-6">
+                    <label
+                      htmlFor="name"
+                      className={`block pb-2 ${
+                        formik.touched.name && formik.errors.name
+                          ? "text-red-400"
+                          : ""
+                      }`}
+                    >
+                      {formik.touched.name && formik.errors.name
+                        ? formik.errors.name
+                        : "Name*"}
+                    </label>
                     <input
-                      type="checkbox"
-                      name="datenschutz"
-                      value="Datenschutz akzeptiert"
+                      type="text"
+                      name="name"
+                      placeholder="Name Eingeben..."
+                      value={formik.values.name}
                       onChange={formik.handleChange}
                       onBlur={formik.handleBlur}
-                      className="h-5 w-5 text-blue-600 focus:border-blue-600 focus:ring-border-600"
+                      className="rounded-full w-full border-slate-600 focus:border-blue-500 focus:ring-blue-500"
                     />
-                    <p>
-                      Mit dem versenden des Formulares ekläre ich mich mit der{" "}
-                      <a className="underline hover:text-blue-600" href="">
-                        Datenschutzerklärung
-                      </a>{" "}
-                      einverstanden
-                    </p>
                   </div>
+                  {/* Email */}
+                  <div className="pb-6">
+                    <label
+                      htmlFor="email"
+                      className={`block pb-2 ${
+                        formik.touched.email && formik.errors.email
+                          ? "text-red-400"
+                          : ""
+                      }`}
+                    >
+                      {formik.touched.email && formik.errors.email
+                        ? formik.errors.email
+                        : "Email*"}
+                    </label>
+                    <input
+                      type="email"
+                      name="email"
+                      placeholder="Email Eingeben..."
+                      value={formik.values.email}
+                      onChange={formik.handleChange}
+                      onBlur={formik.handleBlur}
+                      className="rounded-full w-full border-slate-600 focus:border-blue-500 focus:ring-blue-500"
+                    />
+                  </div>
+                  {/* Telefonnummer */}
+                  <div className="pb-6">
+                    <label htmlFor="telefon" className="block pb-2">
+                      Telefonnummer
+                    </label>
+                    <input
+                      type="text"
+                      name="telefon"
+                      placeholder="Nummer Eingeben..."
+                      value={formik.values.telefon}
+                      onChange={formik.handleChange}
+                      onBlur={formik.handleBlur}
+                      className="rounded-full w-full border-slate-600 focus:border-blue-500 focus:ring-blue-500"
+                    />
+                  </div>
+                  {/* Services */}
+                  <div className="flex gap-3 flex-col text-sm pb-6">
+                    <h2 className="text-base">Dienstleistungen:</h2>
+                    <div className="flex flex-col md:flex-row gap-3">
+                      {/* Webseite */}
+                      <div className="w-full">
+                        <input
+                          type="checkbox"
+                          name="serviceWebseite"
+                          value="Webseiten, "
+                          id="webseite"
+                          className="hidden peer"
+                          onChange={formik.handleChange}
+                          onBlur={formik.handleBlur}
+                        />
+                        <label
+                          htmlFor="webseite"
+                          className="w-full rounded-full flex py-2 justify-center cursor-pointer border-[1px] border-blue-600 bg-white peer-checked:bg-blue-600 peer-checked:text-white duration-300"
+                        >
+                          Webseiten
+                        </label>
+                      </div>
+                      {/* Online Shop */}
+                      <div className="w-full">
+                        <input
+                          type="checkbox"
+                          name="serviceShops"
+                          value="Online-Shops, "
+                          id="online-shop"
+                          className="hidden peer"
+                          onChange={formik.handleChange}
+                          onBlur={formik.handleBlur}
+                        />
+                        <label
+                          htmlFor="online-shop"
+                          className="w-full rounded-full flex py-2 justify-center cursor-pointer border-[1px] border-blue-600 bg-white peer-checked:bg-blue-600 peer-checked:text-white duration-300"
+                        >
+                          Online-Shops
+                        </label>
+                      </div>
+                    </div>
+                    <div className="flex flex-col md:flex-row gap-3">
+                      {/* Medienproduktion */}
+                      <div className="w-full">
+                        <input
+                          type="checkbox"
+                          name="serviceProduktion"
+                          value="Produktion, "
+                          id="medienproduktion"
+                          className="hidden peer"
+                          onChange={formik.handleChange}
+                          onBlur={formik.handleBlur}
+                        />
+                        <label
+                          htmlFor="medienproduktion"
+                          className="w-full rounded-full flex py-2 justify-center cursor-pointer border-[1px] border-blue-600 bg-white peer-checked:bg-blue-600 peer-checked:text-white duration-300"
+                        >
+                          Medienproduktion
+                        </label>
+                      </div>
+                      {/* Social Media Marketing */}
+                      <div className="w-full">
+                        <input
+                          type="checkbox"
+                          name="serviceSSM"
+                          value="Social Media Marketing, "
+                          id="social-media-marketing"
+                          className="hidden peer"
+                          onChange={formik.handleChange}
+                          onBlur={formik.handleBlur}
+                        />
+                        <label
+                          htmlFor="social-media-marketing"
+                          className="w-full rounded-full flex py-2 justify-center cursor-pointer border-[1px] border-blue-600 bg-white peer-checked:bg-blue-600 peer-checked:text-white duration-300"
+                        >
+                          Social Media Marketing
+                        </label>
+                      </div>
+                      {/* Ende */}
+                    </div>
+                  </div>
+                  {/* Service Ende */}
+                  {/* Budget */}
+                  <div className="pb-6">
+                    <label htmlFor="budget" className="block pb-2">
+                      Budget
+                    </label>
+                    <select
+                      name="budget"
+                      className="w-full rounded-full"
+                      value={formik.values.budget}
+                      onChange={formik.handleChange}
+                    >
+                      <option>Auswählen..</option>
+                      <option>Unter 5.000€</option>
+                      <option>5.000€ - 15.000€</option>
+                      <option>15.000€ - 25.000€</option>
+                      <option>25.000€+</option>
+                    </select>
+                  </div>
+                  {/* Nachricht */}
+                  <div className="pb-6">
+                    <label
+                      htmlFor="nachricht"
+                      className={`block pb-2 ${
+                        formik.touched.nachricht && formik.errors.nachricht
+                          ? "text-red-400"
+                          : ""
+                      }`}
+                    >
+                      {formik.touched.nachricht && formik.errors.nachricht
+                        ? formik.errors.nachricht
+                        : "Deine Nachricht*"}
+                    </label>
+                    <textarea
+                      name="nachricht"
+                      className="w-full h-40 rounded-3xl"
+                      placeholder="Hallo Team Sawix, .."
+                      value={formik.values.nachricht}
+                      onChange={formik.handleChange}
+                      onBlur={formik.handleBlur}
+                    />
+                  </div>
+                  {/* Datenschutz */}
+                  <div>
+                    <label
+                      htmlFor="datenschutz"
+                      className={`block pb-2 ${
+                        formik.touched.datenschutz && formik.errors.datenschutz
+                          ? "text-red-400"
+                          : ""
+                      }`}
+                    >
+                      {formik.touched.datenschutz && formik.errors.datenschutz
+                        ? formik.errors.datenschutz
+                        : "Datenschutz"}
+                    </label>
+                    <div className="flex gap-2">
+                      <input
+                        type="checkbox"
+                        name="datenschutz"
+                        value="Datenschutz akzeptiert"
+                        onChange={formik.handleChange}
+                        onBlur={formik.handleBlur}
+                        className="h-5 w-5 text-blue-600 focus:border-blue-600 focus:ring-border-600"
+                      />
+                      <p>
+                        Mit dem versenden des Formulares ekläre ich mich mit der{" "}
+                        <a className="underline hover:text-blue-600" href="">
+                          Datenschutzerklärung
+                        </a>{" "}
+                        einverstanden
+                      </p>
+                    </div>
+                  </div>
+                  <button
+                    type="submit"
+                    className="versendenButton bg-blue-600 text-white px-5 py-2 rounded-full w-full mt-6"
+                  >
+                    {buttonText}
+                  </button>
                 </div>
-                <button
-                  type="submit"
-                  className="bg-blue-600 text-white px-5 py-2 rounded-full w-full mt-6"
-                >
-                  Senden
-                </button>
-              </div>
-            </form>
+              </form>
+            </div>
           </div>
           {/* Bild */}
           <div className="w-full">
@@ -340,7 +353,9 @@ export default function Kontakt() {
             ></Image>
           </div>
         </section>
+        <Confetti numberOfPieces={pieces} />
       </main>
+
       {/* <Footer /> */}
       {/* <div>Hello</div> */}
     </>
