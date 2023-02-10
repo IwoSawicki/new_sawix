@@ -310,10 +310,10 @@ export default function Kontakt() {
                       className="h-5 w-5 text-blue-600 focus:border-blue-600 focus:ring-border-600"
                     />
                     <p>
-                      Mit dem versenden des Formulares ekläre ich mich mit der
+                      Mit dem versenden des Formulares ekläre ich mich mit der{" "}
                       <a className="underline hover:text-blue-600" href="">
                         Datenschutzerklärung
-                      </a>
+                      </a>{" "}
                       einverstanden
                     </p>
                   </div>
