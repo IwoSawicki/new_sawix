@@ -1,11 +1,13 @@
 import Header from "@/components/Header";
 import Head from "next/head";
 
+import { useRef } from "react";
 import React from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import { useRouter } from "next/router";
 import { motion } from "framer-motion";
+import emailjs from "@emailjs/browser";
 
 import Image from "next/image";
 import KontaktImg from "@/public/Home-Jobs.png";
@@ -44,6 +46,20 @@ export default function Kontakt() {
     //Senden
     onSubmit: (values) => {
       console.log(values);
+      try {
+        emailjs
+          .send(
+            "service_4eppd0i",
+            "template_3hamqdy",
+            values,
+            "T9IkqTbY4oGOd132x"
+          )
+          .then(() => {
+            console.log("success");
+          });
+      } catch {
+        console.log("error");
+      }
     },
   });
 
