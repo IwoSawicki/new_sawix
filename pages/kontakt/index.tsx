@@ -176,6 +176,7 @@ export default function Kontakt() {
                       <input
                         type="checkbox"
                         name="serviceWebseite"
+                        value="Webseiten, "
                         id="webseite"
                         className="hidden peer"
                         onChange={formik.handleChange}
@@ -193,6 +194,7 @@ export default function Kontakt() {
                       <input
                         type="checkbox"
                         name="serviceShops"
+                        value="Online-Shops, "
                         id="online-shop"
                         className="hidden peer"
                         onChange={formik.handleChange}
@@ -212,6 +214,7 @@ export default function Kontakt() {
                       <input
                         type="checkbox"
                         name="serviceProduktion"
+                        value="Produktion, "
                         id="medienproduktion"
                         className="hidden peer"
                         onChange={formik.handleChange}
@@ -229,6 +232,7 @@ export default function Kontakt() {
                       <input
                         type="checkbox"
                         name="serviceSSM"
+                        value="Social Media Marketing, "
                         id="social-media-marketing"
                         className="hidden peer"
                         onChange={formik.handleChange}
