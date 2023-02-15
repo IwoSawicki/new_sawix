@@ -6,7 +6,7 @@ import { useState } from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import { useRouter } from "next/router";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import Confetti from "react-confetti";
@@ -28,6 +28,8 @@ export default function Kontakt() {
       setPieces(0);
     }, 5000);
   };
+
+  console.log("test", process.env.NEXT_PUBLIC_API_KEY);
 
   //Formik Logic
   const formik = useFormik({
@@ -62,10 +64,10 @@ export default function Kontakt() {
       try {
         emailjs
           .send(
-            "service_4eppd0i",
-            "template_3hamqdy",
+            process.env.NEXT_PUBLIC_API_KEY,
+            process.env.NEXT_PUBLIC_TEMPLATE_KEY,
             values,
-            "T9IkqTbY4oGOd132x"
+            process.env.NEXT_PUBLIC_USER_KEY
           )
           .then(() => {
             console.log("success");
@@ -78,6 +80,7 @@ export default function Kontakt() {
           });
       } catch {
         console.log("error");
+        setButtonText("Fehler. Bitte nochmal versuchen.");
       }
     },
   });
