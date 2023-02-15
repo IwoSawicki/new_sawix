@@ -19,7 +19,7 @@ export default function Kontakt() {
   const router = useRouter();
 
   //Button Text
-  const [buttonText, setButtonText] = useState("Senden");
+  const [buttonText, setButtonText] = useState("Abschicken");
   const [pieces, setPieces] = useState(0);
 
   const setConfetti = () => {
