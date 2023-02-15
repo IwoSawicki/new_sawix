@@ -17,6 +17,10 @@ import KontaktImg from "@/public/Home-Jobs.png";
 export default function Kontakt() {
   //Router
   const router = useRouter();
+  // secret: process.env.NEXT_PUBLIC_API_KEY as string;
+  // const myVar: string = process.env.NEXT_PUBLIC_API_KEY;
+
+  //ENV LOCAL
 
   //Button Text
   const [buttonText, setButtonText] = useState("Abschicken");
@@ -28,8 +32,6 @@ export default function Kontakt() {
       setPieces(0);
     }, 5000);
   };
-
-  console.log("test", process.env.NEXT_PUBLIC_API_KEY);
 
   //Formik Logic
   const formik = useFormik({
@@ -64,8 +66,8 @@ export default function Kontakt() {
       try {
         emailjs
           .send(
-            process.env.NEXT_PUBLIC_API_KEY,
-            process.env.NEXT_PUBLIC_TEMPLATE_KEY,
+            "service_4eppd0i",
+            "template_3hamqdy",
             values,
             process.env.NEXT_PUBLIC_USER_KEY
           )
@@ -75,7 +77,7 @@ export default function Kontakt() {
               position: toast.POSITION.TOP_CENTER,
               autoClose: 1500,
             });
-            setButtonText("Versendet!");
+            setButtonText("Versendet 🤙");
             setConfetti();
           });
       } catch {
