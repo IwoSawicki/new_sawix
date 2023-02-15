@@ -1,12 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import { BsArrowUpRight } from "react-icons/bs";
-//import ImgWebdesign from "@/public/Services/webdesign/webdesign.jpg";
-import webdesignImg from "public/Services/Webdesign/webdesign.jpg";
-import ImgWebdev from "../../../public/Services/Webdesign/webdev.jpg";
-import ImgMobileApp from "public/Services/Webdesign/mobileapps.jpg";
-import ImgMedienproduktion from "public/Services/Webdesign/medienproduktion.jpg";
+
+import ImgDesign from "@/public/Services/Webdesign/ImgWebdesign.jpg";
+import ImgCMS from "@/public/Services/Webdesign/ImgCMS.jpg";
+import ImgDev from "@/public/Services/Webdesign/ImgDev.jpg";
 import ImgRework from "@/public/Services/Webdesign/ImgRework.jpeg";
+import ImgMedia from "@/public/Services/Webdesign/ImgMedia.webp";
 
 export default function Dienstleistungen() {
   return (
@@ -19,7 +19,7 @@ export default function Dienstleistungen() {
         <div className="flex flex-col lg:flex-row">
           <div className="lg:w-2/5 p-[2px] rounded-2xl bg-gradient-to-r from-[#FFEE62] via-orange-600 to-[#FFEE62] buttonGradient">
             <Image
-              src={webdesignImg}
+              src={ImgDesign}
               alt="Webdesign Dienste bei Sawix"
               className="w-full h-96 lg:h-[600px] object-cover rounded-2xl"
             />
@@ -45,7 +45,7 @@ export default function Dienstleistungen() {
         <div className="flex flex-col lg:flex-row">
           <div className="lg:w-2/5 p-[2px] rounded-2xl bg-gradient-to-r from-[#FFEE62] via-orange-600 to-[#FFEE62] buttonGradient">
             <Image
-              src={ImgWebdev}
+              src={ImgCMS}
               alt="Webdesign Dienste bei Sawix"
               className="w-full h-96 lg:h-[600px] object-cover rounded-2xl"
             />
@@ -63,9 +63,8 @@ export default function Dienstleistungen() {
             </p>
             <ul className="text-base lg:text-xl font-light list-disc ml-5">
               <li>Wordpress CMS</li>
-              <li>React JS</li>
-              <li>Schnelligkeit</li>
-              <li>Sicherheit</li>
+              <li>Schnelle Entwicklung</li>
+              <li>Selbst bearbeiten</li>
             </ul>
           </div>
         </div>
@@ -73,7 +72,7 @@ export default function Dienstleistungen() {
         <div className="flex flex-col lg:flex-row">
           <div className="lg:w-2/5 p-[2px] rounded-2xl bg-gradient-to-r from-[#FFEE62] via-orange-600 to-[#FFEE62] buttonGradient">
             <Image
-              src={ImgWebdev}
+              src={ImgDev}
               alt="Webdesign Dienste bei Sawix"
               className="w-full h-96 lg:h-[600px] object-cover rounded-2xl"
             />
@@ -81,16 +80,18 @@ export default function Dienstleistungen() {
           <div className="flex flex-col gap-3 mt-5 lg:mt-0 justify-center lg:w-3/5 lg:pl-16 lg:gap-5">
             <h3 className="text-3xl lg:text-5xl">Programmierung</h3>
             <p className="text-base lg:text-xl font-light">
-              Bei der heutzutage kurzen Aufmerksamkeitsdauer, müssen die
-              Webseiten vorallem eins: Schnell und Interaktiv sein. Bei kleinen
-              Projekte benutzen wir hierbei Wordpress, mit toller Preis/Leistung
-              und einfach zu verstehender Bearbeitung, die jeder lernen kann.
-              Bei großen Projekten greifen wir jedoch lieber auf eigene
-              Programmierung zurück, um nie zuvor gesehe Interaktivität,
-              Anpassfähigkeit und Schnelligkeit zu liefern.
+              Durch eigene Programmierung von Webseiten, sind wir in der Lage
+              die Webseiten deutlich schneller zu machen, da keine unnötigen
+              Pakete versendet werden.
+              <br />
+              <br />
+              Wir sind auch nicht durch andere Platformen eingeschränkt und
+              können unserer Kreativität freien lauf lassen. Dabei kommen krasse
+              Webseiten zustande, die so nur wenige Agenturen umsetzen können.
+              Wenn du also nicht nur eine Webseite möchtest, sondern eine
+              digitale Erfahrung, bist du bei uns richtig.
             </p>
             <ul className="text-base lg:text-xl font-light list-disc ml-5">
-              <li>Wordpress CMS</li>
               <li>React JS</li>
               <li>Schnelligkeit</li>
               <li>Sicherheit</li>
@@ -154,7 +155,7 @@ export default function Dienstleistungen() {
         <div className="flex flex-col lg:flex-row">
           <div className="lg:w-2/5 p-[2px] rounded-2xl bg-gradient-to-r from-[#FFEE62] via-orange-600 to-[#FFEE62] buttonGradient hover:scale-[1.01] duration-500">
             <Image
-              src={ImgMedienproduktion}
+              src={ImgMedia}
               alt="Webdesign Dienste bei Sawix"
               className="w-full h-96 lg:h-[600px] object-cover rounded-2xl"
             />
