@@ -22,6 +22,13 @@ export default function Kontakt() {
   const [buttonText, setButtonText] = useState("Senden");
   const [pieces, setPieces] = useState(0);
 
+  const setConfetti = () => {
+    setPieces(200);
+    setTimeout(() => {
+      setPieces(0);
+    }, 5000);
+  };
+
   //Formik Logic
   const formik = useFormik({
     initialValues: {
@@ -67,6 +74,7 @@ export default function Kontakt() {
               autoClose: 1500,
             });
             setButtonText("Versendet!");
+            setConfetti();
           });
       } catch {
         console.log("error");
@@ -100,7 +108,7 @@ export default function Kontakt() {
             className="text-3xl mt-6 mb-5 lg:text-4xl block"
             href="mailto:info@sawix.de"
           >
-            hallo@sawix.de
+            info@sawix.de
           </a>
           <a
             className="text-3xl mb-12 lg:text-4xl block"
@@ -112,9 +120,9 @@ export default function Kontakt() {
         {/*  -------------------------------------------------------- */}
         <section className="flex flex-col md:flex-row gap-10 mt-10 md:mt-20">
           {/* Kontaktformular */}
-          <div className="w-full rounded-2xl p-4 bg-white text-black">
+          <div className="w-full rounded-2xl p-4 bg-white text-black relative">
             <div className="form-wrapper">
-              <form onSubmit={formik.handleSubmit}>
+              <form onSubmit={formik.handleSubmit} className="relative">
                 <div>
                   {/* Name */}
                   <div className="pb-6">
@@ -341,6 +349,10 @@ export default function Kontakt() {
                     {buttonText}
                   </button>
                 </div>
+                <Confetti
+                  numberOfPieces={pieces}
+                  className="min-h-full absolute"
+                />
               </form>
             </div>
           </div>
@@ -353,7 +365,6 @@ export default function Kontakt() {
             ></Image>
           </div>
         </section>
-        <Confetti numberOfPieces={pieces} />
       </main>
 
       {/* <Footer /> */}

@@ -4,6 +4,12 @@ import sliderImg3 from "public/Services/Webdesign/hero-slider-img-3.png";
 import sliderImg4 from "public/Services/Webdesign/hero-slider-img-4.png";
 import sliderImg5 from "public/Services/Webdesign/hero-slider-img-5.png";
 import sliderImg6 from "public/Services/Webdesign/hero-slider-img-6.png";
+import slider1 from "@/public/Services/medienproduktion/slider-1.webp";
+import slider2 from "@/public/Services/medienproduktion/slider-2.webp";
+import slider3 from "@/public/Services/medienproduktion/slider-3.webp";
+import slider4 from "@/public/Services/medienproduktion/slider-4.webp";
+import slider5 from "@/public/Services/medienproduktion/slider-5.webp";
+import slider6 from "@/public/Services/medienproduktion/slider-6.webp";
 
 import Image from "next/image";
 
@@ -27,7 +33,7 @@ export default function Hero() {
             <div className="py-6 lg:py-0 animate-marquee lg:animate-marqueeVertical whitespace-nowrap flex lg:flex-col">
               <div className="mx-4 lg:mx-0 lg:my-4 w-full">
                 <Image
-                  src={sliderImg1}
+                  src={slider1}
                   alt="Webdesign Slider Bild 1"
                   priority
                   className="min-w-[400px]"
@@ -36,7 +42,7 @@ export default function Hero() {
 
               <div className="mx-4 lg:mx-0 lg:my-4 w-full">
                 <Image
-                  src={sliderImg2}
+                  src={slider2}
                   alt="Webdesign Slider Bild 2"
                   priority
                   className="min-w-[400px]"
@@ -44,7 +50,7 @@ export default function Hero() {
               </div>
               <div className="mx-4 lg:mx-0 lg:my-4 w-full">
                 <Image
-                  src={sliderImg3}
+                  src={slider3}
                   alt="Webdesign Slider Bild 3"
                   priority
                   className="min-w-[400px]"
@@ -53,7 +59,7 @@ export default function Hero() {
 
               <div className="mx-4 lg:mx-0 lg:my-4 w-full">
                 <Image
-                  src={sliderImg4}
+                  src={slider4}
                   alt="Webdesign Slider Bild 4"
                   priority
                   className="min-w-[400px]"
@@ -62,7 +68,7 @@ export default function Hero() {
 
               <div className="mx-4 lg:mx-0 lg:my-4 w-full">
                 <Image
-                  src={sliderImg5}
+                  src={slider5}
                   alt="Webdesign Slider Bild 5"
                   priority
                   className="min-w-[400px]"
@@ -70,7 +76,7 @@ export default function Hero() {
               </div>
               <div className="mx-4 lg:mx-0 lg:my-4 w-full">
                 <Image
-                  src={sliderImg6}
+                  src={slider6}
                   alt="Webdesign Slider Bild 6"
                   priority
                   className="min-w-[400px]"
@@ -81,7 +87,7 @@ export default function Hero() {
             <div className="absolute top-0 py-6 lg:py-0 animate-marquee2 lg:animate-marqueeVertical2 whitespace-nowrap flex lg:flex-col ">
               <div className="mx-4 lg:mx-0 lg:my-4 w-full">
                 <Image
-                  src={sliderImg1}
+                  src={slider1}
                   alt="Webdesign Slider Bild 1"
                   priority
                   className="min-w-[400px]"
@@ -90,7 +96,7 @@ export default function Hero() {
 
               <div className="mx-4 lg:mx-0 lg:my-4 w-full">
                 <Image
-                  src={sliderImg2}
+                  src={slider2}
                   alt="Webdesign Slider Bild 2"
                   priority
                   className="min-w-[400px]"
@@ -98,7 +104,7 @@ export default function Hero() {
               </div>
               <div className="mx-4 lg:mx-0 lg:my-4 w-full">
                 <Image
-                  src={sliderImg3}
+                  src={slider3}
                   alt="Webdesign Slider Bild 3"
                   priority
                   className="min-w-[400px]"
@@ -107,7 +113,7 @@ export default function Hero() {
 
               <div className="mx-4 lg:mx-0 lg:my-4 w-full">
                 <Image
-                  src={sliderImg4}
+                  src={slider4}
                   alt="Webdesign Slider Bild 4"
                   priority
                   className="min-w-[400px]"
@@ -116,7 +122,7 @@ export default function Hero() {
 
               <div className="mx-4 lg:mx-0 lg:my-4 w-full">
                 <Image
-                  src={sliderImg5}
+                  src={slider5}
                   alt="Webdesign Slider Bild 5"
                   priority
                   className="min-w-[400px]"
@@ -124,7 +130,7 @@ export default function Hero() {
               </div>
               <div className="mx-4 lg:mx-0 lg:my-4 w-full">
                 <Image
-                  src={sliderImg6}
+                  src={slider6}
                   alt="Webdesign Slider Bild 6"
                   priority
                   className="min-w-[400px]"
