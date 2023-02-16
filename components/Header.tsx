@@ -1,6 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 //import { AnimatePresence, easeInOut, motion, spring } from "framer-motion";
+// import cookieCutter from "cookie-cutter";
+// import Cookies from "./Cookies";
+import { getCookie, setCookie } from "cookies-next";
 
 import Logo from "../public/Sawix-Logo.svg";
 import SawixIcon from "@/public/sawix-icon.svg";
@@ -9,6 +12,11 @@ import ImgTemp from "@/public/Footer-Img.png";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
+
+  // const cookies = new Cookies(req, res);
+  const cookieConsent = () => {
+    getCookie("cookies", "idk");
+  };
 
   return (
     <div>
@@ -171,6 +179,23 @@ export default function Header() {
           <Link href={"/kontakt"} className="text-white py-1 px-3 rounded-full">
             Kontakt
           </Link>
+        </div>
+      </div>
+
+      <div className="z-50 fixed bottom-0 w-full bg-black border-t-[1px] border-white hidden">
+        <div className="px-3 py-5 text-center">
+          <p>
+            Durch die Benutzung der Seite stimmst du unserer{" "}
+            <a className="underline" href="/datenschutz">
+              Datenschutzerklärung
+            </a>{" "}
+            zu.
+          </p>
+        </div>
+        <div>
+          <button className="w-full bg-black border-t-[1px] border-white/20 py-3">
+            Verstanden
+          </button>
         </div>
       </div>
 
