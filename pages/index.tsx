@@ -17,7 +17,7 @@ export default function Home() {
         <title>Home - Sawix Studio</title>
         <meta
           name="description"
-          content="Eine Full-Service digitale Agentur, mit spezalisierung auf Webseiten und Medienproduktion."
+          content="Sawix ist eine Full-Service-Kreativagentur, die auffällige Marken entwickelt, wunderschöne Websites gestaltet und Kampagnen liefert, die herausstechen."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta property="og:image" content="../public/Hero-Phone.png" />
