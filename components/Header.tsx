@@ -1,22 +1,37 @@
 import Image from "next/image";
 import Link from "next/link";
-//import { AnimatePresence, easeInOut, motion, spring } from "framer-motion";
-// import cookieCutter from "cookie-cutter";
-// import Cookies from "./Cookies";
-import { getCookie, setCookie } from "cookies-next";
+import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
 
-import Logo from "../public/Sawix-Logo.svg";
+// import Logo from "../public/Sawix-Logo.svg";
 import SawixIcon from "@/public/sawix-icon.svg";
-import { useState } from "react";
 import ImgTemp from "@/public/Footer-Img.png";
 
 export default function Header() {
+  //Menu Popup State
   const [isOpen, setIsOpen] = useState(false);
 
-  // const cookies = new Cookies(req, res);
-  const cookieConsent = () => {
-    getCookie("cookies", "idk");
-  };
+  //Cookie Popup State
+  const [showCookie, setShowCookie] = useState(true);
+
+  useEffect(() => {
+    // const data = window.localStorage.getItem("SWX_COOdwKIE_CONSENT");
+    // console.log("data", data);
+    // if (data !== null) setShowCookie(JSON.parse(data));
+    if (window.localStorage.getItem("SWX_COOKIE_CONSENT")) {
+      setShowCookie(false);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (!showCookie) {
+      window.localStorage.setItem(
+        "SWX_COOKIE_CONSENT",
+        JSON.stringify(showCookie)
+      );
+    }
+    // console.log("Cookie Hidden");
+  }, [showCookie]);
 
   return (
     <div>
@@ -158,7 +173,7 @@ export default function Header() {
         </div>
       </div>
       {/* ----------------------------------------------------------------------- */}
-      <div className="fixed bottom-5 w-screen flex justify-center z-40">
+      <div className="fixed bottom-5 w-screen flex justify-center z-30">
         <div className=" bg-blue-700 py-1 px-[6px] rounded-full flex gap-2  text-sm font-light  justify-center items-center md:text-lg ">
           <Link
             href={"/"}
@@ -182,193 +197,44 @@ export default function Header() {
         </div>
       </div>
 
-      <div className="z-50 fixed bottom-0 w-full bg-black border-t-[1px] border-white hidden">
-        <div className="px-3 py-5 text-center">
-          <p>
-            Durch die Benutzung der Seite stimmst du unserer{" "}
-            <a className="underline" href="/datenschutz">
-              Datenschutzerklärung
-            </a>{" "}
-            zu.
-          </p>
-        </div>
-        <div>
-          <button className="w-full bg-black border-t-[1px] border-white/20 py-3">
-            Verstanden
-          </button>
-        </div>
-      </div>
-
-      {/* <motion.div
-        initial={{
-          //width: 300,
-          //maxWidth: "80vw",
-          scale: 2,
-        }}
-        animate={{
-          //width: 64,
-          scale: 1,
-        }}
-        transition={{
-          duration: 1,
-          delay: 1.5,
-          type: easeInOut,
-        }}
-        onClick={() => setIsOpen(!isOpen)}
-        className={`${
-          isOpen ? "gap-0 bg-black" : "gap-[10px] bg-blue-700 shadow-2xl"
-        } flex flex-col items-center justify-center z-50 h-16 w-16 rounded-full fixed bottom-6 inset-x-0 mx-auto cursor-pointer duration-0`}
-      >
+      {/* COOKIE POPUP */}
+      {showCookie && (
         <motion.div
+          className="z-40 fixed bottom-0 w-full bg-black border-t-[1px] border-white text-sm px-3"
           initial={{
             opacity: 0,
+            bottom: -100,
           }}
           animate={{
             opacity: 1,
+            bottom: 0,
           }}
           transition={{
-            delay: 2.5,
-            duration: 0.5,
+            duration: 0.8,
+            delay: 2,
           }}
-          className={`${
-            isOpen ? "absolute rotate-45" : ""
-          } w-8 h-[2px] bg-white rounded-full duration-100`}
-        ></motion.div>
-        <motion.div
-          initial={{
-            opacity: 0,
-          }}
-          animate={{
-            opacity: 1,
-          }}
-          transition={{
-            delay: 2.5,
-            duration: 0.5,
-          }}
-          className={`${
-            isOpen ? "absolute -rotate-45" : ""
-          } w-8 h-[2px] bg-white rounded-full duration-100`}
-        ></motion.div>
-      </motion.div>
-
-      {/* ----------------------------------------------------- */}
-
-      {/*
-      <motion.div
-        initial={{
-          scale: 1,
-          opacity: 0.6,
-        }}
-        animate={{
-          scale: 1.2,
-          opacity: 0,
-        }}
-        transition={{
-          delay: 4,
-          duration: 1,
-          repeat: Infinity,
-          repeatDelay: 2,
-        }}
-        className="flex flex-col items-center justify-center z-40 h-16 w-16 rounded-full fixed bottom-6 inset-x-0 mx-auto cursor-pointer bg-blue-600"
-      ></motion.div>
-      <motion.div
-        initial={{
-          scale: 1,
-          opacity: 0.7,
-        }}
-        animate={{
-          scale: 1.3,
-          opacity: 0,
-        }}
-        transition={{
-          delay: 4.3,
-          duration: 1,
-          repeat: Infinity,
-          repeatDelay: 2,
-        }}
-        className="flex flex-col items-center justify-center z-30 h-16 w-16 rounded-full fixed bottom-6 inset-x-0 mx-auto cursor-pointer bg-blue-600"
-      ></motion.div>
-      <motion.div
-        initial={{
-          scale: 1,
-          opacity: 0.4,
-        }}
-        animate={{
-          scale: 1.5,
-          opacity: 0,
-        }}
-        transition={{
-          delay: 4.6,
-          duration: 0.8,
-          repeat: Infinity,
-          repeatDelay: 2.2,
-        }}
-        className="flex flex-col items-center justify-center z-30 h-16 w-16 rounded-full fixed bottom-6 inset-x-0 mx-auto cursor-pointer bg-blue-600"
-      ></motion.div>
-      {/* ----------------------------------------------------------------------- */}
-
-      {/* <AnimatePresence>
-        isOpen && ( */}
-      {/*<motion.div
-        className={`${
-          isOpen
-            ? "block z-40 opacity-100 h-[50vh] w-[95%]"
-            : "block -z-40 opacity-0 h-0 w-0"
-        } fixed inset-x-0 mx-auto bottom-3 bg-[#E8E5E3] rounded-xl text-black transition-all duration-300 p-4`}
-      >
-        <div className="">Menu coming soon</div>
-      </motion.div> */}
-      {/* )
-      </AnimatePresence> */}
+        >
+          <div className="md:flex md:justify-between md:items-center max-w-6xl mx-auto">
+            <div className="px-3 py-5 text-center ">
+              <p>
+                Durch die Benutzung der Seite stimmst du unserer{" "}
+                <a className="underline" href="/datenschutz">
+                  Datenschutzerklärung
+                </a>{" "}
+                zu.
+              </p>
+            </div>
+            <div>
+              <button
+                onClick={() => setShowCookie(false)}
+                className="w-full bg-black border-t-[1px] border-white/20 py-3 md:border-[1px] md:border-white md:rounded-full md:py-1 md:px-3 "
+              >
+                Verstanden
+              </button>
+            </div>
+          </div>
+        </motion.div>
+      )}
     </div>
   );
-}
-
-{
-  /* <div className="bg-transparent  flex justify-between items-center duration-300 group">
-          <div className="group relative flex overflow-x-hidden duration-300 max-w-[64px]">
-            <div className={`${isOpen ? "hidden" : "block"}`}>
-              <div className=" animate-marquee whitespace-nowrap flex">
-                <span className="flex  mx-2">Menü</span>
-                <span className="flex  mx-2">Menü</span>
-                <span className="flex  mx-2">Menü</span>
-                <span className="flex  mx-2">Menü</span>
-                <span className="flex  mx-2">Menü</span>
-                <span className="flex  mx-2">Menü</span>
-                <span className="flex  mx-2">Menü</span>
-              </div>
-
-              <div className="absolute top-0 animate-marquee2 whitespace-nowrap flex">
-                <span className="flex  mx-2">Menü</span>
-                <span className="flex  mx-2">Menü</span>
-                <span className="flex  mx-2">Menü</span>
-                <span className="flex  mx-2">Menü</span>
-                <span className="flex  mx-2">Menü</span>
-                <span className="flex  mx-2">Menü</span>
-                <span className="flex  mx-2">Menü</span>
-              </div>
-            </div>
-          </div>
-          <div className="group relative flex overflow-x-hidden duration-300 max-w-[64px]">
-            <div className={`${isOpen ? "block" : "hidden"} `}>
-              <div className=" animate-marquee whitespace-nowrap flex">
-                <span className="flex  mx-2">Schließen</span>
-                <span className="flex  mx-2">Schließen</span>
-                <span className="flex  mx-2">Schließen</span>
-                <span className="flex  mx-2">Schließen</span>
-                <span className="flex  mx-2">Schließen</span>
-                <span className="flex  mx-2">Schließen</span>
-              </div>
-
-              <div className="absolute top-0 animate-marquee2 whitespace-nowrap flex">
-                <span className="flex  mx-2">Schließen</span>
-                <span className="flex  mx-2">Schließen</span>
-                <span className="flex  mx-2">Schließen</span>
-                <span className="flex  mx-2">Schließen</span>
-                <span className="flex  mx-2">Schließen</span>
-                <span className="flex  mx-2">Schließen</span>
-              </div>
-            </div>
-          </div>
-        </div> */
 }
