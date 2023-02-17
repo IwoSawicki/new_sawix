@@ -20,6 +20,7 @@ export default function Home() {
           content="Eine Full-Service digitale Agentur, mit spezalisierung auf Webseiten und Medienproduktion."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta property="og:image" content="../public/Hero-Phone.png" />
         <link rel="icon" href="/favicon.svg" />
       </Head>
       {/* Header */}
