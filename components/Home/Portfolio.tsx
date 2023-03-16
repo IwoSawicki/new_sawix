@@ -36,6 +36,9 @@ export default function () {
               <button className=" bg-transparent border-black border-[1px] rounded-full px-3 py-1 mb-2 mr-2 text-xs md:text-sm font-light">
                 Online-Shop
               </button>
+              <button className=" bg-transparent border-black border-[1px] rounded-full px-3 py-1 mb-2 mr-2 text-xs md:text-sm font-light">
+                Branding
+              </button>
             </div>
             <Image
               src={PortfolioDMK}

@@ -6,18 +6,46 @@ import { useState, useEffect } from "react";
 // import Logo from "../public/Sawix-Logo.svg";
 import SawixIcon from "@/public/sawix-icon.svg";
 import ImgTemp from "@/public/Footer-Img.png";
+import { Router, useRouter } from "next/router";
 
 export default function Header() {
   //Menu Popup State
   const [isOpen, setIsOpen] = useState(false);
+  const router = useRouter();
 
+  // Menu Popup Links
+  const navLinks = [
+    {
+      name: "Home",
+      link: "/",
+    },
+    {
+      name: "Design & Entwicklung",
+      link: "/services/webdesign",
+    },
+    {
+      name: "Online-Shops",
+      link: "/services/e-commerce",
+    },
+    {
+      name: "Medienproduktion",
+      link: "/services/medienproduktion",
+    },
+    {
+      name: "Social Media Marketing",
+      link: "/services/social-media-marketing",
+    },
+    {
+      name: "Kontakt",
+      link: "/kontakt",
+    },
+  ];
+
+  // --------------------- COOKIE POPUP ---------------------
   //Cookie Popup State
   const [showCookie, setShowCookie] = useState(true);
 
   useEffect(() => {
-    // const data = window.localStorage.getItem("SWX_COOdwKIE_CONSENT");
-    // console.log("data", data);
-    // if (data !== null) setShowCookie(JSON.parse(data));
     if (window.localStorage.getItem("SWX_COOKIE_CONSENT")) {
       setShowCookie(false);
     }
@@ -30,8 +58,8 @@ export default function Header() {
         JSON.stringify(showCookie)
       );
     }
-    // console.log("Cookie Hidden");
   }, [showCookie]);
+  // --------------------- COOKIE POPUP Ende---------------------
 
   return (
     <div>
@@ -103,38 +131,22 @@ export default function Header() {
           <div className="flex">
             <div className="bg-blue-600/0 md:w-3/5 flex flex-col justify-center">
               <div className="flex flex-col gap-3 text-2xl md:gap-3 md:text-4xl font-normal">
-                <Link href={"/"}>Home</Link>
-                {/* <Link href={"/about"}>About</Link> */}
-                <Link href={"/services"}>Services</Link>
-                <Link href={"/services/webdesign/"}>Design & Entwicklung</Link>
-                <Link href={"/services/e-commerce/"}>Online-Shops</Link>
-                <Link href={"/services/medienproduktion"}>
-                  Medienproduktion
-                </Link>
-                <Link href={"/services/social-media-marketing"}>
-                  Social Media Marketing
-                </Link>
-                {/* <div className="">
-                  <ul className="list-disc pl-6 space-y-2">
-                    <li>
-                      <Link href={"/services/webdesign"}>
-                        Webdesign & Entwicklung
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href={"/services/webdesign"}>Online-Shops</Link>
-                    </li>
-                    <li>
-                      <Link href={"/services/webdesign"}>Medienproduktion</Link>
-                    </li>
-                    <li>
-                      <Link href={"/services/webdesign"}>
-                        Social Media Marketing
-                      </Link>
-                    </li>
-                  </ul>
-                </div> */}
-                <Link href={"/kontakt"}>Kontakt</Link>
+                {/*  */}
+                {/* LINK LOOP */}
+                {navLinks.map(({ link, name }) => (
+                  <div className="flex items-center">
+                    <div
+                      className={` ${
+                        router.pathname === link ? "block" : "hidden"
+                      } h-3 w-3 bg-black rounded-full mr-3`}
+                    ></div>
+                    <Link key={name} href={link}>
+                      {name}
+                    </Link>
+                  </div>
+                ))}
+                {/* LINK LOOP ENDE */}
+                {/*  */}
               </div>
             </div>
             <div className="hidden md:block md:w-2/5">
@@ -173,7 +185,7 @@ export default function Header() {
         </div>
       </div>
       {/* ----------------------------------------------------------------------- */}
-      <div className="fixed bottom-5 w-screen flex justify-center z-30">
+      {/* <div className="fixed bottom-5 w-screen flex justify-center z-30">
         <div className=" bg-blue-700 py-1 px-[6px] rounded-full flex gap-2  text-sm font-light  justify-center items-center md:text-lg ">
           <Link
             href={"/"}
@@ -181,21 +193,17 @@ export default function Header() {
           >
             Home
           </Link>
-          {/* <Link href={"/about"} className="text-white py-1 px-3 rounded-full ">
-            About
-          </Link> */}
           <Link
             href={"/services"}
             className="text-white py-1 px-3 rounded-full "
           >
             Services
           </Link>
-          {/* <Link href={"/about"}>About</Link> */}
           <Link href={"/kontakt"} className="text-white py-1 px-3 rounded-full">
             Kontakt
           </Link>
         </div>
-      </div>
+      </div> */}
 
       {/* COOKIE POPUP */}
       {showCookie && (
