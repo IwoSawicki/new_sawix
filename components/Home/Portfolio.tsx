@@ -24,6 +24,7 @@ export default function () {
               src={PortfolioMediceo}
               alt="Medi.ceo Portfolio Vorstellung"
               className=" rounded-t-2xl"
+              fill
             />
           </div>
           {/* ----------------------------- ----------------------------- */}
