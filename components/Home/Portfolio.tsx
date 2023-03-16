@@ -12,8 +12,8 @@ export default function () {
       <h2 className="text-4xl lg:text-5xl">Portfolio</h2>
       <div className="text-black pt-8 flex gap-12 flex-col">
         {/* ----------------------------- Row 1  -----------------------------*/}
-        <div className="flex gap-12 flex-col lg:flex-row">
-          <div className=" bg-[#FFEE62] px-4 pt-4 rounded-2xl ">
+        <div className="flex gap-12 flex-col md:flex-row">
+          <div className=" bg-[#FFEE62] px-4 pt-4 rounded-2xl relative block">
             <h3 className="text-3xl mb-3">Mediceo </h3>
             <div className="mb-4">
               <button className=" bg-transparent border-black border-[1px] rounded-full px-3 py-1 mb-2 mr-2 text-xs md:text-sm font-light">
@@ -23,8 +23,7 @@ export default function () {
             <Image
               src={PortfolioMediceo}
               alt="Medi.ceo Portfolio Vorstellung"
-              className=" rounded-t-2xl"
-              fill
+              className=" rounded-t-2xl object-bottom"
             />
           </div>
           {/* ----------------------------- ----------------------------- */}
@@ -37,9 +36,6 @@ export default function () {
               <button className=" bg-transparent border-black border-[1px] rounded-full px-3 py-1 mb-2 mr-2 text-xs md:text-sm font-light">
                 Online-Shop
               </button>
-              <button className=" bg-transparent border-black border-[1px] rounded-full px-3 py-1 mb-2 mr-2 text-xs md:text-sm font-light">
-                Branding
-              </button>
             </div>
             <Image
               src={PortfolioDMK}
@@ -50,7 +46,7 @@ export default function () {
         </div>
 
         {/* ----------------------------- Row 2 -----------------------------*/}
-        <div className="flex gap-12 flex-col lg:flex-row">
+        <div className="flex gap-12 flex-col md:flex-row">
           <div className=" bg-[#9747FF] px-4 pt-4 rounded-2xl">
             {/* bg-[#9747FF] */}
             <h3 className="text-3xl mb-3">Wohlfühlerei Weinhaus</h3>
@@ -65,7 +61,7 @@ export default function () {
             <Image
               src={PortfolioWeinhaus}
               alt="DMK-Haus Portfolio Vorstellung"
-              className=" rounded-t-2xl"
+              className="rounded-t-2xl"
             />
           </div>
           {/* ----------------------------- ----------------------------- */}

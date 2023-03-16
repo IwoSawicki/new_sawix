@@ -16,8 +16,8 @@ export default function Services() {
 
       {/* ------------------------- ------------------------- ---------------------- */}
       <div className="my-12">
-        <div className="rounded-2xl my-5 flex flex-col lg:flex-row">
-          <div className="bg-white rounded-2xl h-60 lg:aspect-square lg:h-96 lg:mr-12 flex items-center justify-center">
+        <div className="rounded-2xl my-5 flex flex-col md:flex-row">
+          <div className="bg-white rounded-2xl h-60 md:aspect-square lg:h-96 lg:mr-12 flex items-center justify-center">
             {/* bg-[#E8E5E3] */}
             <Player
               autoplay
@@ -50,8 +50,8 @@ export default function Services() {
 
       {/* ------------------------- ------------------------- ---------------------- */}
       <div className="my-12">
-        <div className="rounded-2xl my-5 flex flex-col lg:flex-row">
-          <div className="bg-white rounded-2xl h-60 lg:aspect-square lg:h-96 lg:mr-12 flex items-center justify-center">
+        <div className="rounded-2xl my-5 flex flex-col md:flex-row">
+          <div className="bg-white rounded-2xl h-60 md:aspect-square lg:h-96 lg:mr-12 flex items-center justify-center">
             <Player
               autoplay
               loop
@@ -82,8 +82,8 @@ export default function Services() {
 
       {/* ------------------------- ------------------------- ---------------------- */}
       <div className="my-12">
-        <div className="rounded-2xl my-5 flex flex-col lg:flex-row">
-          <div className="bg-white rounded-2xl h-60 lg:aspect-square lg:h-96 lg:mr-12 flex items-center justify-center">
+        <div className="rounded-2xl my-5 flex flex-col md:flex-row">
+          <div className="bg-white rounded-2xl h-60 md:aspect-square lg:h-96 lg:mr-12 flex items-center justify-center">
             <Player
               autoplay
               loop
@@ -116,8 +116,8 @@ export default function Services() {
 
       {/* ------------------------- ------------------------- ---------------------- */}
       <div className="my-12">
-        <div className="rounded-2xl my-5 flex flex-col lg:flex-row">
-          <div className="bg-white rounded-2xl h-60 lg:aspect-square lg:h-96 lg:mr-12 flex items-center justify-center">
+        <div className="rounded-2xl my-5 flex flex-col md:flex-row">
+          <div className="bg-white rounded-2xl h-60 md:aspect-square lg:h-96 lg:mr-12 flex items-center justify-center">
             <Player
               autoplay
               loop

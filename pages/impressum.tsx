@@ -29,16 +29,16 @@ export default function Datenschutz() {
                 <p>
                   Iwo Sawicki
                   <br />
-                  Heidelbergerstra&szlig;e 15D
+                  Vogelsbergstr. 2
                   <br />
-                  64385 Reichelsheim
+                  64646 Heppenheim
                 </p>
               </div>
 
               <div className="pb-6">
                 <h2 className="text-2xl">Kontakt</h2>
                 <p>
-                  Telefon: +49 (0) 173 4388519
+                  Telefon: +49 (0) 176 7788 7216
                   <br />
                   E-Mail: info@sawix.de
                 </p>
@@ -59,9 +59,9 @@ export default function Datenschutz() {
                 <p>
                   Iwo Sawicki
                   <br />
-                  Heidelbergerstra&szlig;e 15D,
+                  Vogelsbergstr. 2
                   <br />
-                  64385 Reichelsheim
+                  64646 Heppenheim
                 </p>
               </div>
 
