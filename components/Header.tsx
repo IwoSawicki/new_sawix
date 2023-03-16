@@ -185,7 +185,7 @@ export default function Header() {
         </div>
       </div>
       {/* ----------------------------------------------------------------------- */}
-      <div className="fixed bottom-5 w-screen flex justify-center z-30">
+      {/* <div className="fixed bottom-5 w-screen flex justify-center z-30">
         <div className=" bg-blue-700 py-1 px-[6px] rounded-full flex gap-2  text-sm font-light  justify-center items-center md:text-lg ">
           <Link
             href={"/"}
@@ -193,21 +193,17 @@ export default function Header() {
           >
             Home
           </Link>
-          {/* <Link href={"/about"} className="text-white py-1 px-3 rounded-full ">
-            About
-          </Link> */}
           <Link
             href={"/services"}
             className="text-white py-1 px-3 rounded-full "
           >
             Services
           </Link>
-          {/* <Link href={"/about"}>About</Link> */}
           <Link href={"/kontakt"} className="text-white py-1 px-3 rounded-full">
             Kontakt
           </Link>
         </div>
-      </div>
+      </div> */}
 
       {/* COOKIE POPUP */}
       {showCookie && (
