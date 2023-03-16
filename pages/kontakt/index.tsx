@@ -119,7 +119,7 @@ export default function Kontakt() {
             className="text-3xl mb-12 lg:text-4xl block"
             href="tel:+491734388519"
           >
-            +49 173 4388519
+            +49 176 7788 7216
           </a>
         </section>
         {/*  -------------------------------------------------------- */}
