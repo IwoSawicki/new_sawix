@@ -20,6 +20,10 @@ export default function Header() {
       link: "/",
     },
     {
+      name: "Projekte",
+      link: "/projekte",
+    },
+    {
       name: "Design & Entwicklung",
       link: "/services/webdesign",
     },
