@@ -27,7 +27,7 @@ export default function () {
               </button>
               {/* <button className="bg-black border-black border-[1px] rounded-full mb-2 mr-2 group-hover:rotate-45 duration-300">
                   <div className="h-6 w-6 md:h-7 md:w-7 flex items-center justify-center">
-                    <BsArrowUpRight className="text-white" />
+                  <BsArrowUpRight className="text-white" />
                   </div>
                 </button> */}
             </div>
