@@ -3,9 +3,16 @@ import Footer from "@/components/Footer";
 import Head from "next/head";
 import Portfolio from "@/components/Home/Portfolio";
 
+import { motion } from "framer-motion";
+
 export default function portfolio() {
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <Head>
         <title>Abgeschlossene Projekte - Sawix Studio</title>
         <meta
@@ -16,8 +23,6 @@ export default function portfolio() {
         <link rel="icon" href="/favicon.svg" />
       </Head>
       <div>
-        <Header />
-
         {/* Hero */}
         <div className="pt-28 md:py-32 flex flex-col justify-center gap-6 items-start px-3 max-w-6xl mx-auto">
           <h1 className="text-4xl md:text-6xl">
@@ -34,6 +39,6 @@ export default function portfolio() {
 
         <Footer />
       </div>
-    </>
+    </motion.div>
   );
 }

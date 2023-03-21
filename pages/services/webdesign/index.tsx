@@ -7,9 +7,16 @@ import Footer from "@/components/Footer";
 import Link from "next/link";
 import { BsArrowUpRight } from "react-icons/bs";
 
+import { motion } from "framer-motion";
+
 export default function webdesign() {
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <Head>
         <title>Webdesign - Sawix Studio</title>
         <meta
@@ -20,7 +27,6 @@ export default function webdesign() {
         <link rel="icon" href="/favicon.svg" />
       </Head>
       <div>
-        <Header />
         <main>
           <section className="overflow-y-hidden">
             <Hero />
@@ -47,6 +53,6 @@ export default function webdesign() {
           </button>
         </Link>
       </div>
-    </>
+    </motion.div>
   );
 }

@@ -70,20 +70,22 @@ export default function Header() {
       <div className="px-6 py-4 fixed w-screen z-50 backdrop-blur ">
         <div className="flex justify-between w-full  max-w-6xl mx-auto">
           <div className="z-20">
-            <Link href="/" className="flex gap-3 items-center">
-              <Image
-                src={SawixIcon}
-                alt="Seitenlogo"
-                className="h-6 w-6"
-              ></Image>
-              <span
-                className={`${
-                  isOpen ? "text-black" : ""
-                } , text-xl duration-500`}
-              >
-                Sawix
-              </span>
-            </Link>
+            <button onClick={() => setIsOpen(false)}>
+              <Link href="/" className="flex gap-3 items-center">
+                <Image
+                  src={SawixIcon}
+                  alt="Seitenlogo"
+                  className="h-6 w-6"
+                ></Image>
+                <span
+                  className={`${
+                    isOpen ? "text-black" : ""
+                  } , text-xl duration-500`}
+                >
+                  Sawix
+                </span>
+              </Link>
+            </button>
           </div>
           <div className="flex z-10">
             {/* <Link className="z-20" href={"/kontakt"}>
@@ -141,12 +143,16 @@ export default function Header() {
                   <div className="flex items-center">
                     <div
                       className={` ${
-                        router.pathname === link ? "block" : "hidden"
-                      } h-3 w-3 bg-black rounded-full mr-3`}
+                        router.pathname === link
+                          ? "bg-black h-3 w-3 mr-3"
+                          : "w-0 h-0 bg-transparent mr-0"
+                      }  rounded-full duration-300 delay-500`}
                     ></div>
-                    <Link key={name} href={link}>
-                      {name}
-                    </Link>
+                    <button onClick={() => setIsOpen(false)}>
+                      <Link key={name} href={link}>
+                        {name}
+                      </Link>
+                    </button>
                   </div>
                 ))}
                 {/* LINK LOOP ENDE */}

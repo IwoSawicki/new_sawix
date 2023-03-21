@@ -12,9 +12,16 @@ import Footer from "@/components/Footer";
 
 import OGimage from "../public/Hero-Phone.png";
 
+import { motion } from "framer-motion";
+
 export default function Home() {
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <Head>
         <title>Home - Sawix Studio</title>
         <meta
@@ -26,7 +33,6 @@ export default function Home() {
         <link rel="icon" href="/favicon.svg" />
       </Head>
       {/* Header */}
-      <Header />
 
       <main>
         {/* Hero */}
@@ -55,8 +61,8 @@ export default function Home() {
         </section> */}
 
         {/* Footer */}
-        <Footer />
       </main>
-    </>
+      <Footer />
+    </motion.div>
   );
 }
