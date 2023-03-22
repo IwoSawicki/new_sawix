@@ -14,6 +14,8 @@ import Confetti from "react-confetti";
 import Image from "next/image";
 import KontaktImg from "@/public/Home-Jobs.png";
 
+import { motion } from "framer-motion";
+
 export default function Kontakt() {
   //Router
   const router = useRouter();
@@ -88,7 +90,12 @@ export default function Kontakt() {
   });
 
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <Head>
         <title>Jetzt Kontaktieren - Sawix Studio</title>
         <meta
@@ -98,7 +105,6 @@ export default function Kontakt() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.svg" />
       </Head>
-      <Header />
       <main className="py-20 px-3 max-w-6xl mx-auto">
         {/* Heading */}
         <section>
@@ -374,6 +380,6 @@ export default function Kontakt() {
 
       {/* <Footer /> */}
       {/* <div>Hello</div> */}
-    </>
+    </motion.div>
   );
 }

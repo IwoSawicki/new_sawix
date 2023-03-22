@@ -7,9 +7,16 @@ import Dienstleistungen from "@/components/Services/E-Commerce/Dienstleistungen"
 import Link from "next/link";
 import { BsArrowUpRight } from "react-icons/bs";
 
+import { motion } from "framer-motion";
+
 export default function eCommerce() {
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <Head>
         <title>Online Shops - Sawix Studio</title>
         <meta
@@ -19,7 +26,6 @@ export default function eCommerce() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.svg" />
       </Head>
-      <Header />
       <main>
         <section className="overflow-hidden">
           <Hero />
@@ -45,6 +51,6 @@ export default function eCommerce() {
           </button>
         </Link>
       </div>
-    </>
+    </motion.div>
   );
 }

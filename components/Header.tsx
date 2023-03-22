@@ -185,7 +185,10 @@ export default function Header() {
               </div>
               <div className="md:w-1/2 flex items-end md:justify-end bg-yellow-400/0 mt-6">
                 <Link href={"/kontakt"}>
-                  <button className="bg-black py-4 px-9 rounded-full text-white">
+                  <button
+                    className="bg-black py-4 px-9 rounded-full text-white"
+                    onClick={() => setIsOpen(false)}
+                  >
                     Jetzt Projekt Starten!
                   </button>
                 </Link>

@@ -7,9 +7,16 @@ import Dienstleistungen from "@/components/Services/social-media-marketing/Diens
 import Link from "next/link";
 import { BsArrowUpRight } from "react-icons/bs";
 
+import { motion } from "framer-motion";
+
 export default function socialMediaMarketing() {
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <div className="">
         <Head>
           <title>Social Media Marketing - Sawix Studio</title>
@@ -20,7 +27,6 @@ export default function socialMediaMarketing() {
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link rel="icon" href="/favicon.svg" />
         </Head>
-        <Header />
         <main>
           <section className="overflow-hidden">
             <Hero />
@@ -47,6 +53,6 @@ export default function socialMediaMarketing() {
           </button>
         </Link>
       </div>
-    </>
+    </motion.div>
   );
 }
