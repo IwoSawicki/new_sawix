@@ -29,7 +29,7 @@ export default function Home() {
           content="Sawix ist eine Full-Service-Kreativagentur, die auffällige Marken entwickelt, wunderschöne Websites gestaltet und Kampagnen liefert, die herausstechen."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta property="og:image" content={"../public/Hero-Phone.png"} />
+        <meta property="og:image" content={"../public/Footer-Img.png"} />
         <link rel="icon" href="/favicon.svg" />
       </Head>
       {/* Header */}
