@@ -5,7 +5,7 @@ export default function Intro() {
     <div className="rounded-t-2xl pt-10 lg:pt-0">
       <div className="px-3 max-w-5xl mx-auto lg:py-28">
         <h2 className="text-4xl text-center my-4 lg:text-5xl lg:mb-10">
-          Für wenn lohnt sicht Social Media Marketing?
+          Für wen lohnt sicht Social Media Marketing?
         </h2>
         <p className="text-base lg:text-xl font-light my-4 text-center">
           Social Media Marketing lohnt sich für alle Unternehmen, die ihre Marke
