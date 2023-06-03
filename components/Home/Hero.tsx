@@ -8,7 +8,7 @@ import HeroAcid from "../../public/Hero-AcidBerlin.png";
 
 export default function Hero() {
   return (
-    <div className="pt-16  bg-gradient-to-b from-[#22282E] to-[#0B0D0F00] lg:pt-28">
+    <div className="pt-16  bg-gradient-to-b from-[#1d344d] to-[#0B0D0F00] lg:pt-28">
       <div className="flex flex-col md:flex-row px-3 max-w-6xl mx-auto lg:items-center">
         <div className="items-center justify-center md:w-1/2">
           <p className="mt-12 my-4 text-base text-slate-500 lg:pl-2">
@@ -20,8 +20,8 @@ export default function Hero() {
             </span>
             <span className="w-full">Gibt es bei uns nicht!</span>
           </h1>
-          <div className="w-4/5">
-            <p className="text-base md:text-xl font-light my-4 pr-3 mb-12">
+          <div className="md:w-4/5">
+            <p className="text-base md:text-xl font-light my-4 md:pr-3 mb-12">
               Wir glauben daran, dass unsere Industrie von Zahlen geblendet
               wird.
               <br /> Während Kaufentscheidungen auf Emotionen basieren!
