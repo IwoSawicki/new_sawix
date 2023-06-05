@@ -5,7 +5,7 @@ export default function Intro() {
     <div className="bg-[#0B0D0F] rounded-t-2xl pt-10 lg:pt-0">
       <div className="px-3 max-w-5xl mx-auto lg:py-28">
         <h2 className="text-4xl text-center my-4 lg:text-5xl lg:mb-10">
-          Eine gute Online Präsenz ist ein stategisches Investment
+          Eine gute Online Präsenz ist ein strategisches Investment
         </h2>
         <p className="text-base lg:text-xl font-light my-4 text-center">
           Deine Website ist dein wichtigstes Marketing-Asset Nummer eins. Daher
