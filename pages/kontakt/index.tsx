@@ -45,7 +45,7 @@ export default function Kontakt() {
       serviceShops: "",
       serviceProduktion: "",
       serviceSSM: "",
-      budget: "Auswählen..",
+      budget: "Noch nicht festgelegt..",
       nachricht: "",
       datenschutz: "",
     },
@@ -291,8 +291,8 @@ export default function Kontakt() {
                       value={formik.values.budget}
                       onChange={formik.handleChange}
                     >
-                      <option>Auswählen..</option>
-                      <option>Unter 5.000€</option>
+                      <option>Noch nicht festgelegt..</option>
+                      <option>1.000 - 5.000€</option>
                       <option>5.000€ - 15.000€</option>
                       <option>15.000€ - 25.000€</option>
                       <option>25.000€+</option>
