@@ -8,14 +8,14 @@ export default function Intro() {
           Eine gute Online Präsenz ist ein stategisches Investment
         </h2>
         <p className="text-base lg:text-xl font-light my-4 text-center">
-          Ihre Website ist Ihr wichtigstes Marketing-Asset Nummer eins. Daher
-          sollte Ihre Website modern, ästhetisch ansprechend und technisch
-          einwandfrei für ein angenehmes Nutzererlebnis sein.
+          Deine Website ist dein wichtigstes Marketing-Asset Nummer eins. Daher
+          sollte diese modern, ästhetisch ansprechend und technisch einwandfrei
+          für ein angenehmes Nutzererlebnis sein.
           <br /> <br />
-          Bei Sawix bauen wir maßgeschneiderte Websites, die das Auge Ihrer
+          Bei Sawix bauen wir maßgeschneiderte Websites, die das Auge deiner
           Zielgruppe fangen und sie von Anfang bis Ende beeindrucken. Wir
           spezialisieren uns darauf, subtile Animationen und interaktive
-          Elemente zu kombinieren, um Ihre Benutzer zu beeindrucken, ohne die
+          Elemente zu kombinieren, um deine Benutzer zu beeindrucken, ohne die
           Funktionalität zu beeinträchtigen.
         </p>
       </div>
