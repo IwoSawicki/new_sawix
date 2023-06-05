@@ -4,7 +4,8 @@ import Head from "next/head";
 
 import Header from "@/components/Header";
 import Hero from "@/components/Home/Hero";
-import Portfolio from "@/components/Home/Portfolio";
+// import Portfolio from "@/components/Home/Portfolio";
+import PortfolioNeu from "@/components/Home/Portfolio-neu";
 // import About from "@/components/Home/About";
 import Services from "@/components/Home/Services";
 // import Jobs from "@/components/Home/Jobs";
@@ -42,7 +43,7 @@ export default function Home() {
 
         {/* Portfolio */}
         <section>
-          <Portfolio />
+          <PortfolioNeu />
         </section>
 
         {/* About */}

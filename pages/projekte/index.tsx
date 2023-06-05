@@ -30,20 +30,17 @@ export default function portfolio() {
       </Head>
       <div>
         {/* Hero */}
-        <div className="pt-28 md:py-32 flex flex-col justify-center gap-6 items-start px-3 max-w-6xl mx-auto">
+        <div className="pt-28 md:py-32 md:pb-8 flex flex-col justify-center gap-6 items-start px-3 max-w-6xl mx-auto">
           <h1 className="text-4xl md:text-6xl">
             Schau dir an, wie wir die Probleme von anderen Kunden lösen konnten.
           </h1>
           <p className="md:w-1/2">
-            Sawix ist eine Full-Service-Kreativagentur, die auffällige Marken
-            entwickelt, wunderschöne Websites gestaltet und Kampagnen liefert,
-            die herausstechen.
+            Wir glauben daran, dass unsere Industrie von Zahlen geblendet wird.
+            <br /> Während Kaufentscheidungen auf Emotionen basieren!
           </p>
         </div>
         {/* Portfolio */}
-        {/* <Portfolio /> */}
-        <div className="my-24 px-3 max-w-6xl mx-auto">
-          <h2 className="text-4xl lg:text-5xl">Abgeschlossene Projekte</h2>
+        <div className="my-6 px-3 max-w-6xl mx-auto">
           <div className="text-black pt-8 flex gap-12 flex-col">
             {/* DMK HAUS */}
             <div>
@@ -53,11 +50,11 @@ export default function portfolio() {
                   <p className="text-md md:text-xl font-light">DMK-Haus</p>
                   <h3 className="font-medium text-2xl md:text-5xl relative">
                     Custom Shop für Modulhäußer und Möbel rund ums Haus
-                    <button className="bg-black border-black border-[1px] rounded-full mx-2 group-hover:rotate-45 duration-300 md:absolute md:mt-2">
+                    {/* <button className="bg-black border-black border-[1px] rounded-full mx-2 group-hover:rotate-45 duration-300 md:absolute md:mt-2">
                       <div className="h-5 w-5 md:h-8 md:w-8 flex items-center justify-center">
                         <BsArrowUpRight className="text-white text-sm" />
                       </div>
-                    </button>
+                    </button> */}
                   </h3>
                 </div>
 
@@ -80,11 +77,11 @@ export default function portfolio() {
                   <p className="text-md md:text-xl font-light">Mediceo</p>
                   <h3 className="font-medium text-2xl md:text-5xl relative">
                     Website redesign für eine innovative Medizinapp
-                    <button className="bg-black border-black border-[1px] rounded-full mx-2 group-hover:rotate-45 duration-300 md:absolute md:mt-2">
+                    {/* <button className="bg-black border-black border-[1px] rounded-full mx-2 group-hover:rotate-45 duration-300 md:absolute md:mt-2">
                       <div className="h-5 w-5 md:h-8 md:w-8 flex items-center justify-center">
                         <BsArrowUpRight className="text-white text-sm" />
                       </div>
-                    </button>
+                    </button> */}
                   </h3>
                 </div>
 
@@ -109,11 +106,11 @@ export default function portfolio() {
                   </p>
                   <h3 className="font-medium text-2xl md:text-5xl relative">
                     Elegante Webseite für einen lokalen Weinanbau
-                    <button className="bg-black border-black border-[1px] rounded-full mx-2 group-hover:rotate-45 duration-300 md:absolute md:mt-2">
+                    {/* <button className="bg-black border-black border-[1px] rounded-full mx-2 group-hover:rotate-45 duration-300 md:absolute md:mt-2">
                       <div className="h-5 w-5 md:h-8 md:w-8 flex items-center justify-center">
                         <BsArrowUpRight className="text-white text-sm" />
                       </div>
-                    </button>
+                    </button> */}
                   </h3>
                 </div>
 
@@ -130,6 +127,7 @@ export default function portfolio() {
             {/* ENDE WEINHAUS */}
           </div>
         </div>
+        {/* <Portfolio /> */}
 
         <Footer />
       </div>
