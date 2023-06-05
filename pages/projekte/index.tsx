@@ -1,16 +1,15 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+
 import Head from "next/head";
 import Image from "next/image";
-import Portfolio from "@/components/Home/Portfolio";
-
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 import { BsArrowUpRight } from "react-icons/bs";
-
 import portolioDmkhaus from "@/public/portfolio/portfolio-dmkhaus.png";
-
-import { motion } from "framer-motion";
+import portfolioMediceo from "@/public/portfolio/portfolio-mediceo.png";
+import portfolioWeinhaus from "@/public/portfolio/portfolio-weinhaus.png";
 
 export default function portfolio() {
   return (
@@ -78,7 +77,7 @@ export default function portfolio() {
               <div className="bg-[#FFF385] rounded-xl lg:w-4/5 group hover:scale-[100.5%] duration-300">
                 {/* <Link href={"/projekte/dmkhaus/"}> */}
                 <div className="px-4 pt-4 md:px-7 md:pt-6">
-                  <p className="text-md md:text-xl font-light">MEDICEO</p>
+                  <p className="text-md md:text-xl font-light">Mediceo</p>
                   <h3 className="font-medium text-2xl md:text-5xl relative">
                     Website redesign für eine innovative Medizinapp
                     <button className="bg-black border-black border-[1px] rounded-full mx-2 group-hover:rotate-45 duration-300 md:absolute md:mt-2">
@@ -91,7 +90,7 @@ export default function portfolio() {
 
                 <div className="pt-6 md:flex md:justify-center">
                   <Image
-                    src={portolioDmkhaus}
+                    src={portfolioMediceo}
                     alt="DMK Haus Mockup portfolio"
                     className=""
                   />
@@ -120,9 +119,9 @@ export default function portfolio() {
 
                 <div className="pt-6 md:flex md:justify-center">
                   <Image
-                    src={portolioDmkhaus}
+                    src={portfolioWeinhaus}
                     alt="DMK Haus Mockup portfolio"
-                    className=""
+                    className="object-left-bottom"
                   />
                 </div>
                 {/* </Link> */}
