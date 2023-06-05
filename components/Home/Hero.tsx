@@ -22,9 +22,8 @@ export default function Hero() {
           </h1>
           <div className="md:w-4/5">
             <p className="text-base md:text-xl font-light my-4 md:pr-3 mb-12">
-              Wir glauben daran, dass unsere Industrie von Zahlen geblendet
-              wird.
-              <br /> Während Kaufentscheidungen auf Emotionen basieren!
+              Sawix ist eine Full-Service-Kreativagentur die wunderschöne
+              Websites gestaltet & Kampagnen liefert, die herausstechen.
             </p>
           </div>
         </div>
