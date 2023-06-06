@@ -104,7 +104,7 @@ export default function () {
             <button className="buttonGradient p-px mt-4 text-white text-base lg:text-xl font-light rounded-full group bg-gradient-to-r from-[#9747FF] via-blue-700 to-[#9747FF]">
               <div className="bg-[#0b0d0f] pl-8 rounded-full flex items-center hover:bg-transparent duration-300 ">
                 Alle Projekte anschauen{" "}
-                <span className="text-xs -mt-3">(06)</span>
+                <span className="text-xs -mt-3 hidden">(06)</span>
                 <span className="bg-[#9747FF] rounded-full p-3 m-[1px] ml-6 group-hover:bg-transparent duration-300">
                   <BsArrowUpRight className=" text-black rounded-full duration-300 group-hover:rotate-45 group-hover:text-white" />
                 </span>
