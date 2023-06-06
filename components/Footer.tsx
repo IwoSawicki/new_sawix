@@ -67,14 +67,14 @@ export default function Footer() {
                   Whatsapp
                 </button>
               </a>
-              <a href="https://www.instagram.com/iwo_swx/">
+              <a href="https://www.instagram.com/its_iwo/">
                 <button className="bg-transparent border-[1px] border-white rounded-full px-5 py-3 w-36 hover:bg-white hover:text-black duration-300">
                   Instagram
                 </button>
               </a>
             </div>
             <div className="flex gap-4">
-              <a href="https://www.youtube.com/@iwo_swx">
+              <a href="https://www.youtube.com/@itsiwo">
                 <button className="bg-transparent border-[1px] border-white rounded-full px-5 py-3 w-36 hover:bg-white hover:text-black duration-300">
                   Youtube
                 </button>
