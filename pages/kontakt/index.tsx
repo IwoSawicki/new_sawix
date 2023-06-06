@@ -103,6 +103,13 @@ export default function Kontakt() {
           content="Kontaktiere uns jederzeit per Telefon, Email oder Kontaktformular. Wir melden uns schnellmöglichst bei dir!"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+          property="og:image"
+          content="https://acid-berlin.de/wp-content/uploads/2023/03/Acid-Berlin-hero.jpg"
+        />
+        <meta property="og:image:type" content="image/jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
         <link rel="icon" href="/favicon.svg" />
       </Head>
       <main className="py-20 px-3 max-w-6xl mx-auto">
