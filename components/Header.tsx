@@ -67,8 +67,8 @@ export default function Header() {
 
   return (
     <div>
-      <div className="px-6 py-4 fixed w-screen z-50 backdrop-blur text-black">
-        <div className="flex justify-between w-full  max-w-7xl mx-auto">
+      <div className="px-6 py-4 fixed w-screen z-50 backdrop-blur ">
+        <div className="flex justify-between w-full  max-w-6xl mx-auto">
           <div className="z-20">
             <button onClick={() => setIsOpen(false)}>
               <Link href="/" className="flex gap-3 items-center">
@@ -105,7 +105,7 @@ export default function Header() {
                 className={`${
                   isOpen
                     ? " rotate-45 bg-black text-white"
-                    : "bg-black text-white"
+                    : "bg-white text-black"
                 } , relative z-10 rounded-full h-7 w-7 ml-3 duration-500 flex justify-center items-center cursor-pointer`}
               >
                 +
@@ -113,7 +113,7 @@ export default function Header() {
               <div
                 className={`${
                   isOpen ? "scale-[80] md:scale-[200]" : ""
-                } , absolute z-0 bg-[#fff7ee] h-7 w-7 rounded-full duration-1000`}
+                } , absolute z-0 bg-white h-7 w-7 rounded-full duration-1000`}
               ></div>
             </div>
           </div>
