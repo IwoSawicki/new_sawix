@@ -10,24 +10,27 @@ export default function Hero() {
   return (
     <div className="pt-16  bg-gradient-to-b from-[#1d344d] to-[#0B0D0F00] lg:pt-28">
       <div className="flex flex-col md:flex-row px-3 max-w-6xl mx-auto lg:items-center">
-        <div className="items-center justify-center md:w-1/2">
+        <div className="items-center justify-center md:w-3/5">
           <p className="mt-12 my-4 text-base text-slate-500 lg:pl-2">
             Sawix Studio.
           </p>
-          <h1 className="text-5xl my-4 md:text-6xl">
+          <h1 className="text-[15vw] leading-[1em] my-4 md:text-[85px]">
             <span className="w-full">
               Grenzen? <br />
             </span>
-            <span className="w-full">Gibt es bei uns nicht!</span>
+            <span className="w-full">
+              Gibt es bei <br />
+              uns nicht!
+            </span>
           </h1>
-          <div className="md:w-4/5">
+          <div className="md:w-4/6">
             <p className="text-base md:text-xl font-light my-4 md:pr-3 mb-12">
               Sawix ist eine Full-Service-Kreativagentur die wunderschöne
-              Websites gestaltet & Kampagnen liefert, die herausstechen.
+              Websites gestaltet und Kampagnen liefert, die herausstechen.
             </p>
           </div>
         </div>
-        <div className="sm:flex sm:justify-center md:w-1/2">
+        <div className="sm:flex sm:justify-center md:w-2/5">
           <div className="w-full h-[600px] lg:h-[700px] lg:max-h-screen flex items-start justify-center relative sm:w-1/2 md:w-full">
             <div className="absolute left-1/2 transform -translate-x-1/2 w-full">
               <motion.div
