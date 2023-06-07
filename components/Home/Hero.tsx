@@ -11,9 +11,7 @@ export default function Hero() {
     <div className="pt-16  bg-gradient-to-b from-[#1d344d] to-[#0B0D0F00] lg:pt-28">
       <div className="flex flex-col md:flex-row px-3 max-w-6xl mx-auto lg:items-center">
         <div className="items-center justify-center md:w-3/5">
-          <p className="mt-12 my-4 text-base text-slate-500 lg:pl-2">
-            Sawix Studio.
-          </p>
+          <p className="mt-12 text-base text-slate-500 lg:pl-2">Sawix Studio</p>
           <h1 className="text-[15vw] leading-[1em] my-4 md:text-[85px]">
             <span className="w-full">
               Grenzen? <br />
