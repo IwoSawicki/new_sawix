@@ -12,7 +12,7 @@ export default function () {
   return (
     <div>
       {/* Portfolio */}
-      <div className="my-24 px-3 max-w-7xl mx-auto">
+      <div className="my-24 px-3 max-w-6xl mx-auto">
         <h2 className="text-4xl my-4 md:text-6xl">Abgeschlossene Projekte</h2>
         <div className="text-black pt-8 flex gap-12 flex-col">
           {/* DMK HAUS */}
@@ -101,12 +101,12 @@ export default function () {
         </div>
         <div className="flex justify-center pt-6">
           <Link href={"/projekte"}>
-            <button className="buttonGradient p-[2px] mt-4 text-base lg:text-xl font-light rounded-full group bg-gradient-to-r from-[#9747FF] via-blue-700 to-[#9747FF]">
-              <div className="bg-[#e8e5e3] pl-8 rounded-full flex items-center group-hover:bg-transparent group-hover:text-white duration-300 ">
+            <button className="buttonGradient p-px mt-4 text-white text-base lg:text-xl font-light rounded-full group bg-gradient-to-r from-[#9747FF] via-blue-700 to-[#9747FF]">
+              <div className="bg-[#0b0d0f] pl-8 rounded-full flex items-center hover:bg-transparent duration-300 ">
                 Alle Projekte anschauen{" "}
                 <span className="text-xs -mt-3 hidden">(06)</span>
                 <span className="bg-[#9747FF] rounded-full p-3 m-[1px] ml-6 group-hover:bg-transparent duration-300">
-                  <BsArrowUpRight className=" text-white rounded-full duration-300 group-hover:rotate-45 group-hover:text-white" />
+                  <BsArrowUpRight className=" text-black rounded-full duration-300 group-hover:rotate-45 group-hover:text-white" />
                 </span>
               </div>
             </button>
