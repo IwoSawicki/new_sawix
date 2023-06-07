@@ -35,7 +35,7 @@ export default function Home() {
       </Head>
       {/* Header */}
 
-      <main>
+      <main className="bg-[#e8e5e3] text-black">
         {/* Hero */}
         <section>
           <Hero />
