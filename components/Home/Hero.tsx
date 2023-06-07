@@ -12,7 +12,7 @@ export default function Hero() {
       <div className="flex flex-col md:flex-row px-3 max-w-6xl mx-auto lg:items-center">
         <div className="items-center justify-center md:w-1/2">
           <p className="mt-12 my-4 text-base text-slate-500 lg:pl-2">
-            Sawix Studio
+            Sawix Studio.
           </p>
           <h1 className="text-5xl my-4 md:text-6xl">
             <span className="w-full">
