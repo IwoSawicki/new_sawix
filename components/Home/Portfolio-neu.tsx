@@ -13,7 +13,9 @@ export default function () {
     <div>
       {/* Portfolio */}
       <div className="my-24 px-3 max-w-[1450px] mx-auto">
-        <h2 className="text-4xl my-4 md:text-6xl">Abgeschlossene Projekte</h2>
+        <h2 className="text-4xl my-4 md:text-8xl font-kaneda font-semibold md:hidden">
+          Abgeschlossene Projekte
+        </h2>
         <div className="text-black pt-8 flex gap-12 flex-col">
           {/* DMK HAUS */}
           <div>
@@ -62,7 +64,7 @@ export default function () {
                 </h3>
               </div>
 
-              <div className="pt-6 md:flex md:justify-center">
+              <div className="pt-6 md:flex md:justify-end">
                 <Image
                   src={portfolioMediceo}
                   alt="DMK Haus Mockup portfolio"
@@ -78,10 +80,10 @@ export default function () {
             <div className="bg-[#A282FF] rounded-xl lg:w-4/5 group hover:scale-[100.5%] duration-300">
               {/* <Link href={"/projekte/dmkhaus/"}> */}
               <div className="px-4 pt-4 md:px-7 md:pt-6">
-                <p className="text-md md:text-xl font-light">
+                <p className="text-md md:text-xl font-light font-IvyPresto">
                   Wohlfühlerei Weinhaus
                 </p>
-                <h3 className="font-medium text-2xl md:text-5xl relative">
+                <h3 className="font-medium text-2xl md:text-8xl relative font-kaneda">
                   Elegante Webseite für einen lokalen Weinanbau
                   {/* <button className="bg-black border-black border-[1px] rounded-full mx-2 group-hover:rotate-45 duration-300 md:absolute md:mt-2">
                       <div className="h-5 w-5 md:h-8 md:w-8 flex items-center justify-center">
@@ -91,11 +93,10 @@ export default function () {
                 </h3>
               </div>
 
-              <div className="pt-6 md:flex md:justify-center">
+              <div className="pt-6 md:flex md:justify-start">
                 <Image
                   src={portfolioWeinhaus}
                   alt="DMK Haus Mockup portfolio"
-                  className="object-left-bottom"
                 />
               </div>
               {/* </Link> */}
@@ -105,8 +106,8 @@ export default function () {
         </div>
         <div className="flex justify-center pt-6">
           <Link href={"/projekte"}>
-            <button className="buttonGradient p-px mt-4 text-white text-base lg:text-xl font-light rounded-full group bg-gradient-to-r from-[#9747FF] via-blue-700 to-[#9747FF]">
-              <div className="bg-[#E8E5E3] pl-8 rounded-full flex items-center hover:bg-transparent duration-300 text-black group-hover:text-white">
+            <button className="buttonGradient p-[2px] mt-12 text-white text-base lg:text-xl font-light rounded-full group bg-gradient-to-r from-[#9747FF] via-blue-700 to-[#9747FF]">
+              <div className="bg-[#E8E5E3] pl-8 rounded-full flex items-center hover:bg-transparent duration-300 text-black group-hover:text-white font-IvyPresto">
                 Alle Projekte anschauen{" "}
                 <span className="text-xs -mt-3 hidden">(06)</span>
                 <span className="bg-[#9747FF] rounded-full p-3 m-[1px] ml-6 group-hover:bg-transparent duration-300">
@@ -115,6 +116,16 @@ export default function () {
               </div>
             </button>
           </Link>
+          {/* <button className="relative flex group pt-12">
+            <div className="absolute">
+              <div className="px-9 py-3 bg-transparent text-transparent border-[1px] border-black rounded-full mt-[9px] z-0">
+                AlleProjekteansehen..
+              </div>
+            </div>
+            <div className="bg-black rounded-full text-white px-9 py-4 group-hover:mt-1 mb-1 group-hover:mb-0 duration-300 z-10">
+              Alle Projekte ansehen
+            </div>
+          </button> */}
         </div>
       </div>
       {/* <Portfolio /> */}

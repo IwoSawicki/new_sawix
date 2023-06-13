@@ -11,6 +11,8 @@ module.exports = {
         sans: ["var(--font-poppins)"],
         kaneda: ["kaneda-gothic", "sans-serif"],
         IvyPresto: ["ivypresto-headline", "serif"],
+        IvyPrestoText: ["ivypresto-text", "serif"],
+        playfair: ["playfair-display", "serif"],
       },
       animation: {
         marquee: "marquee 25s linear infinite",
