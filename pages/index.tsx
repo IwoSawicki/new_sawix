@@ -22,6 +22,7 @@ export default function Home() {
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
       exit={{ opacity: 0 }}
+      className="bg-[#E8E5E3] text-black"
     >
       <Head>
         <title>Home - Sawix Studio</title>

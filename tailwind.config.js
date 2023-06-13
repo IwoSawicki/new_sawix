@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ["var(--font-poppins)"],
+        kaneda: ["kaneda-gothic", "sans-serif"],
       },
       animation: {
         marquee: "marquee 25s linear infinite",
