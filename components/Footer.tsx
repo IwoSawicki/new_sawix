@@ -72,6 +72,9 @@ export default function Footer() {
                   Instagram
                 </button>
               </a>
+              <div>
+                <button className="bg-black text-white rounded-2xl "></button>
+              </div>
             </div>
             <div className="flex gap-4">
               <a href="https://www.youtube.com/@itsiwo">

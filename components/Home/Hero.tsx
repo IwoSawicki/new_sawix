@@ -5,6 +5,7 @@ import HeroPhone from "../../public/Hero-Phone.png";
 import HeroMediceo from "../../public/Hero-Mediceo.png";
 import HeroWeinbau from "../../public/Hero-Weinbau.png";
 import HeroAcid from "../../public/Hero-AcidBerlin.png";
+import { Days_One } from "@next/font/google";
 
 export default function Hero() {
   return (
