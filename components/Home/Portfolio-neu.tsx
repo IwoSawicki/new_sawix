@@ -12,7 +12,7 @@ export default function () {
   return (
     <div>
       {/* Portfolio */}
-      <div className="my-24 px-3 max-w-6xl mx-auto">
+      <div className="my-24 px-3 max-w-[1450px] mx-auto">
         <h2 className="text-4xl my-4 md:text-6xl">Abgeschlossene Projekte</h2>
         <div className="text-black pt-8 flex gap-12 flex-col">
           {/* DMK HAUS */}
@@ -20,8 +20,10 @@ export default function () {
             <div className="bg-[#87AA85] rounded-xl lg:w-4/5 group hover:scale-[100.5%] duration-300">
               {/* <Link href={"/projekte/dmkhaus/"}> */}
               <div className="px-4 pt-4 md:px-7 md:pt-6">
-                <p className="text-md md:text-xl font-light">DMK-Haus</p>
-                <h3 className="font-medium text-2xl md:text-5xl relative">
+                <p className="text-md md:text-xl font-light font-IvyPresto">
+                  DMK-Haus
+                </p>
+                <h3 className="font-medium text-2xl md:text-8xl relative font-kaneda">
                   Custom Shop für Modulhäußer und Möbel rund ums Haus
                   {/* <button className="bg-black border-black border-[1px] rounded-full mx-2 group-hover:rotate-45 duration-300 md:absolute md:mt-2">
                       <div className="h-5 w-5 md:h-8 md:w-8 flex items-center justify-center">
@@ -47,8 +49,10 @@ export default function () {
             <div className="bg-[#FFF385] rounded-xl lg:w-4/5 group hover:scale-[100.5%] duration-300">
               {/* <Link href={"/projekte/dmkhaus/"}> */}
               <div className="px-4 pt-4 md:px-7 md:pt-6">
-                <p className="text-md md:text-xl font-light">Mediceo</p>
-                <h3 className="font-medium text-2xl md:text-5xl relative">
+                <p className="text-md md:text-xl font-light font-IvyPresto">
+                  Mediceo
+                </p>
+                <h3 className="font-medium text-2xl md:text-8xl relative font-kaneda">
                   Website redesign für eine innovative Medizinapp
                   {/* <button className="bg-black border-black border-[1px] rounded-full mx-2 group-hover:rotate-45 duration-300 md:absolute md:mt-2">
                       <div className="h-5 w-5 md:h-8 md:w-8 flex items-center justify-center">
@@ -102,7 +106,7 @@ export default function () {
         <div className="flex justify-center pt-6">
           <Link href={"/projekte"}>
             <button className="buttonGradient p-px mt-4 text-white text-base lg:text-xl font-light rounded-full group bg-gradient-to-r from-[#9747FF] via-blue-700 to-[#9747FF]">
-              <div className="bg-[#0b0d0f] pl-8 rounded-full flex items-center hover:bg-transparent duration-300 ">
+              <div className="bg-[#E8E5E3] pl-8 rounded-full flex items-center hover:bg-transparent duration-300 text-black group-hover:text-white">
                 Alle Projekte anschauen{" "}
                 <span className="text-xs -mt-3 hidden">(06)</span>
                 <span className="bg-[#9747FF] rounded-full p-3 m-[1px] ml-6 group-hover:bg-transparent duration-300">

@@ -1,13 +1,13 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
+import { BsArrowUpRight } from "react-icons/bs";
 import HeroPhone from "../../public/Hero-Phone.png";
 import HeroMediceo from "../../public/Hero-Mediceo.png";
 import HeroWeinbau from "../../public/Hero-Weinbau.png";
 import HeroAcid from "../../public/Hero-AcidBerlin.png";
-import { Days_One } from "@next/font/google";
-import Link from "next/link";
-import { BsArrowUpRight } from "react-icons/bs";
+import textCircle from "@/public/text-circle.svg";
 
 export default function Hero() {
   return (
@@ -18,14 +18,23 @@ export default function Hero() {
         </h1>
       </div>
       <div className="flex flex-col md:flex-row px-3 mx-auto ">
-        <div className=" md:w-2/5 pt-16">
+        <div className=" md:w-2/5 pt-12">
           <p className="font-IvyPresto text-3xl font-normal">
             Bei Sawix gestalten wir wunderschöne Websites, erstellen auffällige
-            Videos und liefern Designs, die dein Unternehmen voranbringen.
+            Videos und liefern Designs, die dein Unternehmen{" "}
+            <span className="inline-block">
+              <Image src={textCircle} className="absolute -mt-1 -ml-1" />{" "}
+              voranbringen
+            </span>
+            .
           </p>
-          <button className="relative flex pt-7 group">
-            <div className="w-[186px] h-[48px] bg-transparent border-[1px] border-black rounded-full absolute mt-1 "></div>
-            <div className="bg-black rounded-full text-white px-8 py-3 group-hover:mt-1 duration-300">
+          <button className="relative flex group pt-12">
+            <div className="absolute">
+              <div className="px-9 py-3 bg-transparent border-[1px] border-black rounded-full mt-[10px] z-0">
+                UnsereProjekte
+              </div>
+            </div>
+            <div className="bg-black rounded-full text-white px-9 py-4 group-hover:mt-1 duration-300 z-10">
               Unsere Projekte
             </div>
           </button>
