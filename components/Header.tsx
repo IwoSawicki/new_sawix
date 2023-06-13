@@ -68,7 +68,7 @@ export default function Header() {
   return (
     <div>
       <div className="px-6 py-4 fixed w-screen z-50 backdrop-blur ">
-        <div className="flex justify-between w-full  max-w-6xl mx-auto">
+        <div className="flex justify-between w-full  max-w-[1450px] mx-auto">
           <div className="z-20">
             <button onClick={() => setIsOpen(false)}>
               <Link href="/" className="flex gap-3 items-center">
@@ -79,7 +79,7 @@ export default function Header() {
                 ></Image>
                 <span
                   className={`${
-                    isOpen ? "text-black" : ""
+                    isOpen ? "text-white" : "text-black"
                   } , text-xl duration-500`}
                 >
                   Sawix
@@ -104,8 +104,8 @@ export default function Header() {
                 onClick={() => setIsOpen(!isOpen)}
                 className={`${
                   isOpen
-                    ? " rotate-45 bg-black text-white"
-                    : "bg-white text-black"
+                    ? " rotate-45 bg-white text-black"
+                    : "bg-black text-white"
                 } , relative z-10 rounded-full h-7 w-7 ml-3 duration-500 flex justify-center items-center cursor-pointer`}
               >
                 +
@@ -113,7 +113,7 @@ export default function Header() {
               <div
                 className={`${
                   isOpen ? "scale-[80] md:scale-[200]" : ""
-                } , absolute z-0 bg-white h-7 w-7 rounded-full duration-1000`}
+                } , absolute z-0 bg-black h-7 w-7 rounded-full duration-1000`}
               ></div>
             </div>
           </div>
@@ -124,7 +124,7 @@ export default function Header() {
           isOpen
             ? "z-50 bg-red-700/0 delay-150 flex flex-col justify-between mt-12 pb-12"
             : "-z-50 delay-300"
-        } , fixed duration-300 px-6 w-full h-screen text-black`}
+        } , fixed duration-300 px-6 w-full h-screen text-white`}
       >
         <div
           className={`${
@@ -144,7 +144,7 @@ export default function Header() {
                     <div
                       className={` ${
                         router.pathname === link
-                          ? "bg-black h-3 w-3 mr-3"
+                          ? "bg-blue-600 h-3 w-3 mr-3"
                           : "w-0 h-0 bg-transparent mr-0"
                       }  rounded-full duration-300 delay-500`}
                     ></div>
@@ -186,7 +186,7 @@ export default function Header() {
               <div className="md:w-1/2 flex items-end md:justify-end bg-yellow-400/0 mt-6">
                 <Link href={"/kontakt"}>
                   <button
-                    className="bg-black py-4 px-9 rounded-full text-white"
+                    className="bg-white py-4 px-9 rounded-full text-black font-medium"
                     onClick={() => setIsOpen(false)}
                   >
                     Jetzt Projekt Starten!

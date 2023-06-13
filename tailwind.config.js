@@ -10,6 +10,7 @@ module.exports = {
       fontFamily: {
         sans: ["var(--font-poppins)"],
         kaneda: ["kaneda-gothic", "sans-serif"],
+        IvyPresto: ["ivypresto-headline", "serif"],
       },
       animation: {
         marquee: "marquee 25s linear infinite",

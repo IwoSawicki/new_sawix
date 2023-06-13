@@ -6,24 +6,43 @@ import HeroMediceo from "../../public/Hero-Mediceo.png";
 import HeroWeinbau from "../../public/Hero-Weinbau.png";
 import HeroAcid from "../../public/Hero-AcidBerlin.png";
 import { Days_One } from "@next/font/google";
+import Link from "next/link";
+import { BsArrowUpRight } from "react-icons/bs";
 
 export default function Hero() {
   return (
     <div className="pt-32 max-w-[1450px] mx-auto">
       <div>
-        <h1 className="text-[13vw] font-semibold font-kaneda leading-[0.8em]">
-          Digitale Erfahrungen die Bewegen
+        <h1 className="text-[12vw] font-bold font-kaneda leading-[0.8em]">
+          Digitale Erfahrungen <br /> die Bewegen
         </h1>
       </div>
-      <div className="flex flex-col md:flex-row px-3 max-w-7xl mx-auto lg:items-center">
-        <div className="items-center justify-center md:w-1/2">
-          <p>
+      <div className="flex flex-col md:flex-row px-3 mx-auto ">
+        <div className=" md:w-2/5 pt-16">
+          <p className="font-IvyPresto text-3xl font-normal">
             Bei Sawix gestalten wir wunderschöne Websites, erstellen auffällige
             Videos und liefern Designs, die dein Unternehmen voranbringen.
           </p>
+          <button className="relative flex pt-7 group">
+            <div className="w-[186px] h-[48px] bg-transparent border-[1px] border-black rounded-full absolute mt-1 "></div>
+            <div className="bg-black rounded-full text-white px-8 py-3 group-hover:mt-1 duration-300">
+              Unsere Projekte
+            </div>
+          </button>
+          {/* <Link href={"/projekte"}>
+            <button className="buttonGradient p-[2px] mt-4 text-white text-base lg:text-xl font-light rounded-full group bg-gradient-to-r from-[#9747FF] via-blue-700 to-[#9747FF]">
+              <div className="bg-[#E8E5E3] pl-8 rounded-full flex items-center hover:bg-transparent duration-300 text-black group-hover:text-white">
+                Alle Projekte anschauen{" "}
+                <span className="text-xs -mt-3 hidden">(06)</span>
+                <span className="bg-[#9747FF] rounded-full p-3 m-[1px] ml-6 group-hover:bg-transparent duration-300">
+                  <BsArrowUpRight className=" text-black rounded-full duration-300 group-hover:rotate-45 group-hover:text-white" />
+                </span>
+              </div>
+            </button>
+          </Link> */}
         </div>
-        <div className="sm:flex sm:justify-center md:w-1/2">
-          <div className="w-full h-[600px] lg:h-[700px] lg:max-h-screen flex items-start justify-center relative sm:w-1/2 md:w-full">
+        <div className="sm:flex sm:justify-center md:w-3/5 h-[600px] lg:h-[700px]">
+          <div className="w-full  lg:max-h-screen flex relative sm:w-1/2 md:w-full -mt-28">
             <div className="absolute left-1/2 transform -translate-x-1/2 w-full">
               <motion.div
                 initial={{
@@ -44,7 +63,7 @@ export default function Hero() {
                   src={HeroAcid}
                   alt="Acid Berlin Startbild"
                   priority
-                  className=" object-contain max-h-[600px] lg:max-h-screen lg:h-[700px]"
+                  className=" object-contain max-h-[600px] lg:max-h-screen lg:h-[900px]"
                 />
               </motion.div>
             </div>
@@ -68,7 +87,7 @@ export default function Hero() {
                   src={HeroWeinbau}
                   alt="Weinbau Startbild"
                   priority
-                  className=" object-contain max-h-[600px] lg:max-h-screen lg:h-[700px]"
+                  className=" object-contain max-h-[600px] lg:max-h-screen lg:h-[900px]"
                 />
               </motion.div>
             </div>
@@ -92,7 +111,7 @@ export default function Hero() {
                   src={HeroMediceo}
                   alt="Mediceo Startbild"
                   priority
-                  className="object-contain max-h-[600px] lg:max-h-screen lg:h-[700px]"
+                  className="object-contain max-h-[600px] lg:max-h-screen lg:h-[900px]"
                 />
               </motion.div>
             </div>
