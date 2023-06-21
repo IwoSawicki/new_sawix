@@ -65,9 +65,9 @@ export default function Home() {
           <Jobs />
         </section> */}
 
-        {/* <section>
+        <section>
           <Prozess />
-        </section> */}
+        </section>
 
         {/* Footer */}
       </main>
