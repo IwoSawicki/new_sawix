@@ -115,21 +115,21 @@ export default function Kontakt() {
       <main className="py-20 px-3 max-w-6xl mx-auto">
         {/* Heading */}
         <section>
-          <h1 className="text-3xl my-4 md:text-5xl md:w-2/3">
+          <h1 className="text-5xl md:text-8xl font-kaneda font-medium pb-5 md:w-2/3">
             Lass uns dein Unternehmen zusammen voranbringen!
           </h1>
-          <p className="md:w-1/2">
+          <p className="font-IvyPresto text-xl md:text-2xl font-normal md:w-1/2">
             Hinterlasse uns einfach eine Nachricht via Kontaktformular oder
             erreiche uns jederzeit über:
           </p>
           <a
-            className="text-3xl mt-6 mb-5 lg:text-4xl block"
+            className="text-3xl mt-6 mb-5 lg:text-4xl block font-IvyPrestoText"
             href="mailto:info@sawix.de"
           >
             info@sawix.de
           </a>
           <a
-            className="text-3xl mb-12 lg:text-4xl block"
+            className="text-3xl mb-12 lg:text-4xl block font-IvyPrestoText"
             href="tel:+491734388519"
           >
             +49 176 7788 7216
@@ -138,7 +138,7 @@ export default function Kontakt() {
         {/*  -------------------------------------------------------- */}
         <section className="flex flex-col md:flex-row gap-10 mt-10 md:mt-20">
           {/* Kontaktformular */}
-          <div className="w-full rounded-2xl p-4 bg-white text-black relative">
+          <div className="w-full rounded-2xl p-4 bg-white text-black relative font-IvyPrestoText">
             <div className="form-wrapper">
               <form onSubmit={formik.handleSubmit} className="relative">
                 <div>
