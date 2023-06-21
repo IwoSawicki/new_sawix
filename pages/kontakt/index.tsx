@@ -15,6 +15,7 @@ import Image from "next/image";
 import KontaktImg from "@/public/Home-Jobs.png";
 
 import { motion } from "framer-motion";
+import Loader from "@/components/Loader";
 
 export default function Kontakt() {
   //Router
@@ -90,12 +91,10 @@ export default function Kontakt() {
   });
 
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 1 }}
-      exit={{ opacity: 0 }}
-    >
+    <motion.div>
+      <Header />
+      <Loader />
+
       <Head>
         <title>Jetzt Kontaktieren - Sawix Studio</title>
         <meta
@@ -136,7 +135,12 @@ export default function Kontakt() {
           </a>
         </section>
         {/*  -------------------------------------------------------- */}
-        <section className="flex flex-col md:flex-row gap-10 mt-10 md:mt-20">
+        <motion.section
+          className="flex flex-col md:flex-row gap-10 mt-10 md:mt-20"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 0.3 }}
+        >
           {/* Kontaktformular */}
           <div className="w-full rounded-2xl p-4 bg-white text-black relative font-IvyPrestoText">
             <div className="form-wrapper">
@@ -382,7 +386,7 @@ export default function Kontakt() {
               className="rounded-2xl object-cover w-full h-full"
             ></Image>
           </div>
-        </section>
+        </motion.section>
       </main>
 
       {/* <Footer /> */}
