@@ -15,13 +15,13 @@ import lightheroCDU from "@/public/home/lighthero-cdu.png";
 
 export default function Hero() {
   return (
-    <div className="pt-32 max-w-[1450px] mx-auto">
+    <div className="pt-32 max-w-[1450px] mx-auto px-3">
       <div>
         <h1 className="text-[26vw] leading-[0.9em] md:text-[12vw] font-bold font-kaneda md:leading-[0.8em]">
           Digitale Erfahrungen <br /> die Bewegen
         </h1>
       </div>
-      <div className="flex flex-col md:flex-row px-3 mx-auto ">
+      <div className="flex flex-col md:flex-row  mx-auto ">
         <div className=" md:w-2/5 pt-12">
           <p className="font-IvyPresto text-2xl md:text-3xl font-normal">
             Bei Sawix gestalten wir wunderschöne Websites, erstellen auffällige
@@ -72,7 +72,7 @@ export default function Hero() {
                 }}
                 transition={{
                   duration: 1,
-                  delay: 0.9,
+                  delay: 0.3,
                   ease: "easeInOut",
                 }}
               >
@@ -120,7 +120,7 @@ export default function Hero() {
                 }}
                 transition={{
                   duration: 1,
-                  delay: 0.3,
+                  delay: 0.9,
                   ease: "easeInOut",
                 }}
               >

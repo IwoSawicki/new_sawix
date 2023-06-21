@@ -7,7 +7,7 @@ import FooterImg from "../public/Footer-Img.png";
 
 export default function Footer() {
   return (
-    <div>
+    <div className="bg-black text-white">
       <div className="group relative flex overflow-x-hidden border-y-[1px] border-white hover:bg-white hover:text-black duration-300">
         <Link className="FooterMarqueeLink" href={"/kontakt"}>
           <div className="py-6 animate-marquee whitespace-nowrap flex">
@@ -97,7 +97,7 @@ export default function Footer() {
               className="text-3xl mt-6 mb-5 lg:text-4xl"
               href="mailto:info@sawix.de"
             >
-              hallo@sawix.de
+              info@sawix.de
             </a>
             <a className="text-3xl mb-12 lg:text-4xl" href="tel:+491734388519">
               +49 176 7788 7216

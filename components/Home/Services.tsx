@@ -28,16 +28,16 @@ export default function Services() {
               ></Player>
             </div>
             <div className="p-4 mt-4 flex flex-col justify-center gap-3">
-              <h3 className="text-3xl mb-3 lg:text-6xl font-kaneda">
+              <h3 className="text-3xl mb-3 lg:text-7xl font-kaneda">
                 Webdesign & Entwicklung
               </h3>
-              <p className="text-base lg:text-3xl font-light font-IvyPrestoText">
+              <p className="text-base lg:text-3xl font-extralight font-IvyPrestoText">
                 Wir spezialisieren uns auf interaktive, skalierbare und
                 Maßgeschneiderte digitale Erfahrungen
               </p>
               <Link href={"services/webdesign"}>
                 <button className="buttonGradient p-px mt-4 text-white text-base lg:text-xl font-light rounded-full group bg-gradient-to-r from-[#FFEE62] via-orange-600 to-[#FFEE62]">
-                  <div className="bg-[#0b0d0f] pl-8 rounded-full flex items-center hover:bg-transparent duration-300 font-IvyPrestoText">
+                  <div className="bg-[#0b0d0f] pl-8 rounded-full flex items-center hover:bg-transparent duration-300 font-IvyPrestoText font-extralight">
                     Erfahre mehr
                     <span className="bg-[#FFEE62] rounded-full p-3 m-[1px] ml-6 group-hover:bg-transparent duration-300">
                       <BsArrowUpRight className=" text-black rounded-full duration-300 group-hover:rotate-45 group-hover:text-white" />
@@ -61,17 +61,17 @@ export default function Services() {
               ></Player>
             </div>
             <div className="p-4 mt-4 flex flex-col justify-center gap-3">
-              <h3 className="text-3xl mb-3 lg:text-6xl font-kaneda">
+              <h3 className="text-3xl mb-3 lg:text-7xl font-kaneda">
                 Online-Shops
               </h3>
-              <p className="text-base lg:text-3xl font-light font-IvyPrestoText">
+              <p className="text-base lg:text-3xl font-extralight font-IvyPrestoText">
                 Sicherheit, Skalierbarkeit und vorallem Kundenzufriedenheit.
                 Darauf legen wir besonderen Wert bei der Erstellung von einem
                 Online-Shop
               </p>
               <Link href={"services/e-commerce"}>
                 <button className="buttonGradient p-px mt-4 text-white text-base lg:text-xl font-light rounded-full group bg-gradient-to-r from-[#6EE863] via-emerald-500 to-[#6EE863]">
-                  <div className="bg-[#0b0d0f] pl-8 rounded-full flex items-center hover:bg-transparent duration-300 ">
+                  <div className="bg-[#0b0d0f] pl-8 rounded-full flex items-center hover:bg-transparent duration-300 font-IvyPrestoText font-extralight">
                     Erfahre mehr
                     <span className="bg-[#6EE863] rounded-full p-3 m-[1px] ml-6 group-hover:bg-transparent duration-300">
                       <BsArrowUpRight className=" text-black rounded-full duration-300 group-hover:rotate-45 group-hover:text-white" />
@@ -95,17 +95,17 @@ export default function Services() {
               ></Player>
             </div>
             <div className="p-4 mt-4 flex flex-col justify-center gap-3">
-              <h3 className="text-3xl mb-3 lg:text-4xl">
+              <h3 className="text-3xl mb-3 lg:text-7xl font-kaneda">
                 Foto- & Videoproduktion
               </h3>
-              <p className="text-base lg:text-xl font-light">
+              <p className="text-base lg:text-3xl font-extralight font-IvyPrestoText">
                 Menschen arbeiten Visuell. Zeig deshalb deinen Kunden was du
                 machst. Bilder sagen bekanntlich mehr als 1000 Worte.
               </p>
 
               <Link href={"services/medienproduktion"}>
                 <button className="buttonGradient p-px mt-4 text-white text-base lg:text-xl font-light rounded-full group bg-gradient-to-r from-[#9747FF] via-blue-700 to-[#9747FF]">
-                  <div className="bg-[#0b0d0f] pl-8 rounded-full flex items-center hover:bg-transparent duration-300 ">
+                  <div className="bg-[#0b0d0f] pl-8 rounded-full flex items-center hover:bg-transparent duration-300 font-IvyPrestoText font-extralight">
                     Erfahre mehr
                     <span className="bg-[#9747FF] rounded-full p-3 m-[1px] ml-6 group-hover:bg-transparent duration-300">
                       <BsArrowUpRight className=" text-black rounded-full duration-300 group-hover:rotate-45 group-hover:text-white" />
@@ -129,16 +129,16 @@ export default function Services() {
               ></Player>
             </div>
             <div className="p-4 mt-4 flex flex-col justify-center gap-3">
-              <h3 className="text-3xl mb-3 xl:text-4xl">
+              <h3 className="text-3xl mb-3 lg:text-7xl font-kaneda">
                 Social Media Marketing
               </h3>
-              <p className="text-base lg:text-xl font-light">
+              <p className="text-base lg:text-3xl font-extralight font-IvyPrestoText">
                 Egal ob Facebook, Instagram oder TikTok, mit uns erreichst du
                 mehr Kunden mit deinem Unternehmen.
               </p>
               <Link href={"services/social-media-marketing"}>
                 <button className="buttonGradient p-px mt-4 text-white text-base lg:text-xl font-light rounded-full group bg-gradient-to-r from-[#FF8540] via-red-600 to-[#FF8540]">
-                  <div className="bg-[#0b0d0f] pl-8 rounded-full flex items-center hover:bg-transparent duration-300 ">
+                  <div className="bg-[#0b0d0f] pl-8 rounded-full flex items-center hover:bg-transparent duration-300 font-IvyPrestoText font-extralight">
                     Erfahre mehr
                     <span className="bg-[#FF8540] rounded-full p-3 m-[1px] ml-6 group-hover:bg-transparent duration-300">
                       <BsArrowUpRight className=" text-black rounded-full duration-300 group-hover:rotate-45 group-hover:text-white" />
