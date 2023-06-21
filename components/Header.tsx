@@ -106,7 +106,7 @@ export default function Header() {
                   isOpen
                     ? " rotate-45 bg-white text-black"
                     : "bg-black text-white"
-                } , relative z-10 rounded-full h-7 w-7 ml-3 duration-500 flex justify-center items-center cursor-pointer`}
+                } , relative z-10 rounded-full h-8 w-8 ml-3 duration-500 flex justify-center items-center cursor-pointer`}
               >
                 +
               </div>
