@@ -2,12 +2,12 @@ import React from "react";
 
 export default function Intro() {
   return (
-    <div className="bg-[#0B0D0F] rounded-t-2xl pt-10 lg:pt-0">
+    <div className="bg-[#E8E5E3] pt-10 lg:pt-0 border-t-2 border-black">
       <div className="px-3 max-w-5xl mx-auto lg:py-28">
-        <h2 className="text-4xl text-center my-4 lg:text-5xl lg:mb-10">
+        <h2 className="text-center text-5xl md:text-8xl font-kaneda font-medium pb-6">
           Eine gute Online Präsenz ist ein strategisches Investment
         </h2>
-        <p className="text-base lg:text-xl font-light my-4 text-center">
+        <p className="font-IvyPresto text-xl md:text-2xl font-normal text-center">
           Deine Website ist dein wichtigstes Marketing-Asset Nummer eins. Daher
           sollte diese modern, ästhetisch ansprechend und technisch einwandfrei
           für ein angenehmes Nutzererlebnis sein.

@@ -13,7 +13,7 @@ export default function () {
     <div>
       {/* Portfolio */}
       <div className="my-24 px-3 max-w-[1450px] mx-auto">
-        <h2 className="text-4xl my-4 md:text-8xl font-kaneda font-semibold md:hidden">
+        <h2 className="text-5xl my-4 md:text-8xl font-kaneda font-semibold md:hidden">
           Abgeschlossene Projekte
         </h2>
         <div className="text-black pt-8 flex gap-12 flex-col">
@@ -25,7 +25,7 @@ export default function () {
                 <p className="text-md md:text-xl font-light font-IvyPresto">
                   DMK-Haus
                 </p>
-                <h3 className="font-medium text-2xl md:text-8xl relative font-kaneda">
+                <h3 className="md:font-medium font-semibold text-4xl md:text-8xl relative font-kaneda">
                   Custom Shop für Modulhäußer und Möbel rund ums Haus
                   {/* <button className="bg-black border-black border-[1px] rounded-full mx-2 group-hover:rotate-45 duration-300 md:absolute md:mt-2">
                       <div className="h-5 w-5 md:h-8 md:w-8 flex items-center justify-center">
@@ -54,7 +54,7 @@ export default function () {
                 <p className="text-md md:text-xl font-light font-IvyPresto">
                   Mediceo
                 </p>
-                <h3 className="font-medium text-2xl md:text-8xl relative font-kaneda">
+                <h3 className="md:font-medium font-semibold text-4xl md:text-8xl relative font-kaneda">
                   Website redesign für eine innovative Medizinapp
                   {/* <button className="bg-black border-black border-[1px] rounded-full mx-2 group-hover:rotate-45 duration-300 md:absolute md:mt-2">
                       <div className="h-5 w-5 md:h-8 md:w-8 flex items-center justify-center">
@@ -83,7 +83,7 @@ export default function () {
                 <p className="text-md md:text-xl font-light font-IvyPresto">
                   Wohlfühlerei Weinhaus
                 </p>
-                <h3 className="font-medium text-2xl md:text-8xl relative font-kaneda">
+                <h3 className="md:font-medium font-semibold text-4xl md:text-8xl relative font-kaneda">
                   Elegante Webseite für einen lokalen Weinanbau
                   {/* <button className="bg-black border-black border-[1px] rounded-full mx-2 group-hover:rotate-45 duration-300 md:absolute md:mt-2">
                       <div className="h-5 w-5 md:h-8 md:w-8 flex items-center justify-center">

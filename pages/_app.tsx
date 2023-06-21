@@ -36,7 +36,7 @@ export default function App({ Component, pageProps, router }: AppProps) {
 
       <AnimatePresence mode="wait">
         <div className={`${poppins.variable} font-sans`}>
-          <Header />
+          {/* <Header /> */}
           <Component key={router.pathname} {...pageProps} />
         </div>
       </AnimatePresence>

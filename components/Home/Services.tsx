@@ -9,9 +9,9 @@ import AnimationSSM from "@/public/Services/AnimationSSM.json";
 
 export default function Services() {
   return (
-    <div className="bg-[#0b0d0f] text-white py-36">
+    <div className="bg-[#0b0d0f] text-white py-20 md:py-36">
       <div className="px-3  max-w-[1250px] mx-auto">
-        <h2 className="text-8xl font-kaneda font-medium">
+        <h2 className="text-6xl md:text-8xl font-kaneda font-medium">
           Finde den Service, <br /> den du brauchst
         </h2>
 
@@ -28,10 +28,10 @@ export default function Services() {
               ></Player>
             </div>
             <div className="p-4 mt-4 flex flex-col justify-center gap-3">
-              <h3 className="text-3xl mb-3 lg:text-7xl font-kaneda">
+              <h3 className="text-5xl mb-3 lg:text-7xl font-kaneda">
                 Webdesign & Entwicklung
               </h3>
-              <p className="text-base lg:text-3xl font-extralight font-IvyPrestoText">
+              <p className="text-xl lg:text-3xl font-extralight font-IvyPrestoText">
                 Wir spezialisieren uns auf interaktive, skalierbare und
                 Maßgeschneiderte digitale Erfahrungen
               </p>
@@ -61,10 +61,10 @@ export default function Services() {
               ></Player>
             </div>
             <div className="p-4 mt-4 flex flex-col justify-center gap-3">
-              <h3 className="text-3xl mb-3 lg:text-7xl font-kaneda">
+              <h3 className="text-5xl mb-3 lg:text-7xl font-kaneda">
                 Online-Shops
               </h3>
-              <p className="text-base lg:text-3xl font-extralight font-IvyPrestoText">
+              <p className="text-xl lg:text-3xl font-extralight font-IvyPrestoText">
                 Sicherheit, Skalierbarkeit und vorallem Kundenzufriedenheit.
                 Darauf legen wir besonderen Wert bei der Erstellung von einem
                 Online-Shop
@@ -95,10 +95,10 @@ export default function Services() {
               ></Player>
             </div>
             <div className="p-4 mt-4 flex flex-col justify-center gap-3">
-              <h3 className="text-3xl mb-3 lg:text-7xl font-kaneda">
+              <h3 className="text-5xl mb-3 lg:text-7xl font-kaneda">
                 Foto- & Videoproduktion
               </h3>
-              <p className="text-base lg:text-3xl font-extralight font-IvyPrestoText">
+              <p className="text-xl lg:text-3xl font-extralight font-IvyPrestoText">
                 Menschen arbeiten Visuell. Zeig deshalb deinen Kunden was du
                 machst. Bilder sagen bekanntlich mehr als 1000 Worte.
               </p>
@@ -129,10 +129,10 @@ export default function Services() {
               ></Player>
             </div>
             <div className="p-4 mt-4 flex flex-col justify-center gap-3">
-              <h3 className="text-3xl mb-3 lg:text-7xl font-kaneda">
+              <h3 className="text-5xl mb-3 lg:text-7xl font-kaneda">
                 Social Media Marketing
               </h3>
-              <p className="text-base lg:text-3xl font-extralight font-IvyPrestoText">
+              <p className="text-xl lg:text-3xl font-extralight font-IvyPrestoText">
                 Egal ob Facebook, Instagram oder TikTok, mit uns erreichst du
                 mehr Kunden mit deinem Unternehmen.
               </p>

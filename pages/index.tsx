@@ -1,6 +1,6 @@
 import Head from "next/head";
+import { motion } from "framer-motion";
 // import Image from "next/image";
-// import { Inter } from "@next/font/google";
 
 import Header from "@/components/Header";
 import Hero from "@/components/Home/Hero";
@@ -10,13 +10,10 @@ import PortfolioNeu from "@/components/Home/Portfolio-neu";
 import Services from "@/components/Home/Services";
 // import Jobs from "@/components/Home/Jobs";
 import Footer from "@/components/Footer";
+import Prozess from "@/components/Home/Prozess";
+import Loader from "@/components/Loader";
 
 import OGimage from "../public/Hero-Phone.png";
-
-import { motion } from "framer-motion";
-import Prozess from "@/components/Home/Prozess";
-
-import Loader from "@/components/Loader";
 
 export default function Home() {
   return (
@@ -38,6 +35,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.svg" />
       </Head>
       {/* Header */}
+      <Header />
 
       <Loader />
 
@@ -67,9 +65,9 @@ export default function Home() {
           <Jobs />
         </section> */}
 
-        <section>
+        {/* <section>
           <Prozess />
-        </section>
+        </section> */}
 
         {/* Footer */}
       </main>

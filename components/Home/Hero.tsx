@@ -15,14 +15,14 @@ import lightheroCDU from "@/public/home/lighthero-cdu.png";
 
 export default function Hero() {
   return (
-    <div className="pt-32 max-w-[1450px] mx-auto px-3">
+    <div className="pt-20 md:pt-32 max-w-[1450px] mx-auto px-3">
       <div>
-        <h1 className="text-[26vw] leading-[0.9em] md:text-[12vw] font-bold font-kaneda md:leading-[0.8em]">
+        <h1 className="text-[26vw] leading-[0.9em] md:text-[12vw] font-bold font-kaneda md:leading-[0.8em] 2xl:text-[230px]">
           Digitale Erfahrungen <br /> die Bewegen
         </h1>
       </div>
       <div className="flex flex-col md:flex-row  mx-auto ">
-        <div className=" md:w-2/5 pt-12">
+        <div className=" md:w-2/5 pt-8 md:pt-12">
           <p className="font-IvyPresto text-2xl md:text-3xl font-normal">
             Bei Sawix gestalten wir wunderschöne Websites, erstellen auffällige
             Videos und liefern Designs, die dein Unternehmen{" "}
@@ -47,7 +47,7 @@ export default function Hero() {
             </div>
           </button> */}
           <Link href={"/projekte"}>
-            <button className="buttonGradient p-[2px] mt-12 text-white text-base lg:text-xl font-light rounded-full group bg-gradient-to-r from-[#9747FF] via-blue-700 to-[#9747FF]">
+            <button className="buttonGradient p-[2px] mt-8 md:mt-12 text-white text-base lg:text-xl font-light rounded-full group bg-gradient-to-r from-[#9747FF] via-blue-700 to-[#9747FF]">
               <div className="bg-[#E8E5E3] pl-8 rounded-full flex items-center hover:bg-transparent duration-300 text-black group-hover:text-white font-IvyPresto">
                 Zu unseren Projekten{" "}
                 <span className="text-xs -mt-3 hidden">(06)</span>

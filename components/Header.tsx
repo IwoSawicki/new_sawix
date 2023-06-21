@@ -148,7 +148,9 @@ export default function Header() {
                           : "w-0 h-0 bg-transparent mr-0"
                       }  rounded-full duration-300 delay-500`}
                     ></div>
-                    <button onClick={() => setIsOpen(false)}>
+                    <button
+                    // onClick={() => setIsOpen(false)}
+                    >
                       <Link key={name} href={link}>
                         {name}
                       </Link>

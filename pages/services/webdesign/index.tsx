@@ -8,15 +8,14 @@ import Link from "next/link";
 import { BsArrowUpRight } from "react-icons/bs";
 
 import { motion } from "framer-motion";
+import Loader from "@/components/Loader";
 
 export default function webdesign() {
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 1 }}
-      exit={{ opacity: 0 }}
-    >
+    <motion.div>
+      <Header />
+      <Loader />
+
       <Head>
         <title>Webdesign - Sawix Studio</title>
         <meta
