@@ -11,7 +11,7 @@ import ImgInterview from "@/public/Services/medienproduktion/ImgInterview.jpg";
 export default function Dienstleistungen() {
   return (
     <div className="my-12 lg:my-28 px-3 max-w-6xl mx-auto">
-      <h2 className="text-4xl mb-8 pt-4 lg:text-5xl lg:pt-0 lg:mb-12">
+      <h2 className="text-6xl md:text-8xl font-kaneda font-medium mb-8">
         Unsere Services
       </h2>
       <div className="space-y-40">
@@ -25,8 +25,10 @@ export default function Dienstleistungen() {
             />
           </div>
           <div className="flex flex-col gap-3 mt-5 lg:mt-0 justify-center lg:w-3/5 lg:pl-16 lg:gap-5">
-            <h3 className="text-3xl lg:text-5xl">Imagefilm</h3>
-            <p className="text-base lg:text-xl font-light">
+            <h3 className="text-5xl md:text-7xl font-kaneda font-medium">
+              Imagefilm
+            </h3>
+            <p className="font-IvyPresto text-xl md:text-2xl font-normal">
               {/* Als Imagefilm-Spezialisten bieten wir Ihnen hochwertige und
               ansprechende Filme, die Ihr Unternehmen und Ihre Produkte perfekt
               präsentieren. Wir verstehen uns als Partner für alle, die einen
@@ -43,7 +45,7 @@ export default function Dienstleistungen() {
               Produkten oder Dienstleistungen, über die Menschen und Geräte bis
               hin zu Arbeitsstätten, Büros, Lager- und Produktionshallen.
             </p>
-            <ul className="text-base lg:text-xl font-light list-disc ml-5">
+            <ul className="text-base lg:text-xl font-light list-disc ml-5 font-IvyPrestoText">
               <li>Unternehmenspräsentaiton</li>
               <li>Marketingfilm</li>
               <li>Branding</li>
@@ -60,8 +62,10 @@ export default function Dienstleistungen() {
             />
           </div>
           <div className="flex flex-col gap-3 mt-5 lg:mt-0 justify-center lg:w-3/5 lg:pl-16 lg:gap-5">
-            <h3 className="text-3xl lg:text-5xl">Werbevideo</h3>
-            <p className="text-base lg:text-xl font-light">
+            <h3 className="text-5xl md:text-7xl font-kaneda font-medium">
+              Werbevideo
+            </h3>
+            <p className="font-IvyPresto text-xl md:text-2xl font-normal">
               {/* Wir sind eine Agentur, die sich auf die Produktion von Werbefilmen
               spezialisiert hat. Unser Ziel ist es, Ihnen zu helfen, Ihre Marke
               und Ihre Produkte erfolgreich zu bewerben und Ihre Zielgruppe zu
@@ -84,7 +88,7 @@ export default function Dienstleistungen() {
               Unternehmen zu skalieren.
             </p>
             <div className="flex flex-col gap-3 lg:gap-5 lg:flex-row">
-              <ul className="text-base lg:text-xl font-light list-disc ml-5">
+              <ul className="text-base lg:text-xl font-light list-disc ml-5 font-IvyPrestoText">
                 <li>Produktvorstellung</li>
                 <li>Social Media Werbefilm</li>
                 <li>Visuelle Präsentation</li>
@@ -112,8 +116,10 @@ export default function Dienstleistungen() {
             />
           </div>
           <div className="flex flex-col gap-3 mt-5 lg:mt-0 justify-center lg:w-3/5 lg:pl-16 lg:gap-5">
-            <h3 className="text-3xl lg:text-5xl">Fotoproduktion</h3>
-            <p className="text-base lg:text-xl font-light">
+            <h3 className="text-5xl md:text-7xl font-kaneda font-medium">
+              Fotoproduktion
+            </h3>
+            <p className="font-IvyPresto text-xl md:text-2xl font-normal">
               Ob das Büro, die Produktions- und Lagerhallen, das Restaurant und
               die Gerichte, die Mitarbeiter, Klamotten oder Produkte. Egal ob
               bei dir vor Ort oder bei uns im Fotostudio. Gute Bilder sind ein
@@ -121,7 +127,7 @@ export default function Dienstleistungen() {
               riesigen Unterschied bei deinem Online Auftritt machen.
               <br /> <br />
             </p>
-            <ul className="text-base lg:text-xl font-light list-disc ml-5">
+            <ul className="text-base lg:text-xl font-light list-disc ml-5 font-IvyPrestoText">
               <li>Produktvorstellung</li>
               <li>Dienstleistungen</li>
             </ul>
@@ -137,8 +143,10 @@ export default function Dienstleistungen() {
             />
           </div>
           <div className="flex flex-col gap-3 mt-5 lg:mt-0 justify-center lg:w-3/5 lg:pl-16 lg:gap-5">
-            <h3 className="text-3xl lg:text-5xl">Recruitingfilm</h3>
-            <p className="text-base lg:text-xl font-light">
+            <h3 className="text-5xl md:text-7xl font-kaneda font-medium">
+              Recruitingfilm
+            </h3>
+            <p className="font-IvyPresto text-xl md:text-2xl font-normal">
               Recruiting-Videos sind ein immer wichtigeres Element des Employer
               Brandings und dienen dazu, Mitarbeiter zu gewinnen. Unternehmen
               präsentieren sich als Arbeitgeber und geben einen echten Einblick
@@ -147,7 +155,7 @@ export default function Dienstleistungen() {
               Arbeitsatmosphäre oder um das Unternehmen als Arbeitgeber im
               Allgemeinen.
             </p>
-            <ul className="text-base lg:text-xl font-light list-disc ml-5">
+            <ul className="text-base lg:text-xl font-light list-disc ml-5 font-IvyPrestoText">
               <li>Mehr Reichweite</li>
               <li>Qualifizierte Mitarbeiter</li>
             </ul>
@@ -163,8 +171,10 @@ export default function Dienstleistungen() {
             />
           </div>
           <div className="flex flex-col gap-3 mt-5 lg:mt-0 justify-center lg:w-3/5 lg:pl-16 lg:gap-5">
-            <h3 className="text-3xl lg:text-5xl">Interview</h3>
-            <p className="text-base lg:text-xl font-light">
+            <h3 className="text-5xl md:text-7xl font-kaneda font-medium">
+              Interview
+            </h3>
+            <p className="font-IvyPresto text-xl md:text-2xl font-normal">
               Ein gut produziertes Interview kann eingesetzt werden, um die
               Authentizität und Persönlichkeit deiner Marke zu unterstreichen,
               oder als Testimonial für deine Produkte und Dienstleistungen
@@ -175,7 +185,7 @@ export default function Dienstleistungen() {
               wie in den meisten fällen, mit den anderen Videoarten kombiniert
               werden, um so Persönlichkeit reinzubringen.
             </p>
-            <ul className="text-base lg:text-xl font-light list-disc ml-5">
+            <ul className="text-base lg:text-xl font-light list-disc ml-5 font-IvyPrestoText">
               <li>Persönlichkeit</li>
               <li>Authentizität</li>
             </ul>

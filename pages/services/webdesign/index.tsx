@@ -42,7 +42,7 @@ export default function webdesign() {
       {/* Weiterleitung */}
       <div className="fixed bottom-5 w-screen flex justify-center z-30">
         <Link href={"e-commerce"}>
-          <button className="bg-blue-700 text-white rounded-full group text-sm md:text-base font-light">
+          <button className="bg-blue-700 text-white rounded-full group text-sm md:text-base font-thin font-IvyPrestoText">
             <div className="px-6 rounded-full flex items-center hover:bg-transparent duration-300">
               Weiter zu Online-Shops
               <span className="rounded-full py-3 pl-2 m-[1px] group-hover:bg-transparent duration-300">

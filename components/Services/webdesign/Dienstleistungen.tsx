@@ -188,11 +188,11 @@ export default function Dienstleistungen() {
                 <li>Immobilienvideo</li>
               </ul>
               <Link href={"/services/medienproduktion"}>
-                <button className="bg-gradient-to-r from-[#FFEE62] via-orange-600 to-[#FFEE62] buttonGradient p-px text-white rounded-full group">
-                  <div className="bg-[#0b0d0f] pl-8 rounded-full flex items-center hover:bg-transparent duration-300">
+                <button className="bg-gradient-to-r from-[#FFEE62] via-orange-600 to-[#FFEE62] buttonGradient p-[2px] text-black rounded-full group font-IvyPrestoText">
+                  <div className="bg-[#e8e5e3] pl-8 rounded-full flex items-center hover:bg-transparent duration-300">
                     Zur Medienproduktion
                     <span className="bg-[#f7aa10] rounded-full p-3 m-[1px] ml-5 group-hover:bg-transparent duration-300">
-                      <BsArrowUpRight className=" text-white rounded-full duration-300 group-hover:rotate-45" />
+                      <BsArrowUpRight className=" text-black rounded-full duration-300 group-hover:rotate-45" />
                     </span>
                   </div>
                 </button>
