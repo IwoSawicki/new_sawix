@@ -11,7 +11,7 @@ import ImgRework from "@/public/Services/e-com/ImgRework.jpeg";
 export default function Dienstleistungen() {
   return (
     <div className="my-12 lg:my-28 px-3 max-w-6xl mx-auto">
-      <h2 className="text-4xl mb-8 pt-4 lg:text-5xl lg:pt-0 lg:mb-12">
+      <h2 className="text-6xl md:text-8xl font-kaneda font-medium mb-8">
         Unsere Services
       </h2>
       <div className="space-y-40">
@@ -25,8 +25,10 @@ export default function Dienstleistungen() {
             />
           </div>
           <div className="flex flex-col gap-3 mt-5 lg:mt-0 justify-center lg:w-3/5 lg:pl-16 lg:gap-5">
-            <h3 className="text-3xl lg:text-5xl">CMS Shopsystem</h3>
-            <p className="text-base lg:text-xl font-light">
+            <h3 className="text-5xl md:text-7xl font-kaneda font-medium">
+              CMS Shopsystem
+            </h3>
+            <p className="font-IvyPresto text-xl md:text-2xl font-normal">
               Für knapp 80% der Aufträge greifen wir auf eine CMS Lösung wie
               Wordpress oder Shopify zurück. Hierbei nehmen wir uns immer Zeit
               um die verschiendenen Vor- und Nachteile zu besprechen und
@@ -40,7 +42,7 @@ export default function Dienstleistungen() {
               Kinderspiel und kann innerhalb von 30 Minuten jedem beigebracht
               werden.
             </p>
-            <ul className="text-base lg:text-xl font-light list-disc ml-5">
+            <ul className="text-base lg:text-xl font-light list-disc ml-5 font-IvyPrestoText">
               <li>Wordpress</li>
               <li>Shopify</li>
             </ul>
@@ -56,8 +58,10 @@ export default function Dienstleistungen() {
             />
           </div>
           <div className="flex flex-col gap-3 mt-5 lg:mt-0 justify-center lg:w-3/5 lg:pl-16 lg:gap-5">
-            <h3 className="text-3xl lg:text-5xl">Internes Shopsystem</h3>
-            <p className="text-base lg:text-xl font-light">
+            <h3 className="text-5xl md:text-7xl font-kaneda font-medium">
+              Internes Shopsystem
+            </h3>
+            <p className="font-IvyPresto text-xl md:text-2xl font-normal">
               Ist deine Vision etwas größer? Etwas personalisierter? Oder
               möchtest du einen Shop haben, der alle anderen aus den Socken haut
               und jeden Besucher begeistert? Genau dafür ist unser Hauseigenes
@@ -71,7 +75,7 @@ export default function Dienstleistungen() {
               Damit du deine Vision und Produkt noch bessern an deine Kunden
               bringen kannst, und mehr Besucher in Kundschaft umwandelst.
             </p>
-            <ul className="text-base lg:text-xl font-light list-disc ml-5">
+            <ul className="text-base lg:text-xl font-light list-disc ml-5 font-IvyPrestoText">
               <li>Anpassungsfähigkeit</li>
               <li>Personalisierung</li>
               <li>Sicherheit</li>
@@ -89,15 +93,17 @@ export default function Dienstleistungen() {
             />
           </div>
           <div className="flex flex-col gap-3 mt-5 lg:mt-0 justify-center lg:w-3/5 lg:pl-16 lg:gap-5">
-            <h3 className="text-3xl lg:text-5xl">Mobile Apps</h3>
-            <p className="text-base lg:text-xl font-light">
+            <h3 className="text-5xl md:text-7xl font-kaneda font-medium">
+              Mobile Apps
+            </h3>
+            <p className="font-IvyPresto text-xl md:text-2xl font-normal">
               Tatsächlich gibt es garnicht so ein großen Unterschied, zwischen
               Web- und Appentwicklung. Jedoch ist die Benutzererfahrung oftmals
               deutlich hochwertiger, schneller und Intuitiver. Und da wir uns in
               diesem Bereich spezialisieren, sind wir in der Lage hochwertige
               und schnelle Arbeit abzuliefern.
             </p>
-            <ul className="text-base lg:text-xl font-light list-disc ml-5">
+            <ul className="text-base lg:text-xl font-light list-disc ml-5 font-IvyPrestoText">
               <li>React Native</li>
               <li>Benutzererfahrung</li>
               <li>Shop-Systeme</li>
@@ -114,8 +120,10 @@ export default function Dienstleistungen() {
             />
           </div>
           <div className="flex flex-col gap-3 mt-5 lg:mt-0 justify-center lg:w-3/5 lg:pl-16 lg:gap-5">
-            <h3 className="text-3xl lg:text-5xl">SEO & bezahlte Werbung</h3>
-            <p className="text-base lg:text-xl font-light">
+            <h3 className="text-5xl md:text-7xl font-kaneda font-medium">
+              SEO & bezahlte Werbung
+            </h3>
+            <p className="font-IvyPresto text-xl md:text-2xl font-normal">
               Eine geile Webseite ist ein wichtiger Aspekt, wenn deine Kunden
               dich jedoch nicht finden können, bringt diese auch nichts. Damit
               das aber kein Problem wird, führen wir vor abschluss jeder
@@ -126,7 +134,7 @@ export default function Dienstleistungen() {
               Wenn man dann noch bezahlte Werbung schalten möchte, kann man sein
               Unternehmen noch schneller skalieren und Kunden gewinnen.{" "}
             </p>
-            <ul className="text-base lg:text-xl font-light list-disc ml-5">
+            <ul className="text-base lg:text-xl font-light list-disc ml-5 font-IvyPrestoText">
               <li>Suchmaschinen Optimierung</li>
               <li>Mehr Reichweite</li>
               <li>Schneller Skalieren</li>
@@ -143,8 +151,10 @@ export default function Dienstleistungen() {
             />
           </div>
           <div className="flex flex-col gap-3 mt-5 lg:mt-0 justify-center lg:w-3/5 lg:pl-16 lg:gap-5">
-            <h3 className="text-3xl lg:text-5xl">Überarbeitung</h3>
-            <p className="text-base lg:text-xl font-light">
+            <h3 className="text-5xl md:text-7xl font-kaneda font-medium">
+              Überarbeitung
+            </h3>
+            <p className="font-IvyPresto text-xl md:text-2xl font-normal">
               Du hast schon einen Online Shop und möchtest nur eine Auffrischung
               des Aussehens oder der Funktionen? Dafür sind wir natürlich auch
               zu haben!
@@ -153,7 +163,7 @@ export default function Dienstleistungen() {
               deiner Seite. Dazu was du gerne gemacht haben möchtest und ,falls
               du es weißt, am besten auch mit was Sie umgesetzt wurde.
             </p>
-            <ul className="text-base lg:text-xl font-light list-disc ml-5">
+            <ul className="text-base lg:text-xl font-light list-disc ml-5 font-IvyPrestoText">
               <li>Neues Design</li>
               <li>Konzeption</li>
               <li>Funktionserweiterung</li>

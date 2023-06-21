@@ -11,7 +11,7 @@ import ImgMedia from "@/public/Services/Webdesign/ImgMedia.webp";
 export default function Dienstleistungen() {
   return (
     <div className="my-12 lg:my-28 px-3 max-w-6xl mx-auto">
-      <h2 className="text-4xl mb-8 pt-4 lg:text-5xl lg:pt-0 lg:mb-12">
+      <h2 className="text-6xl md:text-8xl font-kaneda font-medium mb-8">
         Unsere Services
       </h2>
       <div className="space-y-40">
@@ -25,15 +25,17 @@ export default function Dienstleistungen() {
             />
           </div>
           <div className="flex flex-col gap-3 mt-5 lg:mt-0 justify-center lg:w-3/5 lg:pl-16 lg:gap-5">
-            <h3 className="text-3xl lg:text-5xl">Webdesign</h3>
-            <p className="text-base lg:text-xl font-light">
+            <h3 className="text-5xl md:text-7xl font-kaneda font-medium">
+              Webdesign
+            </h3>
+            <p className="font-IvyPresto text-xl md:text-2xl font-normal">
               Eine Webseite ist deine digitale Visitenkarte und oftmals das
               erste, was potentielle Kunden von deinem Unternehmen sehen. Seien
               es Speisekarte, Produktfotos oder interne Arbeitsprozesse. Wir
               sorgen dafür, dass diese Erfahrung unvergesslich bleibt, mehr
               Neukunden generiert und dein Wachstum beschleunight.
             </p>
-            <ul className="text-base lg:text-xl font-light list-disc ml-5">
+            <ul className="text-base lg:text-xl font-light list-disc ml-5 font-IvyPrestoText">
               <li>Designerstellung</li>
               <li>Überarbeitung</li>
               <li>Benutzererfahrung</li>
@@ -51,8 +53,10 @@ export default function Dienstleistungen() {
             />
           </div>
           <div className="flex flex-col gap-3 mt-5 lg:mt-0 justify-center lg:w-3/5 lg:pl-16 lg:gap-5">
-            <h3 className="text-3xl lg:text-5xl">CMS Entwicklung</h3>
-            <p className="text-base lg:text-xl font-light">
+            <h3 className="text-5xl md:text-7xl font-kaneda font-medium">
+              CMS Entwicklung
+            </h3>
+            <p className="font-IvyPresto text-xl md:text-2xl font-normal">
               Bei der heutzutage kurzen Aufmerksamkeitsdauer, müssen die
               Webseiten vorallem eins: Schnell und Interaktiv sein. Bei kleinen
               Projekte benutzen wir hierbei Wordpress, mit toller Preis/Leistung
@@ -61,7 +65,7 @@ export default function Dienstleistungen() {
               Programmierung zurück, um nie zuvor gesehe Interaktivität,
               Anpassfähigkeit und Schnelligkeit zu liefern.
             </p>
-            <ul className="text-base lg:text-xl font-light list-disc ml-5">
+            <ul className="text-base lg:text-xl font-light list-disc ml-5 font-IvyPrestoText">
               <li>Wordpress CMS</li>
               <li>Schnelle Entwicklung</li>
               <li>Selbst bearbeiten</li>
@@ -78,8 +82,10 @@ export default function Dienstleistungen() {
             />
           </div>
           <div className="flex flex-col gap-3 mt-5 lg:mt-0 justify-center lg:w-3/5 lg:pl-16 lg:gap-5">
-            <h3 className="text-3xl lg:text-5xl">Programmierung</h3>
-            <p className="text-base lg:text-xl font-light">
+            <h3 className="text-5xl md:text-7xl font-kaneda font-medium">
+              Programmierung
+            </h3>
+            <p className="font-IvyPresto text-xl md:text-2xl font-normal">
               Durch eigene Programmierung von Webseiten, sind wir in der Lage
               die Webseiten deutlich schneller zu machen, da keine unnötigen
               Pakete versendet werden.
@@ -91,7 +97,7 @@ export default function Dienstleistungen() {
               Wenn du also nicht nur eine Webseite möchtest, sondern eine
               digitale Erfahrung, bist du bei uns richtig.
             </p>
-            <ul className="text-base lg:text-xl font-light list-disc ml-5">
+            <ul className="text-base lg:text-xl font-light list-disc ml-5 font-IvyPrestoText">
               <li>React JS</li>
               <li>Schnelligkeit</li>
               <li>Sicherheit</li>
@@ -134,8 +140,10 @@ export default function Dienstleistungen() {
             />
           </div>
           <div className="flex flex-col gap-3 mt-5 lg:mt-0 justify-center lg:w-3/5 lg:pl-16 lg:gap-5">
-            <h3 className="text-3xl lg:text-5xl">Überarbeitung</h3>
-            <p className="text-base lg:text-xl font-light">
+            <h3 className="text-5xl md:text-7xl font-kaneda font-medium">
+              Überarbeitung
+            </h3>
+            <p className="font-IvyPresto text-xl md:text-2xl font-normal">
               Du hast schon eine Webseite und möchtest nur eine Auffrischung des
               Aussehens oder der Funktionen? Dafür sind wir natürlich auch zu
               haben!
@@ -144,7 +152,7 @@ export default function Dienstleistungen() {
               deiner Seite. Dazu was du gerne gemacht haben möchtest und ,falls
               du es weißt, am besten auch mit was Sie umgesetzt wurde.
             </p>
-            <ul className="text-base lg:text-xl font-light list-disc ml-5">
+            <ul className="text-base lg:text-xl font-light list-disc ml-5 font-IvyPrestoText">
               <li>Neues Design</li>
               <li>Konzeption</li>
               <li>Funktionserweiterung</li>
@@ -161,8 +169,10 @@ export default function Dienstleistungen() {
             />
           </div>
           <div className="flex flex-col gap-3 mt-5 lg:mt-0 justify-center lg:w-3/5 lg:pl-16 lg:gap-5">
-            <h3 className="text-3xl lg:text-5xl">Fotos und Videos</h3>
-            <p className="text-base lg:text-xl font-light">
+            <h3 className="text-5xl md:text-7xl font-kaneda font-medium">
+              Fotos und Videos
+            </h3>
+            <p className="font-IvyPresto text-xl md:text-2xl font-normal">
               Menschen arbeiten Visuell. Wieso also nicht zeigen, was dein
               Unternehmen macht? Bei Sawix kriegst du deswegen, die Webseite,
               sowie den kompletten Inhalt aus einer Hand. Somit passt der Inhalt
@@ -172,17 +182,17 @@ export default function Dienstleistungen() {
             </p>
 
             <div className="flex flex-col gap-3 lg:gap-5 lg:flex-row">
-              <ul className="text-base lg:text-xl font-light list-disc ml-5">
+              <ul className="text-base lg:text-xl font-light list-disc ml-5 font-IvyPrestoText">
                 <li>Produktfotos</li>
                 <li>Imagefilm</li>
                 <li>Immobilienvideo</li>
               </ul>
               <Link href={"/services/medienproduktion"}>
-                <button className="bg-gradient-to-r from-[#FFEE62] via-orange-600 to-[#FFEE62] buttonGradient p-px text-white rounded-full group">
-                  <div className="bg-[#0b0d0f] pl-8 rounded-full flex items-center hover:bg-transparent duration-300">
+                <button className="bg-gradient-to-r from-[#FFEE62] via-orange-600 to-[#FFEE62] buttonGradient p-[2px] text-black rounded-full group font-IvyPrestoText">
+                  <div className="bg-[#e8e5e3] pl-8 rounded-full flex items-center hover:bg-transparent duration-300">
                     Zur Medienproduktion
                     <span className="bg-[#f7aa10] rounded-full p-3 m-[1px] ml-5 group-hover:bg-transparent duration-300">
-                      <BsArrowUpRight className=" text-white rounded-full duration-300 group-hover:rotate-45" />
+                      <BsArrowUpRight className=" text-black rounded-full duration-300 group-hover:rotate-45" />
                     </span>
                   </div>
                 </button>

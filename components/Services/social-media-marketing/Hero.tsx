@@ -3,14 +3,15 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <div className="py-20 lg:py-0  bg-gradient-to-b from-[#514200] to-[#51420000] ">
+    <div className="py-20 lg:py-0">
       <div className="flex flex-col px-3 max-w-6xl mx-auto lg:flex-row lg:items-center">
         <div className="my-16  lg:w-1/2 lg:pr-20">
-          <h1 className="text-4xl mb-4 lg:mb-6 lg:text-6xl">
+          <h1 className="text-5xl md:text-8xl font-kaneda font-medium pb-5">
             Skaliere dein Unternehmen über Soziale Netzwerke
           </h1>
-          <p className="text-base lg:text-xl font-light">
-            Nutze Instagram, Facebook & TikTok um mehr Neukunden zu gewinnen.
+          <p className="font-IvyPresto text-xl md:text-2xl font-normal">
+            Nutze Instagram, Facebook & TikTok um mehr Neukunden zu gewinnen und
+            eine bessere Bindung zu deiner Zielgruppe aufzubauen.
           </p>
         </div>
         <div className="lg:w-1/2 lg:h-screen flex items-center justify-center">

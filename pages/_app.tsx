@@ -4,7 +4,7 @@ import { Poppins } from "@next/font/google";
 import Script from "next/script";
 import Header from "@/components/Header";
 
-import { AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -36,7 +36,7 @@ export default function App({ Component, pageProps, router }: AppProps) {
 
       <AnimatePresence mode="wait">
         <div className={`${poppins.variable} font-sans`}>
-          <Header />
+          {/* <Header /> */}
           <Component key={router.pathname} {...pageProps} />
         </div>
       </AnimatePresence>

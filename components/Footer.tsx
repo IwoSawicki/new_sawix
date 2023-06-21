@@ -7,8 +7,8 @@ import FooterImg from "../public/Footer-Img.png";
 
 export default function Footer() {
   return (
-    <div>
-      <div className="group relative flex overflow-x-hidden border-y-[1px] border-white hover:bg-white hover:text-black duration-300">
+    <div className="font-IvyPrestoText">
+      <div className="group relative flex overflow-x-hidden border-y-[1px] border-black hover:bg-black hover:text-white duration-300">
         <Link className="FooterMarqueeLink" href={"/kontakt"}>
           <div className="py-6 animate-marquee whitespace-nowrap flex">
             <button className="flex text-4xl mx-4 lg:text-5xl">
@@ -48,7 +48,7 @@ export default function Footer() {
             </button>
             <button className="flex text-4xl mx-4 lg:text-5xl">
               Kontaktieren
-              <BsArrowUpRight className="footerArrow ml-6 group-hover:rotate-45-3000" />
+              <BsArrowUpRight className="footerArrow ml-6 group-hover:rotate-45 duration-300" />
             </button>
             <button className="flex text-4xl mx-4 lg:text-5xl">
               Kontaktieren
@@ -63,12 +63,12 @@ export default function Footer() {
           <div className="mb-12 flex flex-col gap-4">
             <div className="flex gap-4">
               <a href="https://wa.me/message/JHZA2OLHWQGGI1">
-                <button className="bg-transparent border-[1px] border-white rounded-full px-5 py-3 w-36 hover:bg-white hover:text-black duration-300">
+                <button className="bg-transparent border-[1px] border-black rounded-full px-5 py-3 w-36 hover:bg-black hover:text-white duration-300">
                   Whatsapp
                 </button>
               </a>
               <a href="https://www.instagram.com/its_iwo/">
-                <button className="bg-transparent border-[1px] border-white rounded-full px-5 py-3 w-36 hover:bg-white hover:text-black duration-300">
+                <button className="bg-transparent border-[1px] border-black rounded-full px-5 py-3 w-36 hover:bg-black hover:text-white duration-300">
                   Instagram
                 </button>
               </a>
@@ -78,7 +78,7 @@ export default function Footer() {
             </div>
             <div className="flex gap-4">
               <a href="https://www.youtube.com/@itsiwo">
-                <button className="bg-transparent border-[1px] border-white rounded-full px-5 py-3 w-36 hover:bg-white hover:text-black duration-300">
+                <button className="bg-transparent border-[1px] border-black rounded-full px-5 py-3 w-36 hover:bg-black hover:text-white duration-300">
                   Youtube
                 </button>
               </a>

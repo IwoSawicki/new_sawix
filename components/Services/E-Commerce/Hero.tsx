@@ -5,22 +5,28 @@ import sliderImg4 from "public/Services/e-com/hero-slider-img-4.png";
 import sliderImg5 from "public/Services/e-com/hero-slider-img-5.png";
 
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
-    <div className="py-20 lg:py-0  bg-gradient-to-b from-[#1d311c] to-[#1c2d1b00] ">
+    <div className="py-8 lg:py-0">
       <div className="flex flex-col max-w-screen-2xl mx-auto lg:flex-row lg:items-center ">
         <div className="my-16 px-3 lg:w-1/2 lg:pr-20">
-          <h1 className="text-4xl mb-4 lg:mb-6 lg:text-6xl">
+          <h1 className="text-5xl md:text-8xl font-kaneda font-medium pb-5">
             Verkaufe überall & jederzeit.
           </h1>
-          <p className="text-base lg:text-xl font-light">
+          <p className="font-IvyPresto text-xl md:text-2xl font-normal">
             Ob Prdukte, Dienstleistungen, Kurse, Gutscheine oder Lebensmittel.
             Heute kann man alles Online verkaufen. Nutze diese Trend aus,
             steigere dein Umsatz und skaliere dein Unternehmen Online
           </p>
         </div>
-        <div className="lg:w-1/2 lg:h-screen">
+        <motion.div
+          className="lg:w-1/2 lg:h-screen"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 0.4 }}
+        >
           <div className="relative flex overflow-x-hidden lg:overflow-y-hidden duration-300">
             <div className="py-6 lg:py-0 animate-marquee lg:animate-marqueeVertical whitespace-nowrap flex lg:flex-col">
               <div className="mx-4 lg:mx-0 lg:my-4 w-full">
@@ -116,7 +122,7 @@ export default function Hero() {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

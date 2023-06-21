@@ -3,12 +3,12 @@ import { BsArrowUpRight } from "react-icons/bs";
 
 export default function Intro() {
   return (
-    <div className="bg-[#0B0D0F] rounded-t-2xl pt-10 lg:pt-0">
+    <div className="pt-10 lg:pt-0 border-t-2 border-black">
       <div className="px-3 max-w-5xl mx-auto lg:py-28 flex flex-col items-center">
-        <h2 className="text-4xl text-center my-4 lg:text-5xl lg:mb-10">
+        <h2 className="text-center text-5xl md:text-8xl font-kaneda font-medium pb-6">
           Ab wann macht es Sinn einen Online Shop aufzumachen?
         </h2>
-        <p className="text-base lg:text-xl font-light my-4 text-center">
+        <p className="font-IvyPresto text-xl md:text-2xl font-normal text-center">
           Das ist ja auch sehr viel Arbeit sowas zu Pflegen oder? Überhaupt
           nicht! Die Arbeit machen wir uns bei der Konzeption und Entwicklung.
           Den Shop danach zu Pflegen, aktuell zu halten und neue Produkte

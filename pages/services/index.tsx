@@ -1,12 +1,15 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Services from "@/components/Home/Services";
+import Loader from "@/components/Loader";
 
 import Head from "next/head";
 
 export default function services() {
   return (
     <>
+      <Header />
+      <Loader />
       <Head>
         <title>Dienstleistungen - Sawix Studio</title>
         <meta name="description" content="" />
