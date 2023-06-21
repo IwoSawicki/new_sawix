@@ -1,6 +1,6 @@
 import Head from "next/head";
+import { motion } from "framer-motion";
 // import Image from "next/image";
-// import { Inter } from "@next/font/google";
 
 import Header from "@/components/Header";
 import Hero from "@/components/Home/Hero";
@@ -10,18 +10,19 @@ import PortfolioNeu from "@/components/Home/Portfolio-neu";
 import Services from "@/components/Home/Services";
 // import Jobs from "@/components/Home/Jobs";
 import Footer from "@/components/Footer";
+import Prozess from "@/components/Home/Prozess";
+import Loader from "@/components/Loader";
 
 import OGimage from "../public/Hero-Phone.png";
-
-import { motion } from "framer-motion";
 
 export default function Home() {
   return (
     <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
+      // initial={{ opacity: 0 }}
+      // animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
       exit={{ opacity: 0 }}
+      className="bg-[#E8E5E3] text-black"
     >
       <Head>
         <title>Home - Sawix Studio</title>
@@ -34,6 +35,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.svg" />
       </Head>
       {/* Header */}
+      <Header />
+
+      <Loader />
 
       <main>
         {/* Hero */}
@@ -60,6 +64,10 @@ export default function Home() {
         {/* <section>
           <Jobs />
         </section> */}
+
+        <section>
+          <Prozess />
+        </section>
 
         {/* Footer */}
       </main>

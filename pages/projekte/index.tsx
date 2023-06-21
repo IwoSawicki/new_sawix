@@ -13,15 +13,13 @@ import portfolioWeinhaus from "@/public/portfolio/portfolio-weinhaus.png";
 import portfolioCDU from "@/public/portfolio/portfolio-cdu.png";
 import portfolioPilipp from "@/public/portfolio/portfolio-pilipp.png";
 import portfolioSkyvision from "@/public/portfolio/portfolio-skyvision.png";
+import Loader from "@/components/Loader";
 
 export default function portfolio() {
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 1 }}
-      exit={{ opacity: 0 }}
-    >
+    <motion.div className="bg-white text-black">
+      <Header />
+      <Loader />
       <Head>
         <title>Abgeschlossene Projekte - Sawix Studio</title>
         <meta
@@ -33,25 +31,27 @@ export default function portfolio() {
       </Head>
       <div>
         {/* Hero */}
-        <div className="pt-28 md:py-32 md:pb-8 flex flex-col justify-center gap-6 items-start px-3 max-w-6xl mx-auto">
-          <h1 className="text-4xl md:text-6xl">
+        <div className="pt-28 md:py-32 md:pb-8 flex flex-col justify-center gap-6 items-start px-3 max-w-[1450px] mx-auto">
+          <h1 className="text-5xl md:text-8xl font-kaneda font-medium">
             Schau dir an, wie wir die Probleme von anderen Kunden lösen konnten.
           </h1>
-          <p className="md:w-1/2">
+          <p className="font-IvyPresto text-xl md:text-2xl font-normal">
             Wir glauben daran, dass unsere Industrie von Zahlen geblendet wird.
             <br /> Während Kaufentscheidungen auf Emotionen basieren!
           </p>
         </div>
         {/* Portfolio */}
-        <div className="my-6 px-3 max-w-6xl mx-auto pb-16 md:pb-28">
+        <div className="my-6 px-3 max-w-[1450px] mx-auto pb-16 md:pb-28">
           <div className="text-black pt-8 flex gap-12 flex-col">
             {/* DMK HAUS */}
             <div>
               <div className="bg-[#87AA85] rounded-xl lg:w-4/5 group hover:scale-[100.5%] duration-300">
                 {/* <Link href={"/projekte/dmkhaus/"}> */}
                 <div className="px-4 pt-4 md:px-7 md:pt-6">
-                  <p className="text-md md:text-xl font-light">DMK-Haus</p>
-                  <h3 className="font-medium text-2xl md:text-5xl relative">
+                  <p className="text-md md:text-xl font-light font-IvyPresto">
+                    DMK-Haus
+                  </p>
+                  <h3 className="md:font-medium font-semibold text-4xl md:text-8xl relative font-kaneda">
                     Custom Shop für Modulhäußer und Möbel rund ums Haus
                     {/* <button className="bg-black border-black border-[1px] rounded-full mx-2 group-hover:rotate-45 duration-300 md:absolute md:mt-2">
                       <div className="h-5 w-5 md:h-8 md:w-8 flex items-center justify-center">
@@ -77,8 +77,10 @@ export default function portfolio() {
               <div className="bg-[#FFF385] rounded-xl lg:w-4/5 group hover:scale-[100.5%] duration-300">
                 {/* <Link href={"/projekte/dmkhaus/"}> */}
                 <div className="px-4 pt-4 md:px-7 md:pt-6">
-                  <p className="text-md md:text-xl font-light">Mediceo</p>
-                  <h3 className="font-medium text-2xl md:text-5xl relative">
+                  <p className="text-md md:text-xl font-light font-IvyPresto">
+                    Mediceo
+                  </p>
+                  <h3 className="md:font-medium font-semibold text-4xl md:text-8xl relative font-kaneda">
                     Website redesign für eine innovative Medizinapp
                     {/* <button className="bg-black border-black border-[1px] rounded-full mx-2 group-hover:rotate-45 duration-300 md:absolute md:mt-2">
                       <div className="h-5 w-5 md:h-8 md:w-8 flex items-center justify-center">
@@ -88,7 +90,7 @@ export default function portfolio() {
                   </h3>
                 </div>
 
-                <div className="pt-6 md:flex md:justify-center">
+                <div className="pt-6 md:flex md:justify-end">
                   <Image
                     src={portfolioMediceo}
                     alt="DMK Haus Mockup portfolio"
@@ -104,10 +106,10 @@ export default function portfolio() {
               <div className="bg-[#A282FF] rounded-xl lg:w-4/5 group hover:scale-[100.5%] duration-300">
                 {/* <Link href={"/projekte/dmkhaus/"}> */}
                 <div className="px-4 pt-4 md:px-7 md:pt-6">
-                  <p className="text-md md:text-xl font-light">
+                  <p className="text-md md:text-xl font-light font-IvyPresto">
                     Wohlfühlerei Weinhaus
                   </p>
-                  <h3 className="font-medium text-2xl md:text-5xl relative">
+                  <h3 className="md:font-medium font-semibold text-4xl md:text-8xl relative font-kaneda">
                     Elegante Webseite für einen lokalen Weinanbau
                     {/* <button className="bg-black border-black border-[1px] rounded-full mx-2 group-hover:rotate-45 duration-300 md:absolute md:mt-2">
                       <div className="h-5 w-5 md:h-8 md:w-8 flex items-center justify-center">
@@ -117,11 +119,10 @@ export default function portfolio() {
                   </h3>
                 </div>
 
-                <div className="pt-6 md:flex md:justify-center">
+                <div className="pt-6 md:flex md:justify-start">
                   <Image
                     src={portfolioWeinhaus}
                     alt="DMK Haus Mockup portfolio"
-                    className="object-left-bottom"
                   />
                 </div>
                 {/* </Link> */}
@@ -133,8 +134,10 @@ export default function portfolio() {
               <div className="bg-[#93CDFF] rounded-xl lg:w-4/5 group hover:scale-[100.5%] duration-300">
                 {/* <Link href={"/projekte/dmkhaus/"}> */}
                 <div className="px-4 pt-4 md:px-7 md:pt-6">
-                  <p className="text-md md:text-xl font-light">CDU Homepage</p>
-                  <h3 className="font-medium text-2xl md:text-5xl relative">
+                  <p className="text-md md:text-xl font-light font-IvyPresto">
+                    CDU
+                  </p>
+                  <h3 className="md:font-medium font-semibold text-4xl md:text-8xl relative font-kaneda">
                     Redesign einer CDU Homepage
                     {/* <button className="bg-black border-black border-[1px] rounded-full mx-2 group-hover:rotate-45 duration-300 md:absolute md:mt-2">
                       <div className="h-5 w-5 md:h-8 md:w-8 flex items-center justify-center">
@@ -160,10 +163,10 @@ export default function portfolio() {
               <div className="bg-[#FB8484] rounded-xl lg:w-4/5 group hover:scale-[100.5%] duration-300">
                 {/* <Link href={"/projekte/dmkhaus/"}> */}
                 <div className="px-4 pt-4 md:px-7 md:pt-6">
-                  <p className="text-md md:text-xl font-light">
+                  <p className="text-md md:text-xl font-light font-IvyPresto">
                     Pilipp-Holzwerkstoffe
                   </p>
-                  <h3 className="font-medium text-2xl md:text-5xl relative">
+                  <h3 className="md:font-medium font-semibold text-4xl md:text-8xl relative font-kaneda">
                     Custom B2B Shop mit 2000+ eingepflegten Artikeln
                     {/* <button className="bg-black border-black border-[1px] rounded-full mx-2 group-hover:rotate-45 duration-300 md:absolute md:mt-2">
                       <div className="h-5 w-5 md:h-8 md:w-8 flex items-center justify-center">
@@ -189,8 +192,10 @@ export default function portfolio() {
               <div className="bg-[#C89DFF] rounded-xl lg:w-4/5 group hover:scale-[100.5%] duration-300">
                 {/* <Link href={"/projekte/dmkhaus/"}> */}
                 <div className="px-4 pt-4 md:px-7 md:pt-6">
-                  <p className="text-md md:text-xl font-light">SkyVision</p>
-                  <h3 className="font-medium text-2xl md:text-5xl relative">
+                  <p className="text-md md:text-xl font-light font-IvyPresto">
+                    SkyVision
+                  </p>
+                  <h3 className="md:font-medium font-semibold text-4xl md:text-8xl relative font-kaneda">
                     Visuelle Webseite für ein Drohnenunternehmen
                     {/* <button className="bg-black border-black border-[1px] rounded-full mx-2 group-hover:rotate-45 duration-300 md:absolute md:mt-2">
                       <div className="h-5 w-5 md:h-8 md:w-8 flex items-center justify-center">
