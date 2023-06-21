@@ -223,7 +223,7 @@ export default function Header() {
       {/* COOKIE POPUP */}
       {showCookie && (
         <motion.div
-          className="z-40 fixed bottom-0 w-full bg-black border-t-[1px] border-white text-sm px-3"
+          className="z-40 fixed bottom-0 w-full bg-black text-white border-t-[1px] border-white text-sm px-3"
           initial={{
             opacity: 0,
             bottom: -100,
