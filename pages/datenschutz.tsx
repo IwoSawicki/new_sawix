@@ -176,9 +176,9 @@ export default function Datenschutz() {
                 <p>
                   Sawix
                   <br />
-                  Heidelbergerstra&szlig;e 15D,
+                  Lilienthalstraße 51
                   <br />
-                  6435 Reichelsheim
+                  64625 Bensheim
                 </p>
                 <p>
                   Telefon: +49 (0) 173 4388519

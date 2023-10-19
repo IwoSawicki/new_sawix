@@ -29,9 +29,9 @@ export default function Datenschutz() {
                 <p>
                   Iwo Sawicki
                   <br />
-                  Vogelsbergstr. 2
+                  Lilienthalstraße 51
                   <br />
-                  64646 Heppenheim
+                  64625 Bensheim
                 </p>
               </div>
 
@@ -59,9 +59,9 @@ export default function Datenschutz() {
                 <p>
                   Iwo Sawicki
                   <br />
-                  Vogelsbergstr. 2
+                  Lilienthalstraße 51
                   <br />
-                  64646 Heppenheim
+                  64625 Bensheim
                 </p>
               </div>
 
