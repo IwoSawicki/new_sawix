@@ -128,7 +128,7 @@ export default function Kontakt() {
           </a>
           <a
             className="text-3xl mb-12 lg:text-4xl block font-IvyPrestoText"
-            href="tel:+491734388519"
+            href="tel:+4917677887261"
           >
             +49 176 7788 7216
           </a>
