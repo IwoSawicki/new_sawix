@@ -181,7 +181,7 @@ export default function Header() {
                 >
                   info@sawix.de
                 </a>
-                <a className="text-3xl lg:text-4xl" href="tel:+491734388519">
+                <a className="text-3xl lg:text-4xl" href="tel:++4917677887216">
                   +49 176 7788 7216
                 </a>
               </div>

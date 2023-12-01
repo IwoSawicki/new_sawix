@@ -46,7 +46,6 @@ export default function Kontakt() {
       serviceShops: "",
       serviceProduktion: "",
       serviceSSM: "",
-      budget: "Noch nicht festgelegt..",
       nachricht: "",
       datenschutz: "",
     },
@@ -291,24 +290,6 @@ export default function Kontakt() {
                     </div>
                   </div>
                   {/* Service Ende */}
-                  {/* Budget */}
-                  <div className="pb-6">
-                    <label htmlFor="budget" className="block pb-2">
-                      Budget
-                    </label>
-                    <select
-                      name="budget"
-                      className="w-full rounded-full"
-                      value={formik.values.budget}
-                      onChange={formik.handleChange}
-                    >
-                      <option>Noch nicht festgelegt..</option>
-                      <option>1.000 - 5.000€</option>
-                      <option>5.000€ - 15.000€</option>
-                      <option>15.000€ - 25.000€</option>
-                      <option>25.000€+</option>
-                    </select>
-                  </div>
                   {/* Nachricht */}
                   <div className="pb-6">
                     <label
