@@ -68,7 +68,7 @@ export default function Kontakt() {
       try {
         emailjs
           .send(
-            "service_4eppd0i",
+            "service_934o1zk",
             "template_3hamqdy",
             values,
             process.env.NEXT_PUBLIC_USER_KEY
