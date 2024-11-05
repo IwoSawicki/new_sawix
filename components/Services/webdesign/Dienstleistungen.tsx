@@ -189,7 +189,7 @@ export default function Dienstleistungen() {
               </ul>
               <Link href={"/services/medienproduktion"}>
                 <button className="bg-gradient-to-r from-[#FFEE62] via-orange-600 to-[#FFEE62] buttonGradient p-[2px] text-black rounded-full group font-IvyPrestoText">
-                  <div className="bg-[#e8e5e3] pl-8 rounded-full flex items-center hover:bg-transparent duration-300">
+                  <div className="bg-[#FFF] pl-8 rounded-full flex items-center hover:bg-transparent duration-300">
                     Zur Medienproduktion
                     <span className="bg-[#f7aa10] rounded-full p-3 m-[1px] ml-5 group-hover:bg-transparent duration-300">
                       <BsArrowUpRight className=" text-black rounded-full duration-300 group-hover:rotate-45" />

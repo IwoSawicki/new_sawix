@@ -67,24 +67,23 @@ export default function Footer() {
                   Whatsapp
                 </button>
               </a>
-              <a href="https://www.instagram.com/its_iwo/">
+              <a href="https://www.instagram.com/sawix.studio/">
                 <button className="bg-transparent border-[1px] border-black rounded-full px-5 py-3 w-36 hover:bg-black hover:text-white duration-300">
                   Instagram
                 </button>
               </a>
-              <div>
-                <button className="bg-black text-white rounded-2xl "></button>
-              </div>
             </div>
             <div className="flex gap-4">
-              <a href="https://www.youtube.com/@itsiwo">
+              {/*<a href="https://www.youtube.com/@itsiwo">
                 <button className="bg-transparent border-[1px] border-black rounded-full px-5 py-3 w-36 hover:bg-black hover:text-white duration-300">
                   Youtube
                 </button>
+              </a>*/}
+              <a href="https://www.facebook.com/profile.php?id=61556152266805">
+                <button className="bg-transparent border-[1px] border-black rounded-full px-5 py-3 w-36 hover:bg-black hover:text-white duration-300">
+                  Facebook
+                </button>
               </a>
-              {/* <button className="bg-transparent border-[1px] border-white rounded-full px-5 py-3 w-36">
-                Facebook
-              </button> */}
             </div>
           </div>
 

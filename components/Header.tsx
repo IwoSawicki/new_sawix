@@ -92,8 +92,8 @@ export default function Header() {
               <button
                 className={`${
                   isOpen
-                    ? "bg-black text-white"
-                    : "bg-white text-black delay-500"
+                    ? "bg-white text-black"
+                    : "bg-black text-white delay-500"
                 } ,  rounded-full  px-4 py-1 text-sm z-20 duration-500`}
               >
                 Kontakt

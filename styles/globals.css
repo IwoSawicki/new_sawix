@@ -67,10 +67,9 @@
 
 html,
 body {
-  /* color: white;
-  background-color: #0b0d0f; */
   color: black;
-  background-color: #e8e5e3;
+  background: white;
+  background-color: white;
   max-width: 100vw;
   overflow-x: hidden;
 }
