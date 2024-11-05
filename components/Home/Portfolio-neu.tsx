@@ -7,6 +7,8 @@ import { BsArrowUpRight } from "react-icons/bs";
 import portolioDmkhaus from "@/public/portfolio/portfolio-dmkhaus.png";
 import portfolioMediceo from "@/public/portfolio/portfolio-mediceo.png";
 import portfolioWeinhaus from "@/public/portfolio/portfolio-weinhaus.png";
+import portfolioZehner from "@/public/portfolio/portfolio-zehnerimmo.png";
+import portfolioHepa from "@/public/portfolio/portfolio-hepa.png";
 
 export default function () {
   return (
@@ -17,9 +19,69 @@ export default function () {
           Abgeschlossene Projekte
         </h2>
         <div className="text-black pt-8 flex gap-12 flex-col">
+          {/* Zehner Immobilien */}
+          <div>
+            <div className="bg-[#82D3FF] rounded-xl lg:w-4/5 group hover:scale-[100.5%] duration-300 overflow-hidden">
+              {/* <Link href={"/projekte/dmkhaus/"}> */}
+              <div className="px-4 pt-4 md:px-7 md:pt-6">
+                <p className="text-md md:text-xl font-light font-IvyPresto">
+                  Zehner Immobilien
+                </p>
+                <h3 className="md:font-medium font-semibold text-4xl md:text-8xl relative font-kaneda">
+                  Immobilienmakler Webseite mit maßgeschneidertem Immo-System
+                  {
+                    <button className="bg-black border-black border-[1px] rounded-full mx-2 group-hover:rotate-45 duration-300 md:absolute md:mt-2">
+                      <div className="h-5 w-5 md:h-8 md:w-8 flex items-center justify-center">
+                        <BsArrowUpRight className="text-white text-sm" />
+                      </div>
+                    </button>
+                  }
+                </h3>
+              </div>
+
+              <div className="pt-6 md:flex md:justify-center">
+                <Image
+                  src={portfolioZehner}
+                  alt="DMK Haus Mockup portfolio"
+                  className=""
+                />
+              </div>
+              {/* </Link> */}
+            </div>
+          </div>
+          {/* ENDE ZEHNER IMMOBILIEN */}
+          {/* HEPA SOLAR */}
+          <div className="lg:flex lg:justify-end">
+            <div className="bg-[#6FDC6F] rounded-xl lg:w-4/5 group hover:scale-[100.5%] duration-300 overflow-hidden">
+              {/* <Link href={"/projekte/dmkhaus/"}> */}
+              <div className="px-4 pt-4 md:px-7 md:pt-6">
+                <p className="text-md md:text-xl font-light font-IvyPresto">
+                  Hepa Solar
+                </p>
+                <h3 className="md:font-medium font-semibold text-4xl md:text-8xl relative font-kaneda">
+                  Moderne Webseite für ein Photovoltaik-Unternehmen
+                  <button className="bg-black border-black border-[1px] rounded-full mx-2 group-hover:rotate-45 duration-300 md:absolute md:mt-2">
+                    <div className="h-5 w-5 md:h-8 md:w-8 flex items-center justify-center">
+                      <BsArrowUpRight className="text-white text-sm" />
+                    </div>
+                  </button>
+                </h3>
+              </div>
+
+              <div className="pt-6 md:flex md:justify-end">
+                <Image
+                  src={portfolioHepa}
+                  alt="DMK Haus Mockup portfolio"
+                  className=""
+                />
+              </div>
+              {/* </Link> */}
+            </div>
+          </div>
+          {/* ENDE HEPA SOLAR */}
           {/* DMK HAUS */}
           <div>
-            <div className="bg-[#87AA85] rounded-xl lg:w-4/5 group hover:scale-[100.5%] duration-300">
+            <div className="bg-[#87AA85] rounded-xl lg:w-4/5 group hover:scale-[100.5%] duration-300 overflow-hidden">
               {/* <Link href={"/projekte/dmkhaus/"}> */}
               <div className="px-4 pt-4 md:px-7 md:pt-6">
                 <p className="text-md md:text-xl font-light font-IvyPresto">
@@ -48,7 +110,7 @@ export default function () {
           {/* ENDE DMK HAUS */}
           {/* MEDICEO */}
           <div className="lg:flex lg:justify-end">
-            <div className="bg-[#FFF385] rounded-xl lg:w-4/5 group hover:scale-[100.5%] duration-300">
+            <div className="bg-[#FFF385] rounded-xl lg:w-4/5 group hover:scale-[100.5%] duration-300 overflow-hidden">
               {/* <Link href={"/projekte/dmkhaus/"}> */}
               <div className="px-4 pt-4 md:px-7 md:pt-6">
                 <p className="text-md md:text-xl font-light font-IvyPresto">
@@ -77,7 +139,7 @@ export default function () {
           {/* ENDE MEDICEO */}
           {/* WEINHAUS */}
           <div>
-            <div className="bg-[#A282FF] rounded-xl lg:w-4/5 group hover:scale-[100.5%] duration-300">
+            <div className="bg-[#A282FF] rounded-xl lg:w-4/5 group hover:scale-[100.5%] duration-300 overflow-hidden">
               {/* <Link href={"/projekte/dmkhaus/"}> */}
               <div className="px-4 pt-4 md:px-7 md:pt-6">
                 <p className="text-md md:text-xl font-light font-IvyPresto">
@@ -107,8 +169,8 @@ export default function () {
         <div className="flex justify-center pt-6">
           <Link href={"/projekte"}>
             <button className="buttonGradient p-[2px] mt-12 text-white text-base lg:text-xl font-light rounded-full group bg-gradient-to-r from-[#9747FF] via-blue-700 to-[#9747FF]">
-              <div className="bg-[#E8E5E3] pl-8 rounded-full flex items-center hover:bg-transparent duration-300 text-black group-hover:text-white font-IvyPresto">
-                Alle Projekte anschauen{" "}
+              <div className="bg-[#FFF] pl-8 rounded-full flex items-center hover:bg-transparent duration-300 text-black group-hover:text-white font-IvyPresto">
+                Alle Projekte ansehen (8){" "}
                 <span className="text-xs -mt-3 hidden">(06)</span>
                 <span className="bg-[#9747FF] rounded-full p-3 m-[1px] ml-6 group-hover:bg-transparent duration-300">
                   <BsArrowUpRight className=" text-black rounded-full duration-300 group-hover:rotate-45 group-hover:text-white" />

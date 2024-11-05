@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 import Header from "@/components/Header";
 import Hero from "@/components/Home/Hero";
-// import Portfolio from "@/components/Home/Portfolio";
+import Portfolio from "@/components/Home/Portfolio";
 import PortfolioNeu from "@/components/Home/Portfolio-neu";
 // import About from "@/components/Home/About";
 import Services from "@/components/Home/Services";
@@ -22,7 +22,7 @@ export default function Home() {
       // animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
       exit={{ opacity: 0 }}
-      className="bg-[#E8E5E3] text-black"
+      className="bg-[#FFF] text-black"
     >
       <Head>
         <title>Home - Sawix Studio</title>
