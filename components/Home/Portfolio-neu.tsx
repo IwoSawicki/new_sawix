@@ -29,13 +29,13 @@ export default function () {
                 </p>
                 <h3 className="md:font-medium font-semibold text-4xl md:text-8xl relative font-kaneda">
                   Immobilienmakler Webseite mit maßgeschneidertem Immo-System
-                  {
+                  {/*
                     <button className="bg-black border-black border-[1px] rounded-full mx-2 group-hover:rotate-45 duration-300 md:absolute md:mt-2">
                       <div className="h-5 w-5 md:h-8 md:w-8 flex items-center justify-center">
                         <BsArrowUpRight className="text-white text-sm" />
                       </div>
                     </button>
-                  }
+                  */}
                 </h3>
               </div>
 
@@ -60,11 +60,11 @@ export default function () {
                 </p>
                 <h3 className="md:font-medium font-semibold text-4xl md:text-8xl relative font-kaneda">
                   Moderne Webseite für ein Photovoltaik-Unternehmen
-                  <button className="bg-black border-black border-[1px] rounded-full mx-2 group-hover:rotate-45 duration-300 md:absolute md:mt-2">
+                  {/*<button className="bg-black border-black border-[1px] rounded-full mx-2 group-hover:rotate-45 duration-300 md:absolute md:mt-2">
                     <div className="h-5 w-5 md:h-8 md:w-8 flex items-center justify-center">
                       <BsArrowUpRight className="text-white text-sm" />
                     </div>
-                  </button>
+                  </button>*/}
                 </h3>
               </div>
 
